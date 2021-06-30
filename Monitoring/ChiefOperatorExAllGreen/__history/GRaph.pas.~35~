@@ -1,0 +1,146 @@
+unit GRaph;
+
+interface
+uses Classes,Windows,SyncObjs,SysUtils,Graphics,Global,MyPanel,FastDIB,FastDraw,Dialogs;
+
+type TBut=record
+       midd:integer;
+       enbl:boolean;
+     end;
+
+type TGraph=class(TThread)
+     private
+       fIn :array [0..15] of TBut;
+       fOut:array [0..15] of TBut;
+       fwid:integer;
+       fhei:integer;
+       fNeedToChange:boolean;
+       fHand1:THandle;   //main form
+       fHand2:THandle;   //form 7302
+       fevent:TEvent;
+       fnumb :integer;
+       bm    :TBitmap;
+       cs    :TCriticalSection;
+       Fast  :TFastDib;
+       procedure Paint;
+       procedure   FMEssageToForm;
+     public
+       property    ReadyImage:TFastDib read Fast;
+       constructor Create(numb:integer;Handle:THandle;Event:TEvent);
+       procedure   Change(Comm:T15);
+     protected
+       procedure Execute; override;
+     end;
+
+var Gr: array [1..2] of TGraph;
+
+implementation
+
+uses Main,Container_EM7302;
+
+procedure TGraph.Change;
+begin
+  Paint;
+end;
+
+constructor TGraph.Create(numb:integer;Handle:THandle;Event:TEvent);
+var i:integer;
+    panel:TMyPanel;
+    shift:integer;
+begin
+  inherited Create(true);
+  fHand1:=Handle;
+  fEvent:=Event;
+  fnumb :=numb;
+  shift :=fMain.i01.Top;
+  for i:=1 to 16 do
+  begin
+    Panel:=fMain.FindComponent('in'+IntToStr(i)) as TMyPanel;
+    if Panel=nil then begin fIn[i].enbl:=false; continue; end;
+    fin[i-1].enbl  :=Panel.Enabled;
+    fin[i-1].midd  :=(panel.Top+panel.Height div 2)-shift;
+  end;
+  for i:=1 to 16 do
+  begin
+    Panel:=fMain.FindComponent('out'+IntToStr(i)) as TMyPanel;
+    if Panel=nil then begin fout[i].enbl:=false; continue; end;
+    fout[i-1].enbl  :=Panel.Enabled;
+    fout[i-1].midd  :=(panel.Top+panel.Height div 2)-shift;
+  end;
+  fwid:=fMain.i01.Width;
+  fhei:=fMain.i01.Height;
+  Fast:=TFastDib.Create;
+  Fast.SetSize(fwid,fhei,32);
+  Fast.FillColors(0,255,[tfBlack,FRGB(0,100,128),tfWhite]);
+  resume;
+end;
+
+procedure TGraph.Paint;
+var Commutation:T25;
+    Color:tColor;
+    i,j  :integer;
+    y1,y2:integer;
+begin
+  case fnumb of
+    1:begin Commutation:=EM73021.TableOfCommutation;  Color:=EM73021.Color; cs:=GraphCS1; end;
+    2:begin Commutation:=EM73022.TableOfCommutation;  Color:=EM73022.Color; cs:=GraphCS2; end
+    else exit;
+  end;
+  randomize;
+  Commutation[0] :=Random(8);
+  Commutation[1] :=Random(8);
+  Commutation[2] :=Random(8);
+  Commutation[3] :=Random(8);
+  Commutation[4] :=Random(8);
+  Commutation[5] :=Random(8);
+  Commutation[6] :=Random(8);
+  Commutation[7] :=Random(8);
+  Commutation[8] :=Random(8);
+  Commutation[9] :=Random(8);
+  Commutation[10]:=Random(8);
+  Commutation[11]:=Random(8);
+  Commutation[12]:=Random(8);
+  Commutation[13]:=Random(8);
+  Commutation[14]:=Random(8);
+  Commutation[15]:=Random(8);
+  Commutation[16]:=Random(8);
+  GraphCS1.Enter;
+  try
+    Fast.Clear(tfSilver);
+    for i:=0 to 15 do
+    begin
+      if not fout[i].enbl then continue;
+      y1:=fout[i].midd;
+      j:=Commutation[i];
+      y2:=fin[j].midd;
+      SmoothLine(Fast,0,y2,fwid-1,y1,tfBlack);
+      SmoothLine(Fast,0,y2+1,fwid-1,y1+1,tfBlack);
+    end;
+  finally
+    GraphCS1.Leave;
+  end;
+  FMessageToForm;
+end;
+
+procedure TGraph.FMessageToForm;
+begin
+  if fHand1<>0 then
+  PostMessage(fHand1,WM_NOTIFY_Graph,fnumb,fnumb);
+end;
+
+procedure TGraph.Execute;
+begin
+  FreeOnTerminate:=false;
+  Paint;
+  while not Terminated do
+  begin
+    if NeedForSpeed then WaitForSingleObject(fEvent.Handle,TimeToUpdate)
+                    else sleep(TimeToUpdate);
+    if Terminated then
+    begin
+
+    end;
+  end;
+end;
+
+end.

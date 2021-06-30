@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/04/28 10:36:57.685.bdsproj,O:\Users\olikke\Documents\Borland Studio Projects\Project1.bdsproj=O:\Users\olikke\Documents\Borland Studio Projects\MTK_Config.bdsproj</Transaction>
+    <Transaction>2014/04/28 10:37:03.851.pas,O:\Users\olikke\Documents\Borland Studio Projects\Unit1.pas=O:\Users\olikke\Documents\Borland Studio Projects\Main.pas</Transaction>
+    <Transaction>2014/04/28 10:37:03.851.dfm,O:\Users\olikke\Documents\Borland Studio Projects\Unit1.dfm=O:\Users\olikke\Documents\Borland Studio Projects\Main.dfm</Transaction>
+    <Transaction>2014/04/28 10:55:40.990.pas,O:\Users\olikke\Documents\Borland Studio Projects\Unit1.pas=O:\Users\olikke\Documents\Borland Studio Projects\Global.pas</Transaction>
+    <Transaction>2014/04/28 11:00:42.836.pas,O:\Users\olikke\Documents\Borland Studio Projects\Main.pas=H:\moi progi\MTK-71\Configurator\Main.pas</Transaction>
+    <Transaction>2014/04/28 11:00:42.836.dfm,O:\Users\olikke\Documents\Borland Studio Projects\Main.dfm=H:\moi progi\MTK-71\Configurator\Main.dfm</Transaction>
+    <Transaction>2014/04/28 11:00:43.706.pas,O:\Users\olikke\Documents\Borland Studio Projects\Global.pas=H:\moi progi\MTK-71\Configurator\Global.pas</Transaction>
+    <Transaction>2014/04/28 11:00:44.582.bdsproj,O:\Users\olikke\Documents\Borland Studio Projects\MTK_Config.bdsproj=H:\moi progi\MTK-71\Configurator\MTK_Config.bdsproj</Transaction>
+    <Transaction>2014/04/28 15:22:38.723.pas,H:\moi progi\MTK-201??\??\HTTP Multicast Server\VideoServer\????? ????? AxisServer_2012_10_24 VRD\HTTPin.pas=</Transaction>
+    <Transaction>2014/04/30 11:03:51.407.pas,H:\moi progi\MTK-71\Configurator\Unit1.pas=H:\moi progi\MTK-71\Configurator\UPS.pas</Transaction>
+    <Transaction>2014/04/30 11:05:59.571.pas,H:\moi progi\MTK-71\Configurator\UPS.pas=H:\moi progi\MTK-71\Configurator\UPSconfig.pas</Transaction>
+    <Transaction>2014/05/05 15:34:37.405.pas,H:\moi progi\MTK-71\Configurator\Unit1.pas=H:\moi progi\MTK-71\Configurator\TM2409.pas</Transaction>
+    <Transaction>2014/05/05 15:37:01.805.pas,H:\moi progi\MTK-71\Configurator\TM2409.pas=H:\moi progi\MTK-71\Configurator\T2409.pas</Transaction>
+    <Transaction>2014/05/05 15:59:52.624.pas,H:\moi progi\MTK-71\Configurator\T2409.pas=H:\moi progi\MTK-71\Configurator\T2409Find.pas</Transaction>
+    <Transaction>2014/05/05 16:18:20.797.pas,H:\moi progi\MTK-71\Configurator\T2409Find.pas=</Transaction>
+    <Transaction>2014/05/06 10:33:52.616.pas,H:\moi progi\MTK-71\Configurator\Unit1.pas=H:\moi progi\MTK-71\Configurator\HTTP2409.pas</Transaction>
+    <Transaction>2014/05/08 12:20:07.430.pas,H:\moi progi\MTK-71\Configurator\Unit1.pas=H:\moi progi\MTK-71\Configurator\HTTP7303.pas</Transaction>
+    <Transaction>2014/05/08 12:20:14.958.pas,H:\moi progi\MTK-71\Configurator\HTTPin.pas=H:\moi progi\MTK-71\Configurator\HTTP7302.pas</Transaction>
+    <Transaction>2014/05/12 09:27:28.575.pas,H:\moi progi\MTK-71\Configurator\Unit1.pas=H:\moi progi\MTK-71\Configurator\ChangeIP.pas</Transaction>
+    <Transaction>2014/05/12 09:46:00.670.pas,H:\moi progi\MTK-71\Configurator\ChangeIP.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

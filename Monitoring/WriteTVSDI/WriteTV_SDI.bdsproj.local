@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/04/22 14:37:54.236.pas,O:\Users\olikke\Documents\Borland Studio Projects\Unit1.pas=O:\Users\olikke\Documents\Borland Studio Projects\Main.pas</Transaction>
+    <Transaction>2014/04/22 14:37:54.236.dfm,O:\Users\olikke\Documents\Borland Studio Projects\Unit1.dfm=O:\Users\olikke\Documents\Borland Studio Projects\Main.dfm</Transaction>
+    <Transaction>2014/04/22 14:38:05.483.bdsproj,O:\Users\olikke\Documents\Borland Studio Projects\Project1.bdsproj=O:\Users\olikke\Documents\Borland Studio Projects\WriteTV_SDI.bdsproj</Transaction>
+    <Transaction>2014/04/22 14:38:17.229.pas,O:\Users\olikke\Documents\Borland Studio Projects\Main.pas=H:\moi progi\MTK-71\WriteTVSDI\Main.pas</Transaction>
+    <Transaction>2014/04/22 14:38:17.229.dfm,O:\Users\olikke\Documents\Borland Studio Projects\Main.dfm=H:\moi progi\MTK-71\WriteTVSDI\Main.dfm</Transaction>
+    <Transaction>2014/04/22 14:38:18.835.bdsproj,O:\Users\olikke\Documents\Borland Studio Projects\WriteTV_SDI.bdsproj=H:\moi progi\MTK-71\WriteTVSDI\WriteTV_SDI.bdsproj</Transaction>
+    <Transaction>2014/04/22 15:22:10.276.pas,H:\moi progi\MTK-71\WriteTVSDI\Unit1.pas=H:\moi progi\MTK-71\WriteTVSDI\Global.pas</Transaction>
+  </Transactions>
+</BorlandProject>

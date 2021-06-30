@@ -1,0 +1,90 @@
+unit FullState;
+
+interface
+uses Classes,Graphics,Global,Windows,BDRecord,Container_TM2407,Container_TM2410,
+     Container_TM2409,Client_EM7212,Container_EM7302,Container_TM2411,ContainerLanding,
+     Container_Tm2322,Container_TM2408,Container_TM2220,Container_EM7210;
+
+type
+  TFullState=class(TThread)
+  private
+    fCCTVColor:TColor;
+    fFullColor:tColor;
+    procedure AnalizCCTV;
+    procedure AnalizFull;
+  public
+    constructor Create;
+    property CCTVColor:TColor  read fCCTVColor;
+    property FullColor:TColor  read fFullColor;
+
+  protected
+    procedure Execute;override;
+  end;
+
+var MTKState:TFullState;
+
+implementation
+
+constructor TFullState.Create;
+begin
+  inherited Create(true);
+  fCCTVColor:=clWhite;
+  fFullColor:=clWhite;
+  resume;
+end;
+
+procedure tFullState.Execute;
+begin
+  FreeOnTerminate:=false;
+  while not terminated do
+  begin
+    if NeedForSpeed then WaitForSingleObject(StopEventFull.Handle,TimeToUpdate)
+                    else sleep(TimeToUpdate);
+    if terminated then exit;
+    AnalizCCTV;
+    AnalizFull;
+  end;
+end;
+
+procedure TFullState.AnalizCCTV;
+var YellowGroup,i:integer;
+  function CalcColor(Color:TColor):boolean;
+  begin
+    result:=false;
+    case Color of
+      clRed:    result:=true;   
+      clYellow: INC(YellowGroup);
+    end;
+  end;
+begin
+  YellowGroup:=0;
+  if CalcColor(TM2322.Color)    then  begin fCCTVColor:=clRed; exit; end;
+  if not TM2408.DataExh then          begin fCCTVColor:=clRed; exit; end else
+    if CalcColor(TM2408.Color)    then  begin fCCTVColor:=clRed; exit; end;
+  for i:=1 to 8 do if bdKU[i].Use then
+    if CalcColor(TM2220[i].Color) then begin fCCTVColor:=clRed; exit; end;
+  if CalcColor(TM2407.Color)    then  begin fCCTVColor:=clRed; exit; end;
+  if CalcColor(TM24101.Color)   then  begin fCCTVColor:=clRed; exit; end;
+  if CalcColor(TM2409[1].Color) then begin fCCTVColor:=clRed; exit; end;
+  if CalcColor(TM2409[2].Color) then begin fCCTVColor:=clRed; exit; end;
+  if CalcColor(EM72121.Color)    then begin fCCTVColor:=clRed; exit; end;
+  if CalcColor(EM73021.Color)    then begin fCCTVColor:=clRed; exit; end;
+  for i:=1 to 3 do
+    if CalcColor(TM2411[i].Color) then begin fCCTVColor:=clRed; exit; end;
+  for i:=0 to 13 do if EM7210[i].Use then
+    if CalcColor(EM7210[i].Color) then begin fCCTVColor:=clRed; exit; end;
+  if YellowGroup<>0 then fCCTVColor:=clYellow
+                    else fCCTVColor:=clLime;
+end;
+
+procedure TFullState.AnalizFull;
+begin
+  case Landing.Color of
+    clRed:     fFullColor:=clRed;
+    clYellow:  if fCCTVColor<>clRed then fFullColor:=clYellow else fFullColor:=clRed;
+    clLime:    if fCCTVColor=clLime then fFullColor:=clLime   else fFullColor:=fCCTVColor;
+    clWhite:   fFullColor:=clWhite;
+  end;
+end;
+
+end.

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011.10.10 23:39:05.501.bdsproj,G:\moi progi\Фильтры\ClockInFilter\NullNull.bdsproj=G:\moi progi\Фильтры\ClockInFilter\ClockInFilter.bdsproj</Transaction>
+    <Transaction>2011.10.11 15:11:04.781.pas,I:\moi progi\Фильтры\TransInPlace\ClockInFilter2\Unit1.pas=I:\moi progi\Фильтры\TransInPlace\ClockInFilter2\PropertyPages.pas</Transaction>
+    <Transaction>2011.10.11 15:11:04.781.dfm,I:\moi progi\Фильтры\TransInPlace\ClockInFilter2\Unit1.dfm=I:\moi progi\Фильтры\TransInPlace\ClockInFilter2\PropertyPages.dfm</Transaction>
+    <Transaction>2011.10.11 15:14:56.406.pas,I:\moi progi\Фильтры\TransInPlace\ClockInFilter2\PropertyPages.pas=</Transaction>
+    <Transaction>2011.10.11 15:14:56.406.dfm,I:\moi progi\Фильтры\TransInPlace\ClockInFilter2\PropertyPages.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>

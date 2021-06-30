@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011.08.29 09:21:27.968.pas,H:\moi progi\???-201EB\Central_Operator\29.08.11\Unit2.pas=H:\moi progi\???-201EB\Central_Operator\29.08.11\TM2320.pas</Transaction>
+    <Transaction>2011.08.29 09:21:27.968.dfm,H:\moi progi\???-201EB\Central_Operator\29.08.11\Unit2.dfm=H:\moi progi\???-201EB\Central_Operator\29.08.11\TM2320.dfm</Transaction>
+    <Transaction>2011.09.20 06:07:36.543.pas,J:\Operators\Full 21.09.11 2\Unit2.pas=J:\Operators\Full 21.09.11 2\face3401.pas</Transaction>
+    <Transaction>2011.09.20 06:21:14.826.bdsproj,J:\Operators\Full 21.09.11 2\Operators.bdsproj=J:\Operators\Full 21.09.11 2\Operators.bdsproj</Transaction>
+    <Transaction>2011.09.21 05:26:42.218.bdsproj,C:\Documents and Settings\??? 62\??????? ????\Full 21.09.11 2\Operators.bdsproj=C:\Documents and Settings\??? 62\??????? ????\????? ?????\Operators.bdsproj</Transaction>
+    <Transaction>2011.09.21 05:28:26.203.bdsproj,C:\Documents and Settings\??? 62\??????? ????\????? ?????\Operators.bdsproj=C:\Documents and Settings\??? 62\??????? ????\Full 21.09.11 2\Operators.bdsproj</Transaction>
+    <Transaction>2011.10.20 16:08:02.921.pas,I:\moi progi\???-201EB\Central_Operator\Operators19_10_11\ComPort.pas=</Transaction>
+    <Transaction>2011.10.20 16:10:36.562.pas,I:\moi progi\???-201EB\Central_Operator\Operators19_10_11\MixerGenerator.pas=</Transaction>
+    <Transaction>2011.11.06 22:41:45.981.pas,E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\Unit2.pas=E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\HELP_ME.pas</Transaction>
+    <Transaction>2011.11.06 22:41:46.016.dfm,E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\Unit2.dfm=E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\HELP_ME.dfm</Transaction>
+    <Transaction>2011.11.06 22:46:36.789.pas,E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\HELP_ME.pas=E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\HELP.pas</Transaction>
+    <Transaction>2011.11.06 22:46:36.789.dfm,E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\HELP_ME.dfm=E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\HELP.dfm</Transaction>
+    <Transaction>2011.11.06 22:49:32.522.pas,E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\HELP.pas=E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\fmHELP.pas</Transaction>
+    <Transaction>2011.11.06 22:49:32.522.dfm,E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\HELP.dfm=E:\moi progi\???-201EB\Central_Operator\Operators03_11_11\fmHELP.dfm</Transaction>
+    <Transaction>2011.11.11 11:07:32.109.pas,I:\moi progi\???-201EB\Central_Operator\Operators11_11_11\WSL.pas=</Transaction>
+    <Transaction>2000.03.26 22:53:23.421.pas,I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta\Unit2.pas=I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta\TBetta.pas</Transaction>
+    <Transaction>2000.03.26 22:53:23.421.dfm,I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta\Unit2.dfm=I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta\TBetta.dfm</Transaction>
+    <Transaction>2000.03.26 22:54:58.578.pas,I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta\TBetta.pas=I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta\Betta.pas</Transaction>
+    <Transaction>2000.03.26 22:54:58.578.dfm,I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta\TBetta.dfm=I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta\Betta.dfm</Transaction>
+    <Transaction>2000.04.05 22:21:13.796.pas,I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta New Graph\Betta.pas=</Transaction>
+    <Transaction>2000.04.05 22:21:13.796.dfm,I:\moi progi\???-201EB\Central_Operator\2012 After dispatch\Operators 2014_07_01 Betta New Graph\Betta.dfm=</Transaction>
+    <Transaction>2014.05.28 13:28:27.250.pas,I:\moi progi\MTK-71\Landing\Operators New Interface\VRD.pas=</Transaction>
+    <Transaction>2014.05.28 13:28:27.250.dfm,I:\moi progi\MTK-71\Landing\Operators New Interface\VRD.dfm=</Transaction>
+    <Transaction>2014.06.25 10:46:06.593.pas,I:\moi progi\MTK-71\Landing\Operators New Interface Mnemo\Unit2.pas=I:\moi progi\MTK-71\Landing\Operators New Interface Mnemo\ToMonitoringSystem.pas</Transaction>
+    <Transaction>2014.07.04 11:55:34.171.pas,I:\moi progi\MTK-71\Landing\????? Operators New Interface Mnemo\HreadEvent.pas=</Transaction>
+    <Transaction>2014.11.05 17:53:03.671.pas,J:\moi progi\MTK-71\Landing\Operators 2014_11_05\Unit2.pas=J:\moi progi\MTK-71\Landing\Operators 2014_11_05\MSC.pas</Transaction>
+    <Transaction>2014.11.05 17:53:03.671.dfm,J:\moi progi\MTK-71\Landing\Operators 2014_11_05\Unit2.dfm=J:\moi progi\MTK-71\Landing\Operators 2014_11_05\MSC.dfm</Transaction>
+  </Transactions>
+	<IPServerDescMap></IPServerDescMap>
+	<StarTeamShortcuts>; 1; 0; False; 0; -1; </StarTeamShortcuts>
+	<StarTeamMiscUserData></StarTeamMiscUserData>
+</BorlandProject>

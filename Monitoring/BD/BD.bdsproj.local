@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/03/26 15:16:45.581.bdsproj,O:\Users\olikke\Documents\Borland Studio Projects\Project1.bdsproj=O:\Users\olikke\Documents\Borland Studio Projects\BD.bdsproj</Transaction>
+    <Transaction>2014/03/26 15:16:51.589.pas,O:\Users\olikke\Documents\Borland Studio Projects\Unit1.pas=O:\Users\olikke\Documents\Borland Studio Projects\fmMain.pas</Transaction>
+    <Transaction>2014/03/26 15:16:51.589.dfm,O:\Users\olikke\Documents\Borland Studio Projects\Unit1.dfm=O:\Users\olikke\Documents\Borland Studio Projects\fmMain.dfm</Transaction>
+    <Transaction>2014/03/26 15:17:01.090.pas,O:\Users\olikke\Documents\Borland Studio Projects\fmMain.pas=O:\Users\olikke\Desktop\New folder\fmMain.pas</Transaction>
+    <Transaction>2014/03/26 15:17:01.090.dfm,O:\Users\olikke\Documents\Borland Studio Projects\fmMain.dfm=O:\Users\olikke\Desktop\New folder\fmMain.dfm</Transaction>
+    <Transaction>2014/03/26 15:17:02.038.bdsproj,O:\Users\olikke\Documents\Borland Studio Projects\BD.bdsproj=O:\Users\olikke\Desktop\New folder\BD.bdsproj</Transaction>
+    <Transaction>2014/03/27 09:39:29.741.pas,O:\Users\olikke\Desktop\New folder\Unit1.pas=O:\Users\olikke\Desktop\New folder\BDRecord.pas</Transaction>
+  </Transactions>
+</BorlandProject>
