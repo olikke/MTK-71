@@ -355,6 +355,8 @@ type
     ka6: TEdit;
     ka7: TEdit;
     Panel7: TPanel;
+    procedure Edit2Exit(Sender: TObject);
+    procedure Edit2Enter(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure ServMsg(var Msg: TMessage); message WM_NOTIFY_MSG;
@@ -389,6 +391,16 @@ const SW6:array [0..2] of string =
 implementation
 
 {$R *.dfm}
+
+procedure TTelemetric.Edit2Enter(Sender: TObject);
+begin
+  (Sender as TEdit).Enabled:=false;
+end;
+
+procedure TTelemetric.Edit2Exit(Sender: TObject);
+begin
+   (Sender as TEdit).Enabled:=true;
+end;
 
 procedure TTelemetric.FillMe;
 var c:string;

@@ -9,42 +9,29 @@ uses
 type
   Tfm_ARM = class(TForm)
     Panel7: TPanel;
-    Panel8: TPanel;
-    i3: TImage;
+    Panel1: TPanel;
+    Panel4: TPanel;
+    Panel10: TPanel;
+    Panel13: TPanel;
+    Label1: TLabel;
+    Edit9: TEdit;
+    Edit10: TEdit;
     Label3: TLabel;
-    Panel9: TPanel;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
     Edit4: TEdit;
     Edit5: TEdit;
     Edit6: TEdit;
-    Panel1: TPanel;
-    Panel2: TPanel;
-    i4: TImage;
     Label4: TLabel;
-    Panel3: TPanel;
     Edit7: TEdit;
     Edit8: TEdit;
-    Panel4: TPanel;
-    Panel5: TPanel;
-    i1: TImage;
     Label5: TLabel;
-    Panel6: TPanel;
     StringGrid3: TStringGrid;
-    Panel10: TPanel;
-    Panel11: TPanel;
-    i2: TImage;
     Label6: TLabel;
-    Panel12: TPanel;
     StringGrid4: TStringGrid;
-    Panel13: TPanel;
-    Panel14: TPanel;
-    i5: TImage;
-    Label1: TLabel;
-    Panel15: TPanel;
-    Edit9: TEdit;
-    Edit10: TEdit;
+    procedure Edit9Exit(Sender: TObject);
+    procedure Edit9Enter(Sender: TObject);
     procedure StringGrid1DrawCell(Sender: TObject; ACol, ARow: Integer;
       Rect: TRect; State: TGridDrawState);
     procedure StringGrid2DrawCell(Sender: TObject; ACol, ARow: Integer;
@@ -78,16 +65,26 @@ begin
   SetValues;
 end;
 
+procedure Tfm_ARM.Edit9Enter(Sender: TObject);
+begin
+  (Sender as TEdit).Enabled:=false;
+end;
+
+procedure Tfm_ARM.Edit9Exit(Sender: TObject);
+begin
+  (Sender as TEdit).Enabled:=true;
+end;
+
 procedure Tfm_ARM.FormActivate(Sender: TObject);
 begin
   if (Device_ID=3) or (Device_ID=16) then
   begin
     Panel7.Visible:=false;
-    Panel1.Top    :=Panel13.Top+Panel13.Height+5;
+    Panel1.Top    :=Panel13.Top+Panel13.Height-1;
   end else
   begin
     Panel7.Visible:=true;
-    Panel1.Top    :=Panel7.Top+Panel7.Height+5;
+    Panel1.Top    :=Panel7.Top+Panel7.Height-1;
     if ExternalDevice.OLS=0 then
     begin
       Edit1.Enabled:=false;
@@ -107,13 +104,12 @@ begin
       Edit6.Color  :=clMedGray;
     end;
   end;
-  Panel4.Top:=Panel1.Top+Panel1.Height+5;
+  Panel4.Top:=Panel1.Top+Panel1.Height-1;
   if ARM.HDDCount<=2 then StringGrid3.RowCount:=3 else StringGrid3.RowCount:=ARM.HDDCount+1;
   StringGrid3.Height:=(StringGrid3.DefaultRowHeight+2)*(ARM.HDDCount+1);
-  Panel4.Height:=Panel5.Height+StringGrid3.Top+StringGrid3.Height+5;
-  Panel10.Top:=Panel4.Top+Panel4.Height+5;
+  Panel4.Height:=StringGrid3.Top+StringGrid3.Height+10;
+  Panel10.Top:=Panel4.Top+Panel4.Height-1;
   Height:=Panel10.Top+Panel10.Height+40;
-  Panel6.SetFocus;
   SetValues;
 end;
 
@@ -147,13 +143,13 @@ begin
   if ARM.DataExh=0 then  begin SetNoValues; exit; end;
   SetEdit(Edit10,true,Color_R);
   if (not ARM.Lan[1].State) and (not ARM.Lan[2].State) and (DEVICE_ID<>1) then  begin SetNoValues; exit; end;
-  SetEdit(Edit8,ARM.VideoTDV,clRed);
+  SetEdit(Edit8,ARM.VideoTDV,Color_R);
   Count:=ARM.HDDCount;
   if Count<>0 then
   begin
     StringGrid3.RowCount:=Count+1;
     StringGrid3.Height:=(StringGrid3.DefaultRowHeight+2)*(Count+1);
-    Panel4.Height:=Panel5.Height+StringGrid3.Top+StringGrid3.Height+5;
+    Panel4.Height:=StringGrid3.Top+StringGrid3.Height+10;
     for i:= 1 to Count do
     begin
       TotalSpace:=ARM.HDD[i].TotalSpace;
@@ -177,7 +173,7 @@ begin
       StringGrid3.Cells[3,i]:='     ?     ';
     end;
   end;
-  Panel10.Top:=Panel4.Top+Panel4.Height+5;
+  Panel10.Top:=Panel4.Top+Panel4.Height-1;
   Count:=Arm.LANCount;
   if Count<>0 then
   begin

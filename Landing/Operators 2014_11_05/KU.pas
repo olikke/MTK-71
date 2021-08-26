@@ -9,73 +9,8 @@ uses
 type
   Tfm_KU = class(TForm)
     Panel1: TPanel;
-    Panel5: TPanel;
-    i2: TImage;
-    Label1: TLabel;
-    Panel6: TPanel;
-    Panel7: TPanel;
-    Panel8: TPanel;
-    i3: TImage;
-    Label2: TLabel;
-    Panel9: TPanel;
-    Button1: TButton;
-    Button2: TButton;
-    Panel10: TPanel;
-    Panel11: TPanel;
-    i4: TImage;
-    Label4: TLabel;
-    Panel12: TPanel;
-    Button3: TButton;
-    Button4: TButton;
-    Button5: TButton;
-    Panel13: TPanel;
-    Panel14: TPanel;
-    i5: TImage;
-    Label5: TLabel;
-    Panel15: TPanel;
-    Button6: TButton;
-    Button7: TButton;
-    Button8: TButton;
-    Panel16: TPanel;
-    Panel17: TPanel;
-    i6: TImage;
-    Label6: TLabel;
-    Panel18: TPanel;
-    Button9: TButton;
-    Button10: TButton;
-    Panel19: TPanel;
-    Panel20: TPanel;
-    i7: TImage;
-    Label7: TLabel;
-    Panel21: TPanel;
-    Label10: TLabel;
-    bYCG: TSpeedButton;
-    Label11: TLabel;
-    bYCE: TSpeedButton;
-    eYCG: TEdit;
-    udYCG: TUpDown;
-    eYCE: TEdit;
-    udYCE: TUpDown;
-    Panel22: TPanel;
-    Panel23: TPanel;
-    i8: TImage;
-    Label8: TLabel;
-    Panel24: TPanel;
-    Label12: TLabel;
-    bCCG: TSpeedButton;
-    Label13: TLabel;
-    bCCE: TSpeedButton;
-    eCCG: TEdit;
-    udCCG: TUpDown;
-    eCCE: TEdit;
-    udCCE: TUpDown;
-    Panel28: TPanel;
-    Button15: TButton;
-    Button11: TButton;
-    Button12: TButton;
     Panel2: TPanel;
-    Panel3: TPanel;
-    i1: TImage;
+    Panel25: TPanel;
     Label3: TLabel;
     Panel4: TPanel;
     Edit1: TEdit;
@@ -118,12 +53,53 @@ type
     e17: TEdit;
     e18: TEdit;
     e19: TEdit;
-    Panel25: TPanel;
-    Panel26: TPanel;
-    i9: TImage;
+    Label1: TLabel;
+    Panel7: TPanel;
+    Label2: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    Panel10: TPanel;
+    Label4: TLabel;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Panel13: TPanel;
+    Label5: TLabel;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Panel16: TPanel;
+    Label6: TLabel;
+    Button9: TButton;
+    Button10: TButton;
+    Panel19: TPanel;
+    Label7: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    bYCG: TSpeedButton;
+    bYCE: TSpeedButton;
+    eYCG: TEdit;
+    eYCE: TEdit;
+    udYCG: TUpDown;
+    udYCE: TUpDown;
+    Panel22: TPanel;
+    Label8: TLabel;
+    Label12: TLabel;
+    bCCG: TSpeedButton;
+    Label13: TLabel;
+    bCCE: TSpeedButton;
+    eCCG: TEdit;
+    udCCG: TUpDown;
+    eCCE: TEdit;
+    udCCE: TUpDown;
+    Panel28: TPanel;
+    Button15: TButton;
+    Button11: TButton;
+    Button12: TButton;
     Label9: TLabel;
-    Panel27: TPanel;
     RichEdit1: TRichEdit;
+    procedure Edit1Exit(Sender: TObject);
+    procedure Edit1Enter(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure Button12Click(Sender: TObject);
@@ -457,9 +433,9 @@ begin
   end;
   if not fl_Change then
   begin
-    Panel19.Top:=305+1000;
-    Panel22.Top:=380+1000;
-    Panel28.Top:=455+1000;
+    Panel19.Visible:=false;
+    Panel22.Visible:=false;
+    Panel28.Visible:=false;
     ss:='';
     BorderIcons:=[biSystemMenu];
   end;
@@ -548,6 +524,16 @@ begin
   fl_Update:=true;
 end;
 
+procedure Tfm_KU.Edit1Enter(Sender: TObject);
+begin
+(Sender as TEdit).Enabled:=false;
+end;
+
+procedure Tfm_KU.Edit1Exit(Sender: TObject);
+begin
+(Sender as TEdit).Enabled:=true;
+end;
+
 procedure Tfm_KU.FormActivate(Sender: TObject);
 var i:integer;
 begin
@@ -565,9 +551,9 @@ begin
   cs_ArrDevice[Device_ID].Enter; try mKU:=TKU((ArrDevice[Device_ID])); finally cs_ArrDevice[Device_ID].Leave; end;
   udYCG.Position:=mKU.bUsY;
   udYCE.Position:=mKU.bAhxY;
-  Panel19.Top:=305+1000;
-  Panel22.Top:=380+1000;
-  Panel28.Top:=455+1000;
+  Panel19.Visible:=false;
+  Panel22.Visible:=false;
+  Panel28.Visible:=false;
   for i:=1 to 9 do
   begin
     if fm_KU.FindComponent('i'+IntToStr(i))= nil then continue;
@@ -589,9 +575,9 @@ begin
   if Length(ss)=Length(PR) then
   if UpperCase(ss)=upperCase(PR) then
   begin
-    Panel19.Top:=305;
-    Panel22.Top:=380;
-    Panel28.Top:=455;
+    Panel19.Visible:=true;
+    Panel22.Visible:=true;
+    Panel28.Visible:=true;
   end
    else ss:='';
 end;

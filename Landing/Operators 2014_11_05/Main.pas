@@ -140,329 +140,35 @@ type
     UDPCommandServer: TIdUDPServer;
     AnswerWaitTimer: TTimer;
     Label197: TLabel;
-    Legend1: TGroupBox;
-    iL1: TImage;
-    l71: TLabel;
-    Label210: TLabel;
-    Label211: TLabel;
-    Label212: TLabel;
-    Label213: TLabel;
-    Label214: TLabel;
-    Label215: TLabel;
-    Legend2: TGroupBox;
-    iL2: TImage;
-    Label216: TLabel;
-    Label217: TLabel;
-    Label218: TLabel;
-    Label219: TLabel;
-    Label220: TLabel;
-    Label221: TLabel;
     OpenDialog2: TOpenDialog;
     TelemT: TTimer;
     GroupBox35: TGroupBox;
     Dev0: TShape;
     FilterGraph1: TFilterGraph;
     WSCPanel: TPanel;
-    Panel39: TPanel;
-    i1: TImage;
-    Label251: TLabel;
-    Panel41: TPanel;
-    Panel43: TPanel;
-    sp1: TSpeedButton;
-    dev1: TShape;
-    Panel44: TPanel;
-    sp2: TSpeedButton;
-    dev2: TShape;
-    Panel45: TPanel;
-    sp3: TSpeedButton;
-    dev3: TShape;
     KUPanel: TPanel;
-    Panel17: TPanel;
-    i2: TImage;
-    Label252: TLabel;
-    Panel19: TPanel;
-    Panel46: TPanel;
-    sp7: TSpeedButton;
-    dev7: TShape;
-    Panel47: TPanel;
-    sp8: TSpeedButton;
-    dev8: TShape;
-    Panel48: TPanel;
-    sp10: TSpeedButton;
-    dev10: TShape;
-    Panel4: TPanel;
-    sp9: TSpeedButton;
-    dev9: TShape;
     Protocolling: TPanel;
-    Panel50: TPanel;
-    i3: TImage;
-    Label253: TLabel;
-    Panel59: TPanel;
-    Panel60: TPanel;
-    sp16: TSpeedButton;
-    dev16: TShape;
-    Panel119: TPanel;
-    sp20: TSpeedButton;
-    dev20: TShape;
     ShipSystem: TPanel;
-    Panel121: TPanel;
-    i4: TImage;
-    Label254: TLabel;
-    Panel122: TPanel;
-    Panel123: TPanel;
-    sp38: TSpeedButton;
-    dev38: TShape;
-    Panel124: TPanel;
-    sp40: TSpeedButton;
-    dev40: TShape;
-    Panel125: TPanel;
-    sp45: TSpeedButton;
-    dev45: TShape;
-    dev39: TShape;
-    dev41: TShape;
-    dev46: TShape;
     TM2402: TPanel;
-    Panel126: TPanel;
-    i5: TImage;
-    Label255: TLabel;
-    Panel127: TPanel;
-    Panel128: TPanel;
-    sp22: TSpeedButton;
-    dev22: TShape;
-    Panel129: TPanel;
-    sp12: TSpeedButton;
-    dev12: TShape;
-    Panel130: TPanel;
-    sp13: TSpeedButton;
-    dev13: TShape;
-    Panel131: TPanel;
-    sp14: TSpeedButton;
-    dev14: TShape;
-    Panel49: TPanel;
-    sp15: TSpeedButton;
-    dev15: TShape;
-    Panel132: TPanel;
-    sp17: TSpeedButton;
-    dev17: TShape;
-    Panel133: TPanel;
-    sp18: TSpeedButton;
-    dev18: TShape;
-    Panel134: TPanel;
-    sp19: TSpeedButton;
-    dev19: TShape;
     XPManifest1: TXPManifest;
     SpeedButton18: TSpeedButton;
     VR: TPanel;
-    Panel136: TPanel;
-    i6: TImage;
-    Label256: TLabel;
-    Panel137: TPanel;
-    Panel140: TPanel;
-    RadioButton1: TRadioButton;
-    RadioButton2: TRadioButton;
     TRmode: TPanel;
-    Panel138: TPanel;
-    i7: TImage;
-    Label257: TLabel;
-    Panel139: TPanel;
-    SpeedButton3: TSpeedButton;
-    SpeedButton7: TSpeedButton;
-    tr: TButton;
-    Button8: TButton;
-    Button7: TButton;
-    Panel37: TPanel;
-    Label190: TLabel;
-    Label191: TLabel;
-    Label193: TLabel;
-    Shape10: TShape;
-    Shape11: TShape;
-    Shape12: TShape;
-    Label48: TLabel;
-    i8: TImage;
-    tim: TImage;
-    vrim: TImage;
     Image5: TImage;
-    Edit2: TEdit;
     pivotaltracking: TPanel;
-    Panel135: TPanel;
-    i9: TImage;
-    Label266: TLabel;
-    Shape25: TShape;
-    Panel141: TPanel;
-    Image3: TImage;
-    Label5: TLabel;
-    Label240: TLabel;
-    Label244: TLabel;
-    Label245: TLabel;
-    Label6: TLabel;
-    Label241: TLabel;
-    Label246: TLabel;
-    Label247: TLabel;
-    Edit3: TEdit;
     trackingresult: TPanel;
-    Panel142: TPanel;
-    i10: TImage;
-    Label258: TLabel;
-    Panel143: TPanel;
-    Label9: TLabel;
-    Label10: TLabel;
-    Image1: TImage;
-    Image2: TImage;
     pointoftracking: TPanel;
-    Panel144: TPanel;
-    i11: TImage;
-    Label259: TLabel;
-    Panel145: TPanel;
-    SpeedButton1: TSpeedButton;
-    Shape26: TShape;
-    Label232: TLabel;
-    SpeedButton4: TSpeedButton;
-    SpeedButton2: TSpeedButton;
-    Shape27: TShape;
-    Shape28: TShape;
-    Label233: TLabel;
-    Label234: TLabel;
     F78: TPanel;
-    Panel146: TPanel;
-    i12: TImage;
-    Label260: TLabel;
-    Panel147: TPanel;
-    GradProgress1: TGradProgress;
     ModeofTracking: TPanel;
-    Panel148: TPanel;
-    i13: TImage;
-    Label261: TLabel;
-    Panel149: TPanel;
-    SpeedButton33: TSpeedButton;
-    SpeedButton42: TSpeedButton;
-    Shape43: TShape;
-    Shape44: TShape;
     RACSNo: TPanel;
-    Panel150: TPanel;
-    i14: TImage;
-    Label262: TLabel;
-    Panel151: TPanel;
-    SpeedButton8: TSpeedButton;
-    SpeedButton9: TSpeedButton;
-    Shape3: TShape;
-    Shape8: TShape;
-    Label224: TLabel;
-    Label2: TLabel;
     Distance: TPanel;
-    Panel152: TPanel;
-    i15: TImage;
-    Label263: TLabel;
-    Panel153: TPanel;
-    SpeedButton5: TSpeedButton;
-    SpeedButton6: TSpeedButton;
-    Shape4: TShape;
-    Label229: TLabel;
-    Shape5: TShape;
-    Label228: TLabel;
     selectaxialTVD: TPanel;
-    Panel154: TPanel;
-    i16: TImage;
-    Label264: TLabel;
-    Panel155: TPanel;
-    TVD2: TSpeedButton;
-    TVD3: TSpeedButton;
-    Shape6: TShape;
-    Label230: TLabel;
-    Shape7: TShape;
-    Label231: TLabel;
     TVDmod: TPanel;
-    Panel156: TPanel;
-    i17: TImage;
-    Label265: TLabel;
-    Panel157: TPanel;
-    SpeedButton10: TSpeedButton;
-    Shape19: TShape;
-    Label267: TLabel;
-    SpeedButton11: TSpeedButton;
-    SpeedButton12: TSpeedButton;
-    Shape14: TShape;
-    Shape15: TShape;
-    Label236: TLabel;
-    Label237: TLabel;
     SysConf: TPanel;
-    Panel158: TPanel;
-    i18: TImage;
-    Label235: TLabel;
-    Panel159: TPanel;
-    Panel21: TPanel;
-    MB: TSpeedButton;
-    M1: TSpeedButton;
-    M3: TSpeedButton;
-    Panel22: TPanel;
-    Panel23: TPanel;
-    t112: TPanel;
-    Panel34: TPanel;
-    Panel35: TPanel;
-    Splitter1: TSplitter;
-    Splitter2: TSplitter;
-    Splitter3: TSplitter;
-    Splitter4: TSplitter;
-    Splitter5: TSplitter;
-    Splitter6: TSplitter;
-    Splitter7: TSplitter;
-    Splitter8: TSplitter;
-    Splitter9: TSplitter;
-    Splitter10: TSplitter;
-    Splitter11: TSplitter;
-    Splitter12: TSplitter;
-    Splitter13: TSplitter;
-    Splitter14: TSplitter;
-    ImageBase: TImage;
-    ImageConf1: TImage;
-    ImageConf2: TImage;
-    t1: TLabel;
-    t2: TLabel;
-    t3: TLabel;
-    Splitter15: TSplitter;
-    t4: TLabel;
-    t5: TLabel;
-    t6: TLabel;
-    t7: TLabel;
-    t8: TLabel;
-    t9: TLabel;
     Air: TPanel;
-    Panel120: TPanel;
-    i19: TImage;
-    Label7: TLabel;
-    Panel160: TPanel;
-    Label192: TLabel;
-    ComboBox1: TComboBox;
-    Label189: TLabel;
-    Edit1: TEdit;
-    RadioGroup1: TRadioGroup;
     GA: TPanel;
-    Panel161: TPanel;
-    i20: TImage;
-    Label269: TLabel;
-    Panel162: TPanel;
-    Label238: TLabel;
-    Label239: TLabel;
-    MaskEdit1: TMaskEdit;
-    SpeedButton13: TSpeedButton;
-    SpeedButton14: TSpeedButton;
-    Shape9: TShape;
-    SpeedButton16: TSpeedButton;
-    Shape16: TShape;
-    Label248: TLabel;
-    SpeedButton17: TSpeedButton;
-    Shape17: TShape;
-    Label250: TLabel;
     BA: TPanel;
-    Panel163: TPanel;
-    i21: TImage;
-    Label270: TLabel;
-    Panel164: TPanel;
-    Label242: TLabel;
-    Label243: TLabel;
-    MaskEdit2: TMaskEdit;
-    SpeedButton15: TSpeedButton;
     P112: TMyPanel;
-    Label4: TLabel;
     P112Exh: TMyPanel;
     P112_Port1: TMyPanel;
     P112_Port2: TMyPanel;
@@ -473,7 +179,6 @@ type
     P112_Port4: TMyPanel;
     P112_Port6: TMyPanel;
     P113: TMyPanel;
-    Label8: TLabel;
     P113Exh: TMyPanel;
     P113_Port4: TMyPanel;
     P113_Port5: TMyPanel;
@@ -484,7 +189,6 @@ type
     P113_Port2: TMyPanel;
     P113_Port3: TMyPanel;
     p114: TMyPanel;
-    Label11: TLabel;
     P114_Lan4: TMyPanel;
     P114_Lan6: TMyPanel;
     P114_Lan8: TMyPanel;
@@ -502,7 +206,6 @@ type
     P114_Lan12: TMyPanel;
     P114_Lan2: TMyPanel;
     P115: TMyPanel;
-    Label18: TLabel;
     P115_Lan13: TMyPanel;
     P115_Lan11: TMyPanel;
     P115_Lan15: TMyPanel;
@@ -596,8 +299,6 @@ type
     P124_Exh: TMyPanel;
     p111: TMyPanel;
     p111_Ch1: TMyPanel;
-    Label108: TLabel;
-    Label116: TLabel;
     p111_Ch2: TMyPanel;
     p111_Ch3: TMyPanel;
     p111_Ch4: TMyPanel;
@@ -606,8 +307,6 @@ type
     Label119: TLabel;
     Label120: TLabel;
     P121: TMyPanel;
-    Label62: TLabel;
-    Label63: TLabel;
     p121_Ch1: TMyPanel;
     Label97: TLabel;
     p121_Ch2: TMyPanel;
@@ -942,15 +641,6 @@ type
     Label141: TLabel;
     Label142: TLabel;
     BC8_A9_X1: TMyPanel;
-    Panel3: TPanel;
-    Image6: TImage;
-    Label222: TLabel;
-    iL3: TImage;
-    Label223: TLabel;
-    AC: TLabel;
-    Label225: TLabel;
-    Label226: TLabel;
-    Label143: TLabel;
     x22: TMyPanel;
     x21: TMyPanel;
     x13: TMyPanel;
@@ -1014,11 +704,222 @@ type
     SH1: TSpeedButton;
     devSH: TShape;
     Panel5: TPanel;
-    Panel6: TPanel;
-    Image4: TImage;
-    Label161: TLabel;
-    Panel7: TPanel;
+    dev1: TShape;
+    dev2: TShape;
+    dev3: TShape;
+    Label251: TLabel;
+    sp1: TSpeedButton;
+    sp2: TSpeedButton;
+    sp3: TSpeedButton;
+    Panel8: TPanel;
+    Shape18: TShape;
+    Label217: TLabel;
+    Label216: TLabel;
+    iL2: TImage;
+    Label218: TLabel;
+    Label219: TLabel;
+    Label220: TLabel;
+    Label221: TLabel;
+    Label4: TLabel;
+    Panel9: TPanel;
+    Shape13: TShape;
+    Label116: TLabel;
+    l71: TLabel;
+    Label210: TLabel;
+    Label211: TLabel;
+    iL1: TImage;
+    Label212: TLabel;
+    Label213: TLabel;
+    Label214: TLabel;
+    Label215: TLabel;
+    Panel10: TPanel;
+    Shape20: TShape;
+    Label8: TLabel;
+    Label11: TLabel;
+    Label18: TLabel;
+    Label62: TLabel;
+    Label63: TLabel;
+    Label108: TLabel;
+    iL3: TImage;
+    dev10: TShape;
+    dev7: TShape;
+    dev8: TShape;
+    dev9: TShape;
+    Label252: TLabel;
+    sp10: TSpeedButton;
+    sp7: TSpeedButton;
+    sp8: TSpeedButton;
+    sp9: TSpeedButton;
+    Label253: TLabel;
+    sp16: TSpeedButton;
+    dev16: TShape;
+    sp20: TSpeedButton;
+    dev20: TShape;
+    Label254: TLabel;
+    sp38: TSpeedButton;
+    sp40: TSpeedButton;
+    sp45: TSpeedButton;
+    dev38: TShape;
+    dev40: TShape;
+    dev45: TShape;
+    dev39: TShape;
+    dev41: TShape;
+    dev46: TShape;
+    Label255: TLabel;
+    sp22: TSpeedButton;
+    sp12: TSpeedButton;
+    sp13: TSpeedButton;
+    sp14: TSpeedButton;
+    sp15: TSpeedButton;
+    sp17: TSpeedButton;
+    sp18: TSpeedButton;
+    sp19: TSpeedButton;
+    dev22: TShape;
+    dev12: TShape;
+    dev13: TShape;
+    dev14: TShape;
+    dev15: TShape;
+    dev17: TShape;
+    dev18: TShape;
+    dev19: TShape;
+    Label256: TLabel;
+    vrim: TImage;
+    Edit2: TEdit;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
     CMC: TSpeedButton;
+    Label161: TLabel;
+    Label257: TLabel;
+    SpeedButton3: TSpeedButton;
+    SpeedButton7: TSpeedButton;
+    tr: TButton;
+    Button8: TButton;
+    Button7: TButton;
+    Panel37: TPanel;
+    Label190: TLabel;
+    Label191: TLabel;
+    Label193: TLabel;
+    Shape10: TShape;
+    Shape11: TShape;
+    Shape12: TShape;
+    Label48: TLabel;
+    tim: TImage;
+    Label270: TLabel;
+    Label243: TLabel;
+    Label242: TLabel;
+    MaskEdit2: TMaskEdit;
+    SpeedButton15: TSpeedButton;
+    Label269: TLabel;
+    MaskEdit1: TMaskEdit;
+    SpeedButton13: TSpeedButton;
+    SpeedButton16: TSpeedButton;
+    SpeedButton17: TSpeedButton;
+    SpeedButton14: TSpeedButton;
+    Shape9: TShape;
+    Shape16: TShape;
+    Shape17: TShape;
+    Label248: TLabel;
+    Label250: TLabel;
+    Label239: TLabel;
+    Label238: TLabel;
+    Label7: TLabel;
+    Label192: TLabel;
+    ComboBox1: TComboBox;
+    Label189: TLabel;
+    Edit1: TEdit;
+    RadioGroup1: TRadioGroup;
+    Label261: TLabel;
+    SpeedButton33: TSpeedButton;
+    SpeedButton42: TSpeedButton;
+    Shape43: TShape;
+    Shape44: TShape;
+    Label262: TLabel;
+    SpeedButton8: TSpeedButton;
+    SpeedButton9: TSpeedButton;
+    Shape3: TShape;
+    Shape8: TShape;
+    Label224: TLabel;
+    Label2: TLabel;
+    Label263: TLabel;
+    SpeedButton5: TSpeedButton;
+    SpeedButton6: TSpeedButton;
+    Shape4: TShape;
+    Shape5: TShape;
+    Label229: TLabel;
+    Label228: TLabel;
+    Label264: TLabel;
+    TVD2: TSpeedButton;
+    TVD3: TSpeedButton;
+    Shape6: TShape;
+    Shape7: TShape;
+    Label230: TLabel;
+    Label231: TLabel;
+    Label265: TLabel;
+    SpeedButton10: TSpeedButton;
+    SpeedButton11: TSpeedButton;
+    SpeedButton12: TSpeedButton;
+    Shape19: TShape;
+    Shape14: TShape;
+    Shape15: TShape;
+    Label267: TLabel;
+    Label236: TLabel;
+    Label237: TLabel;
+    Label259: TLabel;
+    SpeedButton1: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    Shape26: TShape;
+    Shape27: TShape;
+    Shape28: TShape;
+    Label232: TLabel;
+    Label233: TLabel;
+    Label234: TLabel;
+    Label260: TLabel;
+    GradProgress1: TGradProgress;
+    Label258: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    Image1: TImage;
+    Image2: TImage;
+    Label266: TLabel;
+    Shape25: TShape;
+    Panel141: TPanel;
+    Image3: TImage;
+    Label5: TLabel;
+    Label240: TLabel;
+    Label244: TLabel;
+    Label245: TLabel;
+    Label6: TLabel;
+    Label241: TLabel;
+    Label246: TLabel;
+    Label247: TLabel;
+    Edit3: TEdit;
+    Label235: TLabel;
+    Panel4: TPanel;
+    Panel6: TPanel;
+    Panel7: TPanel;
+    Panel11: TPanel;
+    t1: TPanel;
+    t2: TPanel;
+    t3: TPanel;
+    Panel15: TPanel;
+    t4: TPanel;
+    t5: TPanel;
+    t6: TPanel;
+    Panel19: TPanel;
+    t7: TPanel;
+    Panel25: TPanel;
+    Panel27: TPanel;
+    MB: TSpeedButton;
+    Panel28: TPanel;
+    t8: TPanel;
+    t9: TPanel;
+    Panel31: TPanel;
+    M1: TSpeedButton;
+    M3: TSpeedButton;
+    procedure timClick(Sender: TObject);
+    procedure Edit2Exit(Sender: TObject);
+    procedure Edit2Enter(Sender: TObject);
     procedure CMCClick(Sender: TObject);
     procedure WSLServer1UDPRead(Sender: TObject; AData: TBytes;
       ABinding: TIdSocketHandle);
@@ -1070,7 +971,6 @@ type
     procedure TVD3Click(Sender: TObject);
     procedure TVD2Click(Sender: TObject);
     procedure M3Click(Sender: TObject);
-    procedure M2Click(Sender: TObject);
     procedure M1Click(Sender: TObject);
     procedure MBClick(Sender: TObject);
     procedure sp45Click(Sender: TObject);
@@ -1156,6 +1056,7 @@ type
     procedure WheelRight;
     procedure CreateProtocol;
     procedure AddCommand3(NumbCom: integer;D_ID:integer);
+    procedure SysConfigPaint();
   private
     id1, id2, id3, id4,id5,id6,id7,id8,id9,id10,id11,id12,id13,id14,id15,id16,id18,
     id19,id20,id21,id22,id23,id24,id25,mDown,mUp,mLeft,mRight,idsl,idsr,idsu,idsd : Integer;
@@ -1338,6 +1239,16 @@ begin
   end;
   AirNumb:=i;
   Edit1.Color:=clWhite;
+end;
+
+procedure TNMain.Edit2Enter(Sender: TObject);
+begin
+  (Sender as TEdit).Enabled:=false;
+end;
+
+procedure TNMain.Edit2Exit(Sender: TObject);
+begin
+(Sender as TEdit).Enabled:=true;
 end;
 
 procedure TNMain.EmptyClick(Sender: TObject);
@@ -3024,7 +2935,7 @@ begin
     tr.Caption:='Off';
     with Tim.Canvas do
     begin
-      Brush.Color:=clSkyBlue;
+      Brush.Color:=Color_B;
       FillRect(Tim.ClientRect);
     end;
     Button8.Visible:=true;
@@ -3892,6 +3803,7 @@ var c,cv,i,j:integer;
     Section:string;
 begin
   SysUtils.ShortDateFormat:='dd.mm.yyyy';
+  if HOST_TP=1 then MTKPaint;
   if HOST_TP=1 then
   begin
     AirNumb:=StrToInt(Edit1.Text);
@@ -4046,8 +3958,8 @@ begin
   if HOST_TP=1 then
   begin
     //olikke!!!!!
-    WSLServer1.Active:=true;
-    WSLServer2.Active:=true;
+    {WSLServer1.Active:=true;
+    WSLServer2.Active:=true;   }
     L101.Caption:=IP_SrvWSL1;
     L105.Caption:=IP_SrvWSL2;
     L102.Caption:=IP_SrvWSC1;
@@ -4085,10 +3997,11 @@ begin
     hWC2.Resume;
   end else
   begin
-    try UDPServer1.Active:=true;
+  //olikke
+    {try UDPServer1.Active:=true;
     except  end;
     try UDPServer2.Active:=true;
-    except   end;
+    except   end;     }
   end;
   try UDPCommandServer.Active:=true;
    except end;
@@ -4579,7 +4492,7 @@ begin
  DM.MTK.Connected:=false;
  end;
  //olikke!!
- StartFilterGraph;
+ //StartFilterGraph;
  SetControl(HOST_TP);
  FilterGraph1.Tag:=0;//Tag=0 - видео с камеры, Tag=1 -проигрывание из файла
  if HOST_TP<>1 then SynchroTime.Enabled:=true;
@@ -4757,9 +4670,10 @@ begin
   TelemT.Enabled:=true;
   if HOST_TP=1 then
   begin
-    Monitoring:=TMonitoring.Create(true);
+  //olikke
+   { Monitoring:=TMonitoring.Create(true);
     Monitoring.FreeOnTerminate:=false;
-    Monitoring.Resume;
+    Monitoring.Resume;         }
   end;
 end;
 
@@ -5042,8 +4956,6 @@ begin
    Brush.Color:=clMedGray;
    FillRect((NMain.FindComponent('i'+IntToStr(i)) as TImage).ClientRect);
  end;
- Image4.Canvas.Brush.Color:=clMedGray;
- Image4.Canvas.FillRect(Image4.ClientRect);
  Image5.Canvas.Brush.Color:=clBlack;
  Image5.Canvas.FillRect(Image5.ClientRect);
 end;
@@ -5100,7 +5012,6 @@ begin
     trackingresult.Visible:=false;
     Distance.Visible:=false;
     selectaxialTVD.Visible:=false;
-    Panel21.Visible:=false;
     Air.Visible:=false;
     GA.Visible:=false;
     BA.Visible:=false;
@@ -5269,7 +5180,7 @@ try
     if h<0 then h:=0;
     if e<0 then e:=0;
     if f<0 then f:=0;
-    
+
 
     Line(FastIn,e,g,e,h,tfLime);
     Line(FastIn,e,g,f,g,tfLime);
@@ -5983,58 +5894,35 @@ end;
 
 procedure TNMain.M1Click(Sender: TObject);
 begin
-  with ImageBase.Canvas do
-  begin
-    Brush.Color:=clBtnFace;
-    FillRect(ImageBase.ClientRect);
-  end;
-  with ImageConf1.Canvas do
-  begin
-    Brush.Color:=Color_G;
-    FillRect(ImageConf1.ClientRect);
-  end;
-  with ImageConf2.Canvas do
-  begin
-    Brush.Color:=clBtnFace;
-    FillRect(ImageConf2.ClientRect);
-  end;
   SysConfig:=1;
+  SysConfigPaint();
   if koor[9].Y>koor[Axial].Y then BaseCalc(9,Axial)
   else  BaseCalc(Axial,9);
 end;
 
-procedure TNMain.M2Click(Sender: TObject);
-var i:integer;
+procedure TNMain.SysConfigPaint();
+var c1, c2,c3: TColor;
 begin
-  for i:=1 to 6 do
-  TPanel(NMain.FindComponent('t'+IntToStr(i))).Color:=clBtnFace;
-  for i:=7 to 9 do
-  TPanel(NMain.FindComponent('t'+IntToStr(i))).Color:=Color_G;
-  for i:=10 to 12 do
-  TPanel(NMain.FindComponent('t'+IntToStr(i))).Color:=clBtnFace;
-  SysConfig:=2;
-  if koor[9].Y>koor[7].Y then BaseCalc(9,7)
-  else  BaseCalc(7,9);
+  case SysConfig of
+  0: begin c1:=Color_G; c2:=clBtnFace; c3:=clBtnFace; end;
+  1: begin c2:=Color_G; c1:=clBtnFace; c3:=clBtnFace; end;
+  3: begin c3:=Color_G; c1:=clBtnFace; c2:=clBtnFace; end;
+  end;
+  t1.Color:=c1;
+  t2.Color:=c1;
+  t3.Color:=c1;
+  t4.Color:=c2;
+  t5.Color:=c2;
+  t6.Color:=c2;
+  t7.Color:=c3;
+  t8.Color:=c3;
+  t9.Color:=c3;
 end;
 
 procedure TNMain.M3Click(Sender: TObject);
 begin
-  with ImageBase.Canvas do
-  begin
-    Brush.Color:=clBtnFace;
-    FillRect(ImageBase.ClientRect);
-  end;
-  with ImageConf1.Canvas do
-  begin
-    Brush.Color:=clBtnFace;
-    FillRect(ImageConf1.ClientRect);
-  end;
-  with ImageConf2.Canvas do
-  begin
-    Brush.Color:=Color_G;
-    FillRect(ImageConf2.ClientRect);
-  end;
   SysConfig:=3;
+  SysConfigPaint();
   if koor[Axial].Y>koor[7].Y then BaseCalc(Axial,7)
   else  BaseCalc(7,Axial);
 end;
@@ -6051,22 +5939,8 @@ end;
 
 procedure TNMain.MBClick(Sender: TObject);
 begin
-  with ImageBase.Canvas do
-  begin
-    Brush.Color:=Color_G;
-    FillRect(ImageBase.ClientRect);
-  end;
-  with ImageConf1.Canvas do
-  begin
-    Brush.Color:=clBtnFace;
-    FillRect(ImageConf1.ClientRect);
-  end;
-  with ImageConf2.Canvas do
-  begin
-    Brush.Color:=clBtnFace;
-    FillRect(ImageConf2.ClientRect);
-  end;
   SysConfig:=0;
+  SysConfigPaint();
   if koor[9].Y>koor[7].Y then BaseCalc(9,7)
   else  BaseCalc(7,9);
 end;
@@ -7208,11 +7082,12 @@ begin
   begin
     Brush.Color:=Color_B;
     FillRect(iPower.ClientRect);
-    with image6.Canvas do
+     {   with image6.Canvas do
     begin
       Brush.Color:=Color_B;
       FillRect(image6.ClientRect);
-    end;
+    end;    }
+
     Pen.Width:=1;
     Pen.Color:=Color_W;
     Rectangle(50,20,1200,460);

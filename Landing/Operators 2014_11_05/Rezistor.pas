@@ -43,6 +43,8 @@ type
     f8: TEdit;
     f9: TEdit;
     f10: TEdit;
+    procedure Edit2Exit(Sender: TObject);
+    procedure Edit2Enter(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure SetValues;
@@ -71,7 +73,6 @@ begin
         else n9.Text:=' SAC vertical speed [ft/s]';
   cs_ArrDevice[45].Enter;  try RACS1:=TResistor((ArrDevice[45])); finally cs_ArrDevice[45].Leave; end;
   cs_ArrDevice[46].Enter;  try RACS2:=TResistor((ArrDevice[46])); finally cs_ArrDevice[46].Leave; end;
-  Panel1.SetFocus;
   SetValues;
 end;
 
@@ -80,7 +81,7 @@ begin
   with RACS1 do
   if DataExh=1 then
   begin
-    e1.Text:=' YES';    e1.Color:=clLime;
+    e1.Text:=' YES';    e1.Color:=Color_G;
     if Accomp=1  then e2.text:=' YES'
                  else e2.Text:=' NO';
     e3.Text:=' '+IntToStr(LandPoint);
@@ -107,7 +108,7 @@ begin
   with RACS2 do
   if DataExh=1 then
   begin
-    f1.Text:=' YES';    f1.Color:=clLime;
+    f1.Text:=' YES';    f1.Color:=Color_G;
     if Accomp=1  then f2.text:=' YES'
                  else f2.Text:=' NO';
     f3.Text:=' '+IntToStr(LandPoint);
@@ -141,10 +142,20 @@ begin
   SetValues;
 end;
 
+procedure TRACS.Edit2Enter(Sender: TObject);
+begin
+  (Sender as TEdit).Enabled:=false;
+end;
+
+procedure TRACS.Edit2Exit(Sender: TObject);
+begin
+(Sender as TEdit).Enabled:=true;
+end;
+
 procedure TRACS.FillMe;
 begin
   e1.Text:=' YES';
-  e1.Color:=clLime;
+  e1.Color:=Color_G;
   e2.Text:=' YES';
   e3.Text:=' 1';
   e4.Text:=' 0';
@@ -155,7 +166,7 @@ begin
   e9.Text:=' 0.16';
   e10.Text:=' 4.30';
   f1.Text:=' YES';
-  f1.Color:=clLime;
+  f1.Color:=Color_G;
   f2.Text:=' YES';
   f3.Text:=' 1';
   f4.Text:=' 0';

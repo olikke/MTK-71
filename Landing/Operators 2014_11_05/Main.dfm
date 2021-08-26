@@ -1,7 +1,6 @@
 object NMain: TNMain
   Left = 0
   Top = 0
-  Align = alClient
   AlphaBlendValue = 175
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSizeToolWin
@@ -33,7 +32,7 @@ object NMain: TNMain
     Align = alClient
     BiDiMode = bdLeftToRight
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clNavy
     Font.Height = -14
     Font.Name = 'Cambria'
     Font.Style = [fsBold]
@@ -54,8 +53,8 @@ object NMain: TNMain
       end
       object GroupBox27: TGroupBox
         Left = 1658
-        Top = 4
-        Width = 243
+        Top = 0
+        Width = 247
         Height = 1153
         Caption = 'Control panel'
         Font.Charset = DEFAULT_CHARSET
@@ -69,82 +68,62 @@ object NMain: TNMain
           Left = 5
           Top = 18
           Width = 235
-          Height = 144
+          Height = 148
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 0
-          object Panel135: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label266: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Pivotal tracking'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i9: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label266: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Pivotal tracking'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Shape25: TShape
-              Left = 180
-              Top = 2
-              Width = 19
-              Height = 20
-              Brush.Color = clLime
-              Shape = stCircle
-            end
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 181
+            ExplicitHeight = 24
+          end
+          object Shape25: TShape
+            Left = 180
+            Top = 3
+            Width = 15
+            Height = 15
+            Brush.Color = clLime
+            Shape = stCircle
           end
           object Panel141: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 120
+            Left = 0
+            Top = 20
+            Width = 231
+            Height = 124
             Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
+            BevelOuter = bvNone
+            TabOrder = 0
             object Image3: TImage
               Left = 5
-              Top = 4
+              Top = 5
               Width = 112
               Height = 112
             end
             object Label5: TLabel
               Left = 130
               Top = 10
-              Width = 46
+              Width = 47
               Height = 19
               Caption = 'X=388'
               Font.Charset = DEFAULT_CHARSET
@@ -157,7 +136,7 @@ object NMain: TNMain
             object Label240: TLabel
               Left = 130
               Top = 25
-              Width = 46
+              Width = 47
               Height = 19
               Caption = 'X=388'
               Font.Charset = DEFAULT_CHARSET
@@ -247,7 +226,7 @@ object NMain: TNMain
             end
             object Edit3: TEdit
               Left = 123
-              Top = 90
+              Top = 93
               Width = 100
               Height = 24
               Font.Charset = DEFAULT_CHARSET
@@ -258,7 +237,9 @@ object NMain: TNMain
               ParentFont = False
               ReadOnly = True
               TabOrder = 0
-              Text = '             NO'
+              Text = '         NO'
+              OnEnter = Edit2Enter
+              OnExit = Edit2Exit
             end
           end
         end
@@ -266,1581 +247,1215 @@ object NMain: TNMain
           Left = 5
           Top = 165
           Width = 235
-          Height = 125
+          Height = 128
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 1
-          object Panel142: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label258: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Tracking result'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i10: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label258: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Tracking result'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 181
+            ExplicitHeight = 24
           end
-          object Panel143: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 101
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object Label9: TLabel
-              Left = 20
-              Top = 1
-              Width = 25
-              Height = 16
-              Caption = 'Left'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label10: TLabel
-              Left = 130
-              Top = 1
-              Width = 33
-              Height = 16
-              Caption = 'Right'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Image1: TImage
-              Left = 20
-              Top = 18
-              Width = 80
-              Height = 80
-            end
-            object Image2: TImage
-              Left = 130
-              Top = 18
-              Width = 80
-              Height = 80
-            end
+          object Label9: TLabel
+            Left = 20
+            Top = 22
+            Width = 27
+            Height = 16
+            Caption = 'Left'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label10: TLabel
+            Left = 130
+            Top = 22
+            Width = 37
+            Height = 16
+            Caption = 'Right'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Image1: TImage
+            Left = 20
+            Top = 40
+            Width = 80
+            Height = 80
+          end
+          object Image2: TImage
+            Left = 130
+            Top = 40
+            Width = 80
+            Height = 80
           end
         end
         object pointoftracking: TPanel
           Left = 5
           Top = 292
-          Width = 180
-          Height = 110
+          Width = 181
+          Height = 114
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 2
-          object Panel144: TPanel
-            Left = 1
-            Top = 1
-            Width = 178
-            Height = 22
+          object Label259: TLabel
+            Left = 0
+            Top = 0
+            Width = 177
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Point of tracking'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i11: TImage
-              Left = 1
-              Top = 1
-              Width = 176
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label259: TLabel
-              Left = 1
-              Top = 1
-              Width = 176
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Point of tracking'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 181
+            ExplicitHeight = 24
           end
-          object Panel145: TPanel
-            Left = 1
-            Top = 23
-            Width = 178
-            Height = 86
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object SpeedButton1: TSpeedButton
-              Left = 20
-              Top = 5
-              Width = 145
-              Height = 25
-              Cursor = crHandPoint
-              Caption = '        Silhouette         '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = Buttont1Click
-            end
-            object Shape26: TShape
-              Left = 30
-              Top = 8
-              Width = 15
-              Height = 20
-              Brush.Color = clLime
-              Shape = stCircle
-            end
-            object Label232: TLabel
-              Left = 149
-              Top = 11
-              Width = 12
-              Height = 14
-              Caption = 'F2'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = Buttont1Click
-            end
-            object SpeedButton4: TSpeedButton
-              Left = 20
-              Top = 30
-              Width = 145
-              Height = 25
-              Cursor = crHandPoint
-              Caption = '       Head lamp        '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = Button2Click
-            end
-            object SpeedButton2: TSpeedButton
-              Left = 20
-              Top = 55
-              Width = 145
-              Height = 25
-              Cursor = crHandPoint
-              Caption = '        Hook      '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = Button3Click
-            end
-            object Shape27: TShape
-              Left = 30
-              Top = 35
-              Width = 15
-              Height = 15
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object Shape28: TShape
-              Left = 30
-              Top = 60
-              Width = 15
-              Height = 15
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object Label233: TLabel
-              Left = 149
-              Top = 35
-              Width = 12
-              Height = 14
-              Caption = 'F3'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = Button2Click
-            end
-            object Label234: TLabel
-              Left = 149
-              Top = 60
-              Width = 12
-              Height = 14
-              Caption = 'F4'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = Button3Click
-            end
+          object SpeedButton1: TSpeedButton
+            Left = 5
+            Top = 30
+            Width = 166
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '        Silhouette         '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = Buttont1Click
+          end
+          object SpeedButton4: TSpeedButton
+            Left = 5
+            Top = 55
+            Width = 166
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '       Head lamp        '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = Button2Click
+          end
+          object SpeedButton2: TSpeedButton
+            Left = 5
+            Top = 80
+            Width = 166
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '        Hook      '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = Button3Click
+          end
+          object Shape26: TShape
+            Left = 10
+            Top = 33
+            Width = 15
+            Height = 20
+            Brush.Color = clLime
+            Shape = stCircle
+          end
+          object Shape27: TShape
+            Left = 10
+            Top = 60
+            Width = 15
+            Height = 15
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Shape28: TShape
+            Left = 10
+            Top = 85
+            Width = 15
+            Height = 15
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Label232: TLabel
+            Left = 149
+            Top = 35
+            Width = 12
+            Height = 14
+            Caption = 'F2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = Buttont1Click
+          end
+          object Label233: TLabel
+            Left = 149
+            Top = 60
+            Width = 12
+            Height = 14
+            Caption = 'F3'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = Button2Click
+          end
+          object Label234: TLabel
+            Left = 149
+            Top = 85
+            Width = 12
+            Height = 14
+            Caption = 'F4'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = Button3Click
           end
         end
         object F78: TPanel
           Left = 185
           Top = 292
           Width = 55
-          Height = 110
+          Height = 114
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 3
-          object Panel146: TPanel
-            Left = 1
-            Top = 1
-            Width = 53
-            Height = 22
+          object Label260: TLabel
+            Left = 0
+            Top = 0
+            Width = 51
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'F7'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i12: TImage
-              Left = 1
-              Top = 1
-              Width = 51
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label260: TLabel
-              Left = 1
-              Top = 1
-              Width = 51
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'F7'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 53
           end
-          object Panel147: TPanel
-            Left = 1
-            Top = 23
-            Width = 53
-            Height = 86
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object GradProgress1: TGradProgress
-              Left = 15
-              Top = 7
-              Width = 25
-              Height = 73
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWhite
-              Font.Height = -11
-              Font.Name = 'Default'
-              Font.Style = []
-              Style = gsVertical
-              BevelStyle = bsLowered
-              BevelWidth = 1
-              StartColor = clLime
-              EndColor = clTeal
-              Position = 100
-              MaxValue = 100
-              Step = 1
-              ShowPercent = False
-              BackColor = clBtnFace
-            end
+          object GradProgress1: TGradProgress
+            Left = 14
+            Top = 30
+            Width = 25
+            Height = 73
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'Default'
+            Font.Style = []
+            Style = gsVertical
+            BevelStyle = bsLowered
+            BevelWidth = 1
+            StartColor = clLime
+            EndColor = clTeal
+            Position = 100
+            MaxValue = 100
+            Step = 1
+            ShowPercent = False
+            BackColor = clBtnFace
           end
         end
         object ModeofTracking: TPanel
           Left = 5
-          Top = 404
+          Top = 405
           Width = 235
-          Height = 55
+          Height = 58
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 4
-          object Panel148: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label261: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Mode of tracking'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i13: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label261: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Mode of tracking'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 25
+            ExplicitTop = 3
           end
-          object Panel149: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 31
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object SpeedButton33: TSpeedButton
-              Left = 5
-              Top = 5
-              Width = 110
-              Height = 22
-              Cursor = crHandPoint
-              Caption = '   Centralized'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton33Click
-            end
-            object SpeedButton42: TSpeedButton
-              Left = 117
-              Top = 5
-              Width = 110
-              Height = 22
-              Cursor = crHandPoint
-              Caption = '     Independent'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton42Click
-            end
-            object Shape43: TShape
-              Left = 10
-              Top = 9
-              Width = 15
-              Height = 15
-              Brush.Color = clLime
-              Shape = stCircle
-            end
-            object Shape44: TShape
-              Left = 123
-              Top = 9
-              Width = 14
-              Height = 15
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
+          object SpeedButton33: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '   Centralized'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton33Click
+          end
+          object SpeedButton42: TSpeedButton
+            Left = 118
+            Top = 25
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '     Independent'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton42Click
+          end
+          object Shape43: TShape
+            Left = 10
+            Top = 30
+            Width = 15
+            Height = 15
+            Brush.Color = clLime
+            Shape = stCircle
+          end
+          object Shape44: TShape
+            Left = 122
+            Top = 30
+            Width = 14
+            Height = 15
+            Brush.Color = clSilver
+            Shape = stCircle
           end
         end
         object RACSNo: TPanel
           Left = 5
-          Top = 461
+          Top = 462
           Width = 235
-          Height = 55
+          Height = 58
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 5
-          object Panel150: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label262: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'RACS No'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i14: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label262: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'RACS No'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 181
+            ExplicitHeight = 24
           end
-          object Panel151: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 31
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object SpeedButton8: TSpeedButton
-              Left = 5
-              Top = 5
-              Width = 110
-              Height = 22
-              Cursor = crHandPoint
-              Caption = '      RACS1         '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton8Click
-            end
-            object SpeedButton9: TSpeedButton
-              Left = 117
-              Top = 5
-              Width = 110
-              Height = 22
-              Cursor = crHandPoint
-              Caption = ' RACS2     '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton9Click
-            end
-            object Shape3: TShape
-              Left = 10
-              Top = 9
-              Width = 14
-              Height = 15
-              Brush.Color = clLime
-              Shape = stCircle
-            end
-            object Shape8: TShape
-              Left = 123
-              Top = 9
-              Width = 14
-              Height = 15
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object Label224: TLabel
-              Left = 84
-              Top = 9
-              Width = 27
-              Height = 14
-              Caption = 'Alt+1'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton8Click
-            end
-            object Label2: TLabel
-              Left = 195
-              Top = 9
-              Width = 27
-              Height = 14
-              Caption = 'Alt+2'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton9Click
-            end
+          object SpeedButton8: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '      RACS1         '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton8Click
+          end
+          object SpeedButton9: TSpeedButton
+            Left = 117
+            Top = 25
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = ' RACS2     '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton9Click
+          end
+          object Shape3: TShape
+            Left = 10
+            Top = 30
+            Width = 14
+            Height = 15
+            Brush.Color = clLime
+            Shape = stCircle
+          end
+          object Shape8: TShape
+            Left = 122
+            Top = 30
+            Width = 14
+            Height = 15
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Label224: TLabel
+            Left = 84
+            Top = 30
+            Width = 27
+            Height = 14
+            Caption = 'Alt+1'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton8Click
+          end
+          object Label2: TLabel
+            Left = 195
+            Top = 30
+            Width = 27
+            Height = 14
+            Caption = 'Alt+2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton9Click
           end
         end
         object Distance: TPanel
           Left = 5
-          Top = 518
+          Top = 519
           Width = 235
-          Height = 55
+          Height = 58
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 6
-          object Panel152: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label263: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Distance'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i15: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label263: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Distance'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 181
+            ExplicitHeight = 24
           end
-          object Panel153: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 31
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object SpeedButton5: TSpeedButton
-              Left = 5
-              Top = 5
-              Width = 110
-              Height = 22
-              Cursor = crHandPoint
-              Caption = ' TV           '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton5Click
-            end
-            object SpeedButton6: TSpeedButton
-              Left = 117
-              Top = 5
-              Width = 110
-              Height = 22
-              Cursor = crHandPoint
-              Caption = 'RACS     '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton6Click
-            end
-            object Shape4: TShape
-              Left = 10
-              Top = 9
-              Width = 14
-              Height = 15
-              Brush.Color = clLime
-              Shape = stCircle
-            end
-            object Label229: TLabel
-              Left = 75
-              Top = 9
-              Width = 33
-              Height = 14
-              Caption = 'Ctrl+T'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton5Click
-            end
-            object Shape5: TShape
-              Left = 123
-              Top = 9
-              Width = 14
-              Height = 15
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object Label228: TLabel
-              Left = 185
-              Top = 9
-              Width = 33
-              Height = 14
-              Caption = 'Ctrl+R'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton6Click
-            end
+          object SpeedButton5: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = ' TV           '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton5Click
+          end
+          object SpeedButton6: TSpeedButton
+            Left = 117
+            Top = 25
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = 'RACS     '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton6Click
+          end
+          object Shape4: TShape
+            Left = 10
+            Top = 30
+            Width = 14
+            Height = 15
+            Brush.Color = clLime
+            Shape = stCircle
+          end
+          object Shape5: TShape
+            Left = 122
+            Top = 30
+            Width = 14
+            Height = 15
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Label229: TLabel
+            Left = 78
+            Top = 30
+            Width = 33
+            Height = 14
+            Caption = 'Ctrl+T'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton5Click
+          end
+          object Label228: TLabel
+            Left = 190
+            Top = 30
+            Width = 33
+            Height = 14
+            Caption = 'Ctrl+R'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton6Click
           end
         end
         object selectaxialTVD: TPanel
           Left = 5
           Top = 575
           Width = 235
-          Height = 55
+          Height = 58
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 7
-          object Panel154: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label264: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Select axial TVD'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i16: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label264: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Select axial TVD'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 233
           end
-          object Panel155: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 31
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object TVD2: TSpeedButton
-              Left = 5
-              Top = 5
-              Width = 110
-              Height = 22
-              Cursor = crHandPoint
-              Caption = '     TVD2            '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = TVD2Click
-            end
-            object TVD3: TSpeedButton
-              Left = 117
-              Top = 5
-              Width = 110
-              Height = 22
-              Cursor = crHandPoint
-              Caption = '     TVD3           '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = TVD3Click
-            end
-            object Shape6: TShape
-              Left = 10
-              Top = 9
-              Width = 14
-              Height = 15
-              Brush.Color = clLime
-              Shape = stCircle
-            end
-            object Label230: TLabel
-              Left = 93
-              Top = 9
-              Width = 12
-              Height = 14
-              Caption = 'F5'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = TVD2Click
-            end
-            object Shape7: TShape
-              Left = 123
-              Top = 9
-              Width = 14
-              Height = 15
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object Label231: TLabel
-              Left = 203
-              Top = 9
-              Width = 12
-              Height = 14
-              Caption = 'F6'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = TVD3Click
-            end
+          object TVD2: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '     TVD2            '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = TVD2Click
+          end
+          object TVD3: TSpeedButton
+            Left = 117
+            Top = 25
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '     TVD3           '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = TVD3Click
+          end
+          object Shape6: TShape
+            Left = 10
+            Top = 30
+            Width = 14
+            Height = 15
+            Brush.Color = clLime
+            Shape = stCircle
+          end
+          object Shape7: TShape
+            Left = 122
+            Top = 30
+            Width = 14
+            Height = 15
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Label230: TLabel
+            Left = 97
+            Top = 30
+            Width = 12
+            Height = 14
+            Caption = 'F5'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = TVD2Click
+          end
+          object Label231: TLabel
+            Left = 210
+            Top = 30
+            Width = 12
+            Height = 14
+            Caption = 'F6'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = TVD3Click
           end
         end
         object TVDmod: TPanel
           Left = 5
-          Top = 631
+          Top = 632
           Width = 235
-          Height = 60
+          Height = 58
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 8
-          object Panel156: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label265: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'TVD mode'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i17: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label265: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'TVD mode'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = -6
+            ExplicitTop = -4
           end
-          object Panel157: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 36
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object SpeedButton10: TSpeedButton
-              Left = 5
-              Top = 5
-              Width = 65
-              Height = 25
-              Cursor = crHandPoint
-              Caption = '          1           '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton10Click
-            end
-            object Shape19: TShape
-              Left = 10
-              Top = 11
-              Width = 14
-              Height = 14
-              Brush.Color = clLime
-              Shape = stCircle
-            end
-            object Label267: TLabel
-              Left = 53
-              Top = 11
-              Width = 12
-              Height = 14
-              Caption = 'F9'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton10Click
-            end
-            object SpeedButton11: TSpeedButton
-              Left = 85
-              Top = 5
-              Width = 65
-              Height = 25
-              Cursor = crHandPoint
-              Caption = '          2           '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton11Click
-            end
-            object SpeedButton12: TSpeedButton
-              Left = 162
-              Top = 5
-              Width = 65
-              Height = 25
-              Cursor = crHandPoint
-              Caption = '          3           '
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton12Click
-            end
-            object Shape14: TShape
-              Left = 90
-              Top = 11
-              Width = 14
-              Height = 14
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object Shape15: TShape
-              Left = 167
-              Top = 11
-              Width = 14
-              Height = 14
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object Label236: TLabel
-              Left = 128
-              Top = 11
-              Width = 18
-              Height = 14
-              Caption = 'F10'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton11Click
-            end
-            object Label237: TLabel
-              Left = 205
-              Top = 11
-              Width = 18
-              Height = 14
-              Caption = 'F11'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton12Click
-            end
+          object SpeedButton10: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 71
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '          1           '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton10Click
+          end
+          object SpeedButton11: TSpeedButton
+            Left = 80
+            Top = 25
+            Width = 71
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '          2           '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton11Click
+          end
+          object SpeedButton12: TSpeedButton
+            Left = 155
+            Top = 25
+            Width = 72
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '          3           '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton12Click
+          end
+          object Shape19: TShape
+            Left = 10
+            Top = 30
+            Width = 14
+            Height = 14
+            Brush.Color = clLime
+            Shape = stCircle
+          end
+          object Shape14: TShape
+            Left = 85
+            Top = 30
+            Width = 14
+            Height = 14
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Shape15: TShape
+            Left = 160
+            Top = 30
+            Width = 14
+            Height = 14
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Label267: TLabel
+            Left = 55
+            Top = 30
+            Width = 12
+            Height = 14
+            Caption = 'F9'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton10Click
+          end
+          object Label236: TLabel
+            Left = 128
+            Top = 30
+            Width = 18
+            Height = 14
+            Caption = 'F10'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton11Click
+          end
+          object Label237: TLabel
+            Left = 205
+            Top = 30
+            Width = 18
+            Height = 14
+            Caption = 'F11'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton12Click
           end
         end
         object SysConf: TPanel
           Left = 5
-          Top = 693
+          Top = 689
           Width = 235
-          Height = 183
+          Height = 190
+          BevelKind = bkFlat
+          BevelOuter = bvNone
+          Color = clMedGray
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 9
-          object Panel158: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label235: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'System configuration'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i18: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label235: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'System configuration'
-              Color = clMedGray
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 181
+            ExplicitHeight = 24
+          end
+          object Panel27: TPanel
+            Left = 183
+            Top = 76
+            Width = 45
+            Height = 25
+            BevelOuter = bvNone
+            ParentBackground = False
+            TabOrder = 14
+            object MB: TSpeedButton
+              Left = 2
+              Top = 2
+              Width = 41
+              Height = 21
+              Cursor = crHandPoint
+              Caption = 'B'
               Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
+              Font.Color = clBlack
+              Font.Height = -16
               Font.Name = 'Cambria'
               Font.Style = [fsBold]
-              ParentColor = False
+              Glyph.Data = {
+                76010000424D7601000000000000760000002800000020000000100000000100
+                04000000000000010000120B0000120B00001000000000000000000000000000
+                800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+                FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+                555555555555555555555555555555555555555555FF55555555555559055555
+                55555555577FF5555555555599905555555555557777F5555555555599905555
+                555555557777FF5555555559999905555555555777777F555555559999990555
+                5555557777777FF5555557990599905555555777757777F55555790555599055
+                55557775555777FF5555555555599905555555555557777F5555555555559905
+                555555555555777FF5555555555559905555555555555777FF55555555555579
+                05555555555555777FF5555555555557905555555555555777FF555555555555
+                5990555555555555577755555555555555555555555555555555}
+              NumGlyphs = 2
               ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
+              OnClick = MBClick
             end
           end
-          object Panel159: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 159
-            Align = alClient
-            BevelOuter = bvLowered
+          object Panel4: TPanel
+            Left = 3
+            Top = 25
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'WSL'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 0
+          end
+          object Panel6: TPanel
+            Left = 63
+            Top = 25
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'WSP'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
             TabOrder = 1
-            object Panel21: TPanel
-              Left = 0
-              Top = 0
-              Width = 233
-              Height = 201
-              BevelOuter = bvNone
-              TabOrder = 0
-              object ImageConf2: TImage
-                Left = 0
-                Top = 130
-                Width = 170
-                Height = 29
-              end
-              object ImageConf1: TImage
-                Left = 0
-                Top = 100
-                Width = 170
-                Height = 29
-              end
-              object ImageBase: TImage
-                Left = 0
-                Top = 50
-                Width = 170
-                Height = 29
-              end
-              object MB: TSpeedButton
-                Left = 172
-                Top = 50
-                Width = 62
-                Height = 30
-                Cursor = crHandPoint
-                Caption = 'B'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clBlack
-                Font.Height = -16
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                Glyph.Data = {
-                  76010000424D7601000000000000760000002800000020000000100000000100
-                  04000000000000010000120B0000120B00001000000000000000000000000000
-                  800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
-                  FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
-                  555555555555555555555555555555555555555555FF55555555555559055555
-                  55555555577FF5555555555599905555555555557777F5555555555599905555
-                  555555557777FF5555555559999905555555555777777F555555559999990555
-                  5555557777777FF5555557990599905555555777757777F55555790555599055
-                  55557775555777FF5555555555599905555555555557777F5555555555559905
-                  555555555555777FF5555555555559905555555555555777FF55555555555579
-                  05555555555555777FF5555555555557905555555555555777FF555555555555
-                  5990555555555555577755555555555555555555555555555555}
-                NumGlyphs = 2
-                ParentFont = False
-                OnClick = MBClick
-              end
-              object M1: TSpeedButton
-                Left = 172
-                Top = 99
-                Width = 62
-                Height = 30
-                Cursor = crHandPoint
-                Caption = '1'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clBlack
-                Font.Height = -16
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                Glyph.Data = {
-                  76010000424D7601000000000000760000002800000020000000100000000100
-                  04000000000000010000120B0000120B00001000000000000000000000000000
-                  800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
-                  FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
-                  555555555555555555555555555555555555555555FF55555555555559055555
-                  55555555577FF5555555555599905555555555557777F5555555555599905555
-                  555555557777FF5555555559999905555555555777777F555555559999990555
-                  5555557777777FF5555557990599905555555777757777F55555790555599055
-                  55557775555777FF5555555555599905555555555557777F5555555555559905
-                  555555555555777FF5555555555559905555555555555777FF55555555555579
-                  05555555555555777FF5555555555557905555555555555777FF555555555555
-                  5990555555555555577755555555555555555555555555555555}
-                NumGlyphs = 2
-                ParentFont = False
-                OnClick = M1Click
-              end
-              object M3: TSpeedButton
-                Left = 172
-                Top = 130
-                Width = 62
-                Height = 30
-                Cursor = crHandPoint
-                Caption = '2'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clBlack
-                Font.Height = -16
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                Glyph.Data = {
-                  76010000424D7601000000000000760000002800000020000000100000000100
-                  04000000000000010000120B0000120B00001000000000000000000000000000
-                  800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
-                  FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
-                  555555555555555555555555555555555555555555FF55555555555559055555
-                  55555555577FF5555555555599905555555555557777F5555555555599905555
-                  555555557777FF5555555559999905555555555777777F555555559999990555
-                  5555557777777FF5555557990599905555555777757777F55555790555599055
-                  55557775555777FF5555555555599905555555555557777F5555555555559905
-                  555555555555777FF5555555555559905555555555555777FF55555555555579
-                  05555555555555777FF5555555555557905555555555555777FF555555555555
-                  5990555555555555577755555555555555555555555555555555}
-                NumGlyphs = 2
-                ParentFont = False
-                OnClick = M3Click
-              end
-              object Splitter1: TSplitter
-                Left = 60
-                Top = 0
-                Height = 28
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter2: TSplitter
-                Left = 115
-                Top = 0
-                Height = 28
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter3: TSplitter
-                Left = 0
-                Top = 27
-                Width = 300
-                Height = 3
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter4: TSplitter
-                Left = 170
-                Top = 0
-                Height = 28
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter5: TSplitter
-                Left = 0
-                Top = 48
-                Width = 300
-                Height = 3
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter6: TSplitter
-                Left = 60
-                Top = 50
-                Height = 30
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter7: TSplitter
-                Left = 0
-                Top = 79
-                Width = 300
-                Height = 3
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter8: TSplitter
-                Left = 115
-                Top = 50
-                Height = 30
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter9: TSplitter
-                Left = 170
-                Top = 50
-                Height = 30
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter10: TSplitter
-                Left = 0
-                Top = 97
-                Width = 300
-                Height = 3
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter11: TSplitter
-                Left = 60
-                Top = 97
-                Height = 201
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter12: TSplitter
-                Left = 115
-                Top = 97
-                Height = 201
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter13: TSplitter
-                Left = 170
-                Top = 97
-                Height = 201
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object Splitter14: TSplitter
-                Left = 0
-                Top = 128
-                Width = 300
-                Height = 3
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object t1: TLabel
-                Left = 15
-                Top = 57
-                Width = 36
-                Height = 16
-                Alignment = taCenter
-                Caption = 'TVD1'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object t2: TLabel
-                Left = 70
-                Top = 57
-                Width = 36
-                Height = 16
-                Alignment = taCenter
-                Caption = 'TVD2'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object t3: TLabel
-                Left = 124
-                Top = 57
-                Width = 36
-                Height = 16
-                Alignment = taCenter
-                Caption = 'TVD4'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object Splitter15: TSplitter
-                Left = -1
-                Top = 0
-                Height = 201
-                Cursor = crDefault
-                Align = alNone
-                Color = clMedGray
-                ParentColor = False
-              end
-              object t4: TLabel
-                Left = 26
-                Top = 100
-                Width = 12
-                Height = 24
-                Alignment = taCenter
-                Caption = 'x'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clRed
-                Font.Height = -20
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object t5: TLabel
-                Left = 70
-                Top = 106
-                Width = 36
-                Height = 16
-                Alignment = taCenter
-                Caption = 'TVD2'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object t6: TLabel
-                Left = 124
-                Top = 106
-                Width = 36
-                Height = 16
-                Alignment = taCenter
-                Caption = 'TVD4'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object t7: TLabel
-                Left = 15
-                Top = 137
-                Width = 36
-                Height = 16
-                Alignment = taCenter
-                Caption = 'TVD1'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object t8: TLabel
-                Left = 70
-                Top = 137
-                Width = 36
-                Height = 16
-                Alignment = taCenter
-                Caption = 'TVD2'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object t9: TLabel
-                Left = 135
-                Top = 131
-                Width = 12
-                Height = 24
-                Alignment = taCenter
-                Caption = 'x'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clRed
-                Font.Height = -20
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                ParentFont = False
-              end
-              object Panel23: TPanel
-                Left = 0
-                Top = 82
-                Width = 231
-                Height = 15
-                BevelOuter = bvNone
-                Caption = 'Stand-by'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = []
-                ParentFont = False
-                TabOrder = 1
-              end
-              object t112: TPanel
-                Left = 6
-                Top = 1
-                Width = 54
-                Height = 26
-                BevelOuter = bvNone
-                Caption = 'WSL'
-                Color = clGreen
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                ParentFont = False
-                TabOrder = 2
-              end
-              object Panel34: TPanel
-                Left = 61
-                Top = 1
-                Width = 54
-                Height = 26
-                BevelOuter = bvNone
-                Caption = 'WSP'
-                Color = clSkyBlue
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                ParentFont = False
-                TabOrder = 3
-              end
-              object Panel35: TPanel
-                Left = 116
-                Top = 1
-                Width = 54
-                Height = 26
-                BevelOuter = bvNone
-                Caption = 'WSR'
-                Color = clSkyBlue
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Tahoma'
-                Font.Style = [fsBold]
-                ParentFont = False
-                TabOrder = 4
-              end
-              object Panel22: TPanel
-                Left = 6
-                Top = 30
-                Width = 219
-                Height = 15
-                BevelOuter = bvNone
-                Caption = 'Base'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = []
-                ParentFont = False
-                TabOrder = 0
-              end
+          end
+          object Panel7: TPanel
+            Left = 123
+            Top = 25
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'WSR'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 2
+          end
+          object Panel11: TPanel
+            Left = 3
+            Top = 53
+            Width = 225
+            Height = 20
+            BevelOuter = bvNone
+            Caption = 'BASE'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 3
+          end
+          object t1: TPanel
+            Left = 3
+            Top = 76
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'TVD1'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 4
+          end
+          object t2: TPanel
+            Left = 63
+            Top = 76
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'TVD2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 5
+          end
+          object t3: TPanel
+            Left = 123
+            Top = 76
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'TVD4'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 6
+          end
+          object Panel15: TPanel
+            Left = 3
+            Top = 104
+            Width = 225
+            Height = 20
+            BevelOuter = bvNone
+            Caption = 'STAND-BY'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 7
+          end
+          object t4: TPanel
+            Left = 3
+            Top = 127
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'X'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clRed
+            Font.Height = -24
+            Font.Name = 'Comic Sans MS'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 8
+          end
+          object t5: TPanel
+            Left = 63
+            Top = 127
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'TVD2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 9
+          end
+          object t6: TPanel
+            Left = 123
+            Top = 127
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'TVD4'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 10
+          end
+          object Panel19: TPanel
+            Left = 0
+            Top = 20
+            Width = 231
+            Height = 2
+            Align = alTop
+            BevelOuter = bvNone
+            ParentBackground = False
+            TabOrder = 11
+          end
+          object t7: TPanel
+            Left = 3
+            Top = 155
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'TVD1'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 12
+          end
+          object Panel25: TPanel
+            Left = 183
+            Top = 25
+            Width = 45
+            Height = 25
+            BevelOuter = bvNone
+            ParentBackground = False
+            TabOrder = 13
+          end
+          object Panel28: TPanel
+            Left = 183
+            Top = 127
+            Width = 45
+            Height = 25
+            BevelOuter = bvNone
+            ParentBackground = False
+            TabOrder = 15
+            object M1: TSpeedButton
+              Left = 2
+              Top = 2
+              Width = 41
+              Height = 24
+              Cursor = crHandPoint
+              Caption = '1'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -16
+              Font.Name = 'Cambria'
+              Font.Style = [fsBold]
+              Glyph.Data = {
+                76010000424D7601000000000000760000002800000020000000100000000100
+                04000000000000010000120B0000120B00001000000000000000000000000000
+                800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+                FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+                555555555555555555555555555555555555555555FF55555555555559055555
+                55555555577FF5555555555599905555555555557777F5555555555599905555
+                555555557777FF5555555559999905555555555777777F555555559999990555
+                5555557777777FF5555557990599905555555777757777F55555790555599055
+                55557775555777FF5555555555599905555555555557777F5555555555559905
+                555555555555777FF5555555555559905555555555555777FF55555555555579
+                05555555555555777FF5555555555557905555555555555777FF555555555555
+                5990555555555555577755555555555555555555555555555555}
+              NumGlyphs = 2
+              ParentFont = False
+              OnClick = M1Click
+            end
+          end
+          object t8: TPanel
+            Left = 63
+            Top = 155
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'TVD2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 16
+          end
+          object t9: TPanel
+            Left = 123
+            Top = 155
+            Width = 57
+            Height = 25
+            BevelOuter = bvNone
+            Caption = 'X'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clRed
+            Font.Height = -24
+            Font.Name = 'Comic Sans MS'
+            Font.Style = [fsBold]
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 17
+          end
+          object Panel31: TPanel
+            Left = 183
+            Top = 155
+            Width = 45
+            Height = 25
+            BevelOuter = bvNone
+            ParentBackground = False
+            TabOrder = 18
+            object M3: TSpeedButton
+              Left = 2
+              Top = 2
+              Width = 41
+              Height = 21
+              Cursor = crHandPoint
+              Caption = '2'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Height = -16
+              Font.Name = 'Cambria'
+              Font.Style = [fsBold]
+              Glyph.Data = {
+                76010000424D7601000000000000760000002800000020000000100000000100
+                04000000000000010000120B0000120B00001000000000000000000000000000
+                800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+                FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+                555555555555555555555555555555555555555555FF55555555555559055555
+                55555555577FF5555555555599905555555555557777F5555555555599905555
+                555555557777FF5555555559999905555555555777777F555555559999990555
+                5555557777777FF5555557990599905555555777757777F55555790555599055
+                55557775555777FF5555555555599905555555555557777F5555555555559905
+                555555555555777FF5555555555559905555555555555777FF55555555555579
+                05555555555555777FF5555555555557905555555555555777FF555555555555
+                5990555555555555577755555555555555555555555555555555}
+              NumGlyphs = 2
+              ParentFont = False
+              OnClick = M3Click
             end
           end
         end
@@ -1848,504 +1463,411 @@ object NMain: TNMain
           Left = 5
           Top = 878
           Width = 235
-          Height = 103
+          Height = 105
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 10
-          object Panel120: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label7: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Aircraft'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
+            ParentFont = False
+            Transparent = False
+            Layout = tlCenter
+          end
+          object Label192: TLabel
+            Left = 5
+            Top = 33
+            Width = 33
+            Height = 16
+            Caption = 'Type'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label189: TLabel
+            Left = 158
+            Top = 33
+            Width = 19
+            Height = 16
+            Caption = 'No'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object ComboBox1: TComboBox
+            Left = 45
+            Top = 30
+            Width = 95
+            Height = 24
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = []
+            ItemHeight = 16
             ParentFont = False
             TabOrder = 0
-            object i19: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label7: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Aircraft'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
+            Text = 'Unknoun'
+            OnChange = ComboBox1Change
+            Items.Strings = (
+              '')
           end
-          object Panel160: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 79
-            Align = alClient
-            BevelOuter = bvLowered
+          object Edit1: TEdit
+            Left = 180
+            Top = 30
+            Width = 41
+            Height = 24
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = []
+            ParentFont = False
             TabOrder = 1
-            object Label192: TLabel
-              Left = 10
-              Top = 10
-              Width = 31
-              Height = 16
-              Caption = 'Type'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label189: TLabel
-              Left = 160
-              Top = 10
-              Width = 18
-              Height = 16
-              Caption = 'No'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object ComboBox1: TComboBox
-              Left = 45
-              Top = 9
-              Width = 95
-              Height = 24
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = []
-              ItemHeight = 16
-              ParentFont = False
-              TabOrder = 0
-              Text = 'Unknoun'
-              OnChange = ComboBox1Change
-              Items.Strings = (
-                '')
-            end
-            object Edit1: TEdit
-              Left = 180
-              Top = 9
-              Width = 41
-              Height = 24
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = []
-              ParentFont = False
-              TabOrder = 1
-              Text = '7777'
-              OnChange = Edit1Change
-            end
-            object RadioGroup1: TRadioGroup
-              Left = 5
-              Top = 32
-              Width = 222
-              Height = 44
-              Caption = 'According to'
-              Columns = 2
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ItemIndex = 0
-              Items.Strings = (
-                'RACS'
-                'Manual')
-              ParentFont = False
-              TabOrder = 2
-              OnClick = RadioGroup1Click
-            end
+            Text = '7777'
+            OnChange = Edit1Change
+          end
+          object RadioGroup1: TRadioGroup
+            Left = 5
+            Top = 58
+            Width = 222
+            Height = 40
+            Caption = 'According to'
+            Columns = 2
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ItemIndex = 0
+            Items.Strings = (
+              'RACS'
+              'Manual')
+            ParentFont = False
+            TabOrder = 2
+            OnClick = RadioGroup1Click
           end
         end
         object GA: TPanel
           Left = 5
-          Top = 983
+          Top = 982
           Width = 235
-          Height = 90
+          Height = 95
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 11
-          object Panel161: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label269: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Glidepath angle'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
+            ParentFont = False
+            Transparent = False
+            Layout = tlCenter
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 181
+            ExplicitHeight = 24
+          end
+          object SpeedButton13: TSpeedButton
+            Left = 118
+            Top = 30
+            Width = 30
+            Height = 25
+            Cursor = crHandPoint
+            Hint = 'To apply'
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+              555555555555555555555555555555555555555555FF55555555555559055555
+              55555555577FF5555555555599905555555555557777F5555555555599905555
+              555555557777FF5555555559999905555555555777777F555555559999990555
+              5555557777777FF5555557990599905555555777757777F55555790555599055
+              55557775555777FF5555555555599905555555555557777F5555555555559905
+              555555555555777FF5555555555559905555555555555777FF55555555555579
+              05555555555555777FF5555555555557905555555555555777FF555555555555
+              5990555555555555577755555555555555555555555555555555}
+            NumGlyphs = 2
+            ParentShowHint = False
+            ShowHint = True
+            OnClick = SpeedButton13Click
+          end
+          object SpeedButton16: TSpeedButton
+            Left = 5
+            Top = 60
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = 'PC'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton16Click
+          end
+          object SpeedButton17: TSpeedButton
+            Left = 118
+            Top = 60
+            Width = 110
+            Height = 25
+            Cursor = crHandPoint
+            Caption = 'PCH'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton17Click
+          end
+          object SpeedButton14: TSpeedButton
+            Left = 151
+            Top = 30
+            Width = 77
+            Height = 25
+            Cursor = crHandPoint
+            Caption = '   night'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton14Click
+          end
+          object Shape9: TShape
+            Left = 156
+            Top = 35
+            Width = 14
+            Height = 15
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Shape16: TShape
+            Left = 10
+            Top = 65
+            Width = 14
+            Height = 15
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Shape17: TShape
+            Left = 123
+            Top = 65
+            Width = 14
+            Height = 15
+            Brush.Color = clSilver
+            Shape = stCircle
+          end
+          object Label248: TLabel
+            Left = 80
+            Top = 66
+            Width = 27
+            Height = 14
+            Caption = 'Alt+4'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton16Click
+          end
+          object Label250: TLabel
+            Left = 193
+            Top = 66
+            Width = 27
+            Height = 14
+            Caption = 'Alt+5'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+            OnClick = SpeedButton16Click
+          end
+          object Label239: TLabel
+            Left = 38
+            Top = 29
+            Width = 21
+            Height = 13
+            Caption = 'qwe'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Symbol'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label238: TLabel
+            Left = 10
+            Top = 34
+            Width = 24
+            Height = 14
+            Caption = 'qwe'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object MaskEdit1: TMaskEdit
+            Left = 70
+            Top = 30
+            Width = 45
+            Height = 24
+            EditMask = '0.00;1;_'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            MaxLength = 4
             ParentFont = False
             TabOrder = 0
-            object i20: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label269: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Glidepath angle'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-          end
-          object Panel162: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 66
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object Label238: TLabel
-              Left = 18
-              Top = 14
-              Width = 24
-              Height = 14
-              Caption = 'qwe'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label239: TLabel
-              Left = 40
-              Top = 11
-              Width = 21
-              Height = 13
-              Caption = 'qwe'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Symbol'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object SpeedButton13: TSpeedButton
-              Left = 110
-              Top = 10
-              Width = 30
-              Height = 25
-              Cursor = crHandPoint
-              Hint = 'To apply'
-              Glyph.Data = {
-                76010000424D7601000000000000760000002800000020000000100000000100
-                04000000000000010000120B0000120B00001000000000000000000000000000
-                800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
-                FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
-                555555555555555555555555555555555555555555FF55555555555559055555
-                55555555577FF5555555555599905555555555557777F5555555555599905555
-                555555557777FF5555555559999905555555555777777F555555559999990555
-                5555557777777FF5555557990599905555555777757777F55555790555599055
-                55557775555777FF5555555555599905555555555557777F5555555555559905
-                555555555555777FF5555555555559905555555555555777FF55555555555579
-                05555555555555777FF5555555555557905555555555555777FF555555555555
-                5990555555555555577755555555555555555555555555555555}
-              NumGlyphs = 2
-              ParentShowHint = False
-              ShowHint = True
-              OnClick = SpeedButton13Click
-            end
-            object SpeedButton14: TSpeedButton
-              Left = 155
-              Top = 10
-              Width = 65
-              Height = 25
-              Cursor = crHandPoint
-              Caption = '    night'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton14Click
-            end
-            object Shape9: TShape
-              Left = 160
-              Top = 15
-              Width = 14
-              Height = 15
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object SpeedButton16: TSpeedButton
-              Left = 8
-              Top = 38
-              Width = 105
-              Height = 25
-              Cursor = crHandPoint
-              Caption = 'PC'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton16Click
-            end
-            object Shape16: TShape
-              Left = 18
-              Top = 43
-              Width = 14
-              Height = 15
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object Label248: TLabel
-              Left = 80
-              Top = 44
-              Width = 27
-              Height = 14
-              Caption = 'Alt+4'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton16Click
-            end
-            object SpeedButton17: TSpeedButton
-              Left = 120
-              Top = 38
-              Width = 105
-              Height = 25
-              Cursor = crHandPoint
-              Caption = 'PCH'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton17Click
-            end
-            object Shape17: TShape
-              Left = 128
-              Top = 43
-              Width = 14
-              Height = 15
-              Brush.Color = clSilver
-              Shape = stCircle
-            end
-            object Label250: TLabel
-              Left = 190
-              Top = 43
-              Width = 27
-              Height = 14
-              Caption = 'Alt+5'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-              OnClick = SpeedButton16Click
-            end
-            object MaskEdit1: TMaskEdit
-              Left = 65
-              Top = 10
-              Width = 44
-              Height = 24
-              EditMask = '0.00;1;_'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              MaxLength = 4
-              ParentFont = False
-              TabOrder = 0
-              Text = ' .  '
-              OnChange = MaskEdit1Change
-            end
+            Text = ' .  '
+            OnChange = MaskEdit1Change
           end
         end
         object BA: TPanel
           Left = 5
-          Top = 1075
+          Top = 1076
           Width = 235
-          Height = 60
+          Height = 63
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           ParentBackground = False
           TabOrder = 12
-          object Panel163: TPanel
-            Left = 1
-            Top = 1
-            Width = 233
-            Height = 22
+          object Label270: TLabel
+            Left = 0
+            Top = 0
+            Width = 231
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Beta angle'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
+            ParentFont = False
+            Transparent = False
+            ExplicitLeft = 1
+            ExplicitTop = 1
+            ExplicitWidth = 233
+          end
+          object Label243: TLabel
+            Left = 38
+            Top = 26
+            Width = 28
+            Height = 13
+            Caption = 'wert'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Symbol'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label242: TLabel
+            Left = 10
+            Top = 34
+            Width = 24
+            Height = 14
+            Caption = 'qwe'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = cl3DDkShadow
+            Font.Height = -11
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object SpeedButton15: TSpeedButton
+            Left = 118
+            Top = 30
+            Width = 30
+            Height = 25
+            Cursor = crHandPoint
+            Hint = 'To apply'
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+              555555555555555555555555555555555555555555FF55555555555559055555
+              55555555577FF5555555555599905555555555557777F5555555555599905555
+              555555557777FF5555555559999905555555555777777F555555559999990555
+              5555557777777FF5555557990599905555555777757777F55555790555599055
+              55557775555777FF5555555555599905555555555557777F5555555555559905
+              555555555555777FF5555555555559905555555555555777FF55555555555579
+              05555555555555777FF5555555555557905555555555555777FF555555555555
+              5990555555555555577755555555555555555555555555555555}
+            NumGlyphs = 2
+            ParentShowHint = False
+            ShowHint = True
+            OnClick = SpeedButton15Click
+          end
+          object MaskEdit2: TMaskEdit
+            Left = 70
+            Top = 30
+            Width = 45
+            Height = 24
+            EditMask = '0.00;1;_'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Arial'
+            Font.Style = [fsBold]
+            MaxLength = 4
             ParentFont = False
             TabOrder = 0
-            object i21: TImage
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-            object Label270: TLabel
-              Left = 1
-              Top = 1
-              Width = 231
-              Height = 20
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Beta angle'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-              ExplicitHeight = 24
-            end
-          end
-          object Panel164: TPanel
-            Left = 1
-            Top = 23
-            Width = 233
-            Height = 36
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object Label242: TLabel
-              Left = 18
-              Top = 13
-              Width = 24
-              Height = 14
-              Caption = 'qwe'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label243: TLabel
-              Left = 40
-              Top = 5
-              Width = 28
-              Height = 13
-              Caption = 'wert'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = cl3DDkShadow
-              Font.Height = -11
-              Font.Name = 'Symbol'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object SpeedButton15: TSpeedButton
-              Left = 110
-              Top = 5
-              Width = 30
-              Height = 25
-              Cursor = crHandPoint
-              Hint = 'To apply'
-              Glyph.Data = {
-                76010000424D7601000000000000760000002800000020000000100000000100
-                04000000000000010000120B0000120B00001000000000000000000000000000
-                800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
-                FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
-                555555555555555555555555555555555555555555FF55555555555559055555
-                55555555577FF5555555555599905555555555557777F5555555555599905555
-                555555557777FF5555555559999905555555555777777F555555559999990555
-                5555557777777FF5555557990599905555555777757777F55555790555599055
-                55557775555777FF5555555555599905555555555557777F5555555555559905
-                555555555555777FF5555555555559905555555555555777FF55555555555579
-                05555555555555777FF5555555555557905555555555555777FF555555555555
-                5990555555555555577755555555555555555555555555555555}
-              NumGlyphs = 2
-              ParentShowHint = False
-              ShowHint = True
-              OnClick = SpeedButton15Click
-            end
-            object MaskEdit2: TMaskEdit
-              Left = 65
-              Top = 5
-              Width = 44
-              Height = 24
-              EditMask = '0.00;1;_'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              MaxLength = 4
-              ParentFont = False
-              TabOrder = 0
-              Text = ' .  '
-              OnChange = MaskEdit2Change
-            end
+            Text = ' .  '
+            OnChange = MaskEdit2Change
           end
         end
       end
@@ -2390,13 +1912,13 @@ object NMain: TNMain
         Left = 5
         Top = 0
         Width = 170
-        Height = 842
+        Height = 837
         Caption = '     Landing state'
         Color = clBtnFace
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -14
-        Font.Name = 'Arial'
+        Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentColor = False
         ParentFont = False
@@ -2409,1553 +1931,1033 @@ object NMain: TNMain
           Shape = stCircle
         end
         object SH1: TSpeedButton
-          Left = 5
-          Top = 805
-          Width = 160
+          Left = 12
+          Top = 797
+          Width = 147
           Height = 30
           Caption = 'DP (A6)'
         end
         object devSH: TShape
           Left = 19
-          Top = 812
-          Width = 13
-          Height = 16
+          Top = 805
+          Width = 15
+          Height = 15
           Shape = stCircle
         end
         object WSCPanel: TPanel
           Left = 5
           Top = 20
           Width = 160
-          Height = 127
+          Height = 125
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           TabOrder = 0
-          object Panel39: TPanel
-            Left = 1
-            Top = 1
-            Width = 158
-            Height = 26
-            Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Caption = 'WS and VRD'
-            Color = clActiveBorder
+          object sp3: TSpeedButton
+            Left = 5
+            Top = 85
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = 'WSR'
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -15
+            Font.Color = clWindowText
+            Font.Height = -14
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
             ParentFont = False
-            TabOrder = 0
-            object i1: TImage
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              ExplicitWidth = 181
-            end
-            object Label251: TLabel
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'WS'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-            end
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = SpeedButton19Click
           end
-          object Panel41: TPanel
-            Left = 1
-            Top = 27
-            Width = 158
-            Height = 99
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object Panel43: TPanel
-              Left = 8
-              Top = 5
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 0
-              object sp1: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'WSP'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp1Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev1: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel44: TPanel
-              Left = 8
-              Top = 35
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 1
-              object sp2: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'WSL'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = SpeedButton18Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev2: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel45: TPanel
-              Left = 8
-              Top = 65
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 2
-              object sp3: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'WSR'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -14
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = SpeedButton19Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev3: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
+          object sp2: TSpeedButton
+            Left = 5
+            Top = 55
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = 'WSL'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = SpeedButton18Click
+          end
+          object sp1: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = 'WSP'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp1Click
+          end
+          object dev1: TShape
+            Left = 13
+            Top = 33
+            Width = 15
+            Height = 16
+            Shape = stCircle
+          end
+          object dev2: TShape
+            Left = 13
+            Top = 63
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev3: TShape
+            Left = 13
+            Top = 93
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object Label251: TLabel
+            Left = 0
+            Top = 0
+            Width = 156
+            Height = 20
+            Align = alTop
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'WS'
+            Color = clMedGray
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -15
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentColor = False
+            ParentFont = False
+            Transparent = False
+            Layout = tlCenter
           end
         end
         object KUPanel: TPanel
           Left = 5
-          Top = 147
+          Top = 144
           Width = 160
-          Height = 157
+          Height = 155
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           TabOrder = 1
-          object Panel17: TPanel
-            Left = 1
-            Top = 1
-            Width = 158
-            Height = 26
-            Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Caption = 'WS and VRD'
-            Color = clActiveBorder
+          object sp9: TSpeedButton
+            Left = 5
+            Top = 115
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = '  TVD4 (right)'
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = -15
+            Font.Color = clWindowText
+            Font.Height = -13
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
             ParentFont = False
-            TabOrder = 0
-            object i2: TImage
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              ExplicitWidth = 181
-            end
-            object Label252: TLabel
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'TVD (TM-2220-1)'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-            end
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp9Click
           end
-          object Panel19: TPanel
-            Left = 1
-            Top = 27
-            Width = 158
-            Height = 129
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object Panel46: TPanel
-              Left = 8
-              Top = 5
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 0
-              object sp7: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'TVD1 (left)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp7Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev7: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel47: TPanel
-              Left = 8
-              Top = 35
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 1
-              object sp8: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = '     TVD2 (axial1)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp8Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev8: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel48: TPanel
-              Left = 8
-              Top = 65
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 2
-              object sp10: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = '    TVD3 (axial2)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp10Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev10: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel4: TPanel
-              Left = 8
-              Top = 95
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 3
-              object sp9: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = '  TVD4 (right)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp9Click
-                ExplicitLeft = 5
-                ExplicitTop = 1
-                ExplicitWidth = 135
-              end
-              object dev9: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
+          object sp10: TSpeedButton
+            Left = 5
+            Top = 85
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = '    TVD3 (axial2)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp10Click
+          end
+          object sp8: TSpeedButton
+            Left = 5
+            Top = 55
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = '     TVD2 (axial1)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp8Click
+          end
+          object sp7: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = 'TVD1 (left)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp7Click
+          end
+          object dev10: TShape
+            Left = 13
+            Top = 93
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev7: TShape
+            Left = 13
+            Top = 33
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev8: TShape
+            Left = 13
+            Top = 63
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev9: TShape
+            Left = 13
+            Top = 123
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object Label252: TLabel
+            Left = 0
+            Top = 0
+            Width = 156
+            Height = 20
+            Align = alTop
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'TVD (TM-2220-1)'
+            Color = clMedGray
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -15
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentColor = False
+            ParentFont = False
+            Transparent = False
+            Layout = tlCenter
           end
         end
         object Protocolling: TPanel
           Left = 5
-          Top = 304
+          Top = 298
           Width = 160
-          Height = 97
+          Height = 95
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           TabOrder = 2
-          object Panel50: TPanel
-            Left = 1
-            Top = 1
-            Width = 158
-            Height = 26
+          object Label253: TLabel
+            Left = 0
+            Top = 0
+            Width = 156
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Caption = 'WS and VRD'
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Protocolling device'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i3: TImage
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              ExplicitWidth = 181
-            end
-            object Label253: TLabel
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Protocolling device'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-            end
+            Transparent = False
+            Layout = tlCenter
           end
-          object Panel59: TPanel
-            Left = 1
-            Top = 27
-            Width = 158
-            Height = 69
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object Panel60: TPanel
-              Left = 8
-              Top = 5
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 0
-              object sp16: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'TM-2408-1 (A8)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp16Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev16: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel119: TPanel
-              Left = 8
-              Top = 35
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 1
-              object sp20: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'TM-2320 (A11)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = sp20Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev20: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
+          object sp16: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = 'TM-2408-1 (A8)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp16Click
+          end
+          object dev16: TShape
+            Left = 13
+            Top = 33
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object sp20: TSpeedButton
+            Left = 5
+            Top = 55
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = 'TM-2320 (A11)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = sp20Click
+          end
+          object dev20: TShape
+            Left = 13
+            Top = 63
+            Width = 15
+            Height = 15
+            Shape = stCircle
           end
         end
         object ShipSystem: TPanel
           Left = 5
-          Top = 401
+          Top = 392
           Width = 160
-          Height = 127
+          Height = 125
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           TabOrder = 3
-          object Panel121: TPanel
-            Left = 1
-            Top = 1
-            Width = 158
-            Height = 26
+          object Label254: TLabel
+            Left = 0
+            Top = 0
+            Width = 156
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Caption = 'WS and VRD'
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'Ship system'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i4: TImage
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              ExplicitWidth = 181
-            end
-            object Label254: TLabel
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'Ship system'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-            end
+            Transparent = False
+            Layout = tlCenter
           end
-          object Panel122: TPanel
-            Left = 1
-            Top = 27
-            Width = 158
-            Height = 99
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object Panel123: TPanel
-              Left = 8
-              Top = 5
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 0
-              object sp38: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'OLS " Luna-3E"'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = sp38Click
-                ExplicitLeft = -1
-              end
-              object dev38: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-              object dev39: TShape
-                Left = 125
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel124: TPanel
-              Left = 8
-              Top = 35
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 1
-              object sp40: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'NS " Ilmen-71"'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = sp40Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev40: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-              object dev41: TShape
-                Left = 125
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel125: TPanel
-              Left = 8
-              Top = 65
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 2
-              object sp45: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'RACS'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = sp45Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev45: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-              object dev46: TShape
-                Left = 125
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
+          object sp38: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = 'OLS " Luna-3E"'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = sp38Click
+          end
+          object sp40: TSpeedButton
+            Left = 5
+            Top = 55
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = 'NS " Ilmen-71"'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = sp40Click
+          end
+          object sp45: TSpeedButton
+            Left = 5
+            Top = 85
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = 'RACS'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = sp45Click
+          end
+          object dev38: TShape
+            Left = 13
+            Top = 33
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev40: TShape
+            Left = 13
+            Top = 63
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev45: TShape
+            Left = 13
+            Top = 93
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev39: TShape
+            Left = 130
+            Top = 33
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev41: TShape
+            Left = 130
+            Top = 63
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev46: TShape
+            Left = 130
+            Top = 93
+            Width = 15
+            Height = 15
+            Shape = stCircle
           end
         end
         object TM2402: TPanel
           Left = 5
-          Top = 528
+          Top = 516
           Width = 160
-          Height = 277
+          Height = 275
+          BevelKind = bkFlat
+          BevelOuter = bvNone
           Constraints.MinHeight = 29
           TabOrder = 4
-          object Panel126: TPanel
-            Left = 1
-            Top = 1
-            Width = 158
-            Height = 26
+          object Label255: TLabel
+            Left = 0
+            Top = 0
+            Width = 156
+            Height = 20
             Align = alTop
-            BevelInner = bvLowered
-            BevelOuter = bvNone
-            Caption = 'WS and VRD'
-            Color = clActiveBorder
+            Alignment = taCenter
+            AutoSize = False
+            Caption = 'TM-2402-3 (A5)'
+            Color = clMedGray
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
+            Font.Color = clWindowText
             Font.Height = -15
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
+            ParentColor = False
             ParentFont = False
-            TabOrder = 0
-            object i5: TImage
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              ExplicitWidth = 181
-            end
-            object Label255: TLabel
-              Left = 1
-              Top = 1
-              Width = 156
-              Height = 24
-              Align = alClient
-              Alignment = taCenter
-              AutoSize = False
-              Caption = 'TM-2402-3 (A5)'
-              Color = clMedGray
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -15
-              Font.Name = 'Cambria'
-              Font.Style = [fsBold]
-              ParentColor = False
-              ParentFont = False
-              ExplicitWidth = 181
-            end
+            Transparent = False
+            Layout = tlCenter
           end
-          object Panel127: TPanel
-            Left = 1
-            Top = 27
-            Width = 158
-            Height = 249
-            Align = alClient
-            BevelOuter = bvLowered
-            TabOrder = 1
-            object Panel128: TPanel
-              Left = 8
-              Top = 5
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 0
-              object sp22: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'TM-2404 (A6) '
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp22Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev22: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel129: TPanel
-              Left = 8
-              Top = 35
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 1
-              object sp12: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = '  TM-2409-1 (A4)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp12Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev12: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel130: TPanel
-              Left = 8
-              Top = 65
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 2
-              object sp13: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = '  TM-2409-1 (A5)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp13Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev13: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel131: TPanel
-              Left = 8
-              Top = 95
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 3
-              object sp14: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'TM-2410 (A2) '
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp14Click
-                ExplicitLeft = 5
-                ExplicitTop = 1
-                ExplicitWidth = 135
-              end
-              object dev14: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel49: TPanel
-              Left = 8
-              Top = 125
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 4
-              object sp15: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = 'TM-2410 (A3) '
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp15Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev15: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel132: TPanel
-              Left = 8
-              Top = 155
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 5
-              object sp17: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = '  TM-2411-1 (A7)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp17Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev17: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel133: TPanel
-              Left = 8
-              Top = 185
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 6
-              object sp18: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = '  TM-2411-1 (A8)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp18Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev18: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
-            object Panel134: TPanel
-              Left = 8
-              Top = 215
-              Width = 145
-              Height = 30
-              BevelOuter = bvNone
-              TabOrder = 7
-              object sp19: TSpeedButton
-                Left = 0
-                Top = 0
-                Width = 145
-                Height = 30
-                Align = alClient
-                BiDiMode = bdLeftToRight
-                Caption = '  TM-2411-1 (A9)'
-                Font.Charset = DEFAULT_CHARSET
-                Font.Color = clWindowText
-                Font.Height = -13
-                Font.Name = 'Cambria'
-                Font.Style = [fsBold]
-                ParentFont = False
-                ParentShowHint = False
-                ParentBiDiMode = False
-                ShowHint = True
-                OnClick = Sp19Click
-                ExplicitLeft = 1
-                ExplicitTop = 1
-                ExplicitWidth = 160
-                ExplicitHeight = 33
-              end
-              object dev19: TShape
-                Left = 5
-                Top = 9
-                Width = 13
-                Height = 16
-                Shape = stCircle
-              end
-            end
+          object sp22: TSpeedButton
+            Left = 5
+            Top = 25
+            Width = 147
+            Height = 30
+            Align = alCustom
+            BiDiMode = bdLeftToRight
+            Caption = 'TM-2404 (A6) '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp22Click
+          end
+          object sp12: TSpeedButton
+            Left = 5
+            Top = 55
+            Width = 147
+            Height = 30
+            Align = alCustom
+            BiDiMode = bdLeftToRight
+            Caption = 'TM-2409-1 (A4)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp12Click
+          end
+          object sp13: TSpeedButton
+            Left = 5
+            Top = 85
+            Width = 147
+            Height = 30
+            Align = alCustom
+            BiDiMode = bdLeftToRight
+            Caption = 'TM-2409-1 (A5)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp13Click
+          end
+          object sp14: TSpeedButton
+            Left = 5
+            Top = 115
+            Width = 147
+            Height = 30
+            Align = alCustom
+            BiDiMode = bdLeftToRight
+            Caption = 'TM-2410 (A2) '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp14Click
+          end
+          object sp15: TSpeedButton
+            Left = 5
+            Top = 145
+            Width = 147
+            Height = 30
+            Align = alCustom
+            BiDiMode = bdLeftToRight
+            Caption = 'TM-2410 (A3) '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp15Click
+          end
+          object sp17: TSpeedButton
+            Left = 5
+            Top = 175
+            Width = 147
+            Height = 30
+            Align = alCustom
+            BiDiMode = bdLeftToRight
+            Caption = '  TM-2411-1 (A7)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp17Click
+          end
+          object sp18: TSpeedButton
+            Left = 5
+            Top = 205
+            Width = 147
+            Height = 30
+            Align = alCustom
+            BiDiMode = bdLeftToRight
+            Caption = '  TM-2411-1 (A8)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp18Click
+          end
+          object sp19: TSpeedButton
+            Left = 5
+            Top = 235
+            Width = 147
+            Height = 30
+            BiDiMode = bdLeftToRight
+            Caption = '  TM-2411-1 (A9)'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ParentShowHint = False
+            ParentBiDiMode = False
+            ShowHint = True
+            OnClick = Sp19Click
+          end
+          object dev22: TShape
+            Left = 13
+            Top = 33
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev12: TShape
+            Left = 13
+            Top = 63
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev13: TShape
+            Left = 13
+            Top = 93
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev14: TShape
+            Left = 13
+            Top = 123
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev15: TShape
+            Left = 13
+            Top = 153
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev17: TShape
+            Left = 13
+            Top = 183
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev18: TShape
+            Left = 13
+            Top = 213
+            Width = 15
+            Height = 15
+            Shape = stCircle
+          end
+          object dev19: TShape
+            Left = 13
+            Top = 243
+            Width = 15
+            Height = 15
+            Shape = stCircle
           end
         end
       end
       object VR: TPanel
         Left = 5
-        Top = 842
+        Top = 835
         Width = 170
-        Height = 85
+        Height = 82
+        BevelKind = bkFlat
+        BevelOuter = bvNone
         Constraints.MinHeight = 29
         TabOrder = 3
-        object Panel136: TPanel
-          Left = 1
-          Top = 1
-          Width = 168
-          Height = 26
+        object Label256: TLabel
+          Left = 0
+          Top = 0
+          Width = 166
+          Height = 20
           Align = alTop
-          BevelInner = bvLowered
-          BevelOuter = bvNone
-          Caption = 'WS and VRD'
-          Color = clActiveBorder
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Videorecorder'
+          Color = clMedGray
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
+          Font.Color = clWindowText
           Font.Height = -15
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
+          ParentColor = False
           ParentFont = False
-          TabOrder = 0
-          object i6: TImage
-            Left = 1
-            Top = 1
-            Width = 166
-            Height = 24
-            Align = alClient
-            ExplicitWidth = 181
-          end
-          object Label256: TLabel
-            Left = 1
-            Top = 1
-            Width = 166
-            Height = 24
-            Align = alClient
-            Alignment = taCenter
-            AutoSize = False
-            Caption = 'Videorecorder'
-            Color = clMedGray
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -15
-            Font.Name = 'Cambria'
-            Font.Style = [fsBold]
-            ParentColor = False
-            ParentFont = False
-            ExplicitWidth = 181
-          end
+          Transparent = False
+          Layout = tlCenter
         end
-        object Panel137: TPanel
-          Left = 1
-          Top = 27
-          Width = 168
-          Height = 57
+        object vrim: TImage
+          Left = 0
+          Top = 20
+          Width = 166
+          Height = 58
           Align = alClient
-          BevelOuter = bvLowered
+          ExplicitLeft = 144
+          ExplicitTop = 8
+          ExplicitWidth = 105
+          ExplicitHeight = 105
+        end
+        object Edit2: TEdit
+          Left = 10
+          Top = 25
+          Width = 148
+          Height = 24
+          ReadOnly = True
+          TabOrder = 0
+          Text = '           STOP'
+          OnEnter = Edit2Enter
+          OnExit = Edit2Exit
+        end
+        object RadioButton1: TRadioButton
+          Left = 13
+          Top = 55
+          Width = 57
+          Height = 17
+          Caption = 'Stop'
+          Checked = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
           TabOrder = 1
-          object vrim: TImage
-            Left = 1
-            Top = 1
-            Width = 166
-            Height = 55
-            Align = alClient
-            ExplicitLeft = 144
-            ExplicitTop = 8
-            ExplicitWidth = 105
-            ExplicitHeight = 105
-          end
-          object Panel140: TPanel
-            Left = 8
-            Top = 65
-            Width = 135
-            Height = 30
-            BevelOuter = bvNone
-            TabOrder = 0
-          end
-          object RadioButton1: TRadioButton
-            Left = 7
-            Top = 35
-            Width = 57
-            Height = 17
-            Caption = 'Stop'
-            Checked = True
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 1
-            TabStop = True
-            OnClick = RadioButton1Click
-          end
-          object RadioButton2: TRadioButton
-            Left = 100
-            Top = 35
-            Width = 65
-            Height = 17
-            Caption = 'Start'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 2
-            OnClick = RadioButton2Click
-          end
-          object Edit2: TEdit
-            Left = 10
-            Top = 5
-            Width = 148
-            Height = 24
-            ReadOnly = True
-            TabOrder = 3
-            Text = '           STOP'
-          end
+          TabStop = True
+          OnClick = RadioButton1Click
+        end
+        object RadioButton2: TRadioButton
+          Left = 104
+          Top = 55
+          Width = 65
+          Height = 17
+          Caption = 'Start'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 2
+          OnClick = RadioButton2Click
         end
       end
       object TRmode: TPanel
         Left = 5
-        Top = 985
+        Top = 975
         Width = 170
-        Height = 160
+        Height = 168
+        BevelKind = bkFlat
+        BevelOuter = bvNone
         Constraints.MinHeight = 29
         TabOrder = 4
-        object Panel138: TPanel
-          Left = 1
-          Top = 1
-          Width = 168
-          Height = 26
+        object tim: TImage
+          Left = 0
+          Top = 20
+          Width = 166
+          Height = 96
+          Align = alClient
+          OnClick = timClick
+          ExplicitLeft = 57
+          ExplicitTop = 65
+          ExplicitWidth = 398
+          ExplicitHeight = 298
+        end
+        object Label257: TLabel
+          Left = 0
+          Top = 0
+          Width = 166
+          Height = 20
           Align = alTop
-          BevelInner = bvLowered
-          BevelOuter = bvNone
-          Caption = 'WS and VRD'
-          Color = clActiveBorder
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Training mode'
+          Color = clMedGray
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
+          Font.Color = clWindowText
           Font.Height = -15
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+          Layout = tlCenter
+        end
+        object SpeedButton3: TSpeedButton
+          Left = 8
+          Top = 30
+          Width = 23
+          Height = 22
+          OnClick = SpeedButton3Click
+        end
+        object SpeedButton7: TSpeedButton
+          Left = 140
+          Top = 30
+          Width = 23
+          Height = 22
+          Visible = False
+          OnClick = SpeedButton7Click
+        end
+        object tr: TButton
+          Left = 37
+          Top = 30
+          Width = 95
+          Height = 27
+          Caption = 'On'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
-          object i7: TImage
-            Left = 1
-            Top = 1
-            Width = 166
-            Height = 24
-            Align = alClient
-            ExplicitWidth = 181
-          end
-          object Label257: TLabel
-            Left = 1
-            Top = 1
-            Width = 166
-            Height = 24
-            Align = alClient
-            Alignment = taCenter
-            AutoSize = False
-            Caption = 'Training mode'
-            Color = clMedGray
+          OnClick = trClick
+        end
+        object Button8: TButton
+          Left = 10
+          Top = 57
+          Width = 147
+          Height = 27
+          Caption = 'Start record'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 1
+          Visible = False
+          OnClick = Button8Click
+        end
+        object Button7: TButton
+          Left = 10
+          Top = 84
+          Width = 147
+          Height = 27
+          Caption = 'Start training'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 2
+          Visible = False
+          OnClick = Button7Click
+        end
+        object Panel37: TPanel
+          Left = 0
+          Top = 116
+          Width = 166
+          Height = 48
+          Align = alBottom
+          BevelOuter = bvNone
+          Color = clMedGray
+          TabOrder = 3
+          Visible = False
+          object Label190: TLabel
+            Left = 10
+            Top = 15
+            Width = 30
+            Height = 16
+            Caption = 'WSL'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
-            Font.Height = -15
+            Font.Height = -13
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
-            ParentColor = False
             ParentFont = False
-            ExplicitLeft = 2
-            ExplicitTop = 0
           end
-        end
-        object Panel139: TPanel
-          Left = 1
-          Top = 27
-          Width = 168
-          Height = 132
-          Align = alClient
-          BevelOuter = bvLowered
-          Color = clSkyBlue
-          TabOrder = 1
-          object tim: TImage
-            Left = 1
-            Top = 1
-            Width = 166
-            Height = 130
-            Align = alClient
-            ExplicitLeft = 8
-            ExplicitTop = 32
-            ExplicitWidth = 105
-            ExplicitHeight = 105
-          end
-          object SpeedButton3: TSpeedButton
-            Left = 8
-            Top = 5
-            Width = 23
-            Height = 22
-            OnClick = SpeedButton3Click
-          end
-          object SpeedButton7: TSpeedButton
-            Left = 140
-            Top = 5
-            Width = 23
-            Height = 22
-            Visible = False
-            OnClick = SpeedButton7Click
-          end
-          object tr: TButton
-            Left = 37
-            Top = 5
-            Width = 95
-            Height = 25
-            Caption = 'On'
+          object Label191: TLabel
+            Left = 65
+            Top = 15
+            Width = 31
+            Height = 16
+            Caption = 'WSC'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
-            Font.Height = -14
-            Font.Name = 'Arial'
+            Font.Height = -13
+            Font.Name = 'Cambria'
             Font.Style = [fsBold]
             ParentFont = False
-            TabOrder = 0
-            OnClick = trClick
           end
-          object Button8: TButton
-            Left = 10
+          object Label193: TLabel
+            Left = 120
+            Top = 15
+            Width = 31
+            Height = 16
+            Caption = 'WSR'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Shape10: TShape
+            Left = 17
             Top = 30
-            Width = 150
-            Height = 25
-            Caption = 'Start record'
+            Width = 15
+            Height = 15
+            Brush.Color = clRed
+            Shape = stRoundRect
+          end
+          object Shape11: TShape
+            Left = 72
+            Top = 30
+            Width = 15
+            Height = 15
+            Brush.Color = clRed
+            Shape = stRoundRect
+          end
+          object Shape12: TShape
+            Left = 127
+            Top = 30
+            Width = 15
+            Height = 15
+            Brush.Color = clRed
+            Shape = stRoundRect
+          end
+          object Label48: TLabel
+            Left = 40
+            Top = 2
+            Width = 94
+            Height = 16
+            Caption = 'State of record'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -14
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
+            Font.Name = 'Cambria'
+            Font.Style = []
             ParentFont = False
-            TabOrder = 1
-            Visible = False
-            OnClick = Button8Click
-          end
-          object Button7: TButton
-            Left = 10
-            Top = 55
-            Width = 150
-            Height = 25
-            Caption = 'Start training'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -14
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 2
-            Visible = False
-            OnClick = Button7Click
-          end
-          object Panel37: TPanel
-            Left = 2
-            Top = 80
-            Width = 165
-            Height = 48
-            BevelOuter = bvNone
-            Color = clGradientActiveCaption
-            TabOrder = 3
-            Visible = False
-            object i8: TImage
-              Left = 0
-              Top = 0
-              Width = 165
-              Height = 48
-              Align = alClient
-              ExplicitLeft = 8
-              ExplicitTop = 8
-              ExplicitWidth = 105
-              ExplicitHeight = 105
-            end
-            object Label190: TLabel
-              Left = 10
-              Top = 15
-              Width = 30
-              Height = 16
-              Caption = 'WSL'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label191: TLabel
-              Left = 65
-              Top = 15
-              Width = 31
-              Height = 16
-              Caption = 'WSC'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Label193: TLabel
-              Left = 120
-              Top = 15
-              Width = 31
-              Height = 16
-              Caption = 'WSR'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -13
-              Font.Name = 'Arial'
-              Font.Style = [fsBold]
-              ParentFont = False
-            end
-            object Shape10: TShape
-              Left = 17
-              Top = 30
-              Width = 15
-              Height = 15
-              Brush.Color = clRed
-              Shape = stRoundRect
-            end
-            object Shape11: TShape
-              Left = 72
-              Top = 30
-              Width = 15
-              Height = 15
-              Brush.Color = clRed
-              Shape = stRoundRect
-            end
-            object Shape12: TShape
-              Left = 127
-              Top = 30
-              Width = 15
-              Height = 15
-              Brush.Color = clRed
-              Shape = stRoundRect
-            end
-            object Label48: TLabel
-              Left = 40
-              Top = 2
-              Width = 94
-              Height = 16
-              Caption = 'State of record'
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clWindowText
-              Font.Height = -14
-              Font.Name = 'Arial'
-              Font.Style = []
-              ParentFont = False
-            end
           end
         end
       end
       object Panel5: TPanel
         Left = 5
-        Top = 928
+        Top = 916
         Width = 170
-        Height = 56
+        Height = 60
+        BevelKind = bkFlat
+        BevelOuter = bvNone
         Constraints.MinHeight = 29
-        ParentBackground = False
         TabOrder = 5
-        object Panel6: TPanel
-          Left = 1
-          Top = 1
-          Width = 168
-          Height = 22
-          Align = alTop
-          BevelInner = bvLowered
-          BevelOuter = bvNone
-          Color = clActiveBorder
+        object CMC: TSpeedButton
+          Left = 10
+          Top = 25
+          Width = 147
+          Height = 25
+          Cursor = crHandPoint
+          Hint = 'change'
+          Caption = 'Change mode'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
+          Font.Height = -14
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          NumGlyphs = 2
+          ParentFont = False
+          ParentShowHint = False
+          ShowHint = True
+          OnClick = CMCClick
+        end
+        object Label161: TLabel
+          Left = 0
+          Top = 0
+          Width = 166
+          Height = 20
+          Align = alTop
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Measuring mode'
+          Color = clMedGray
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
           Font.Height = -15
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
+          ParentColor = False
           ParentFont = False
-          TabOrder = 0
-          object Image4: TImage
-            Left = 1
-            Top = 1
-            Width = 166
-            Height = 20
-            Align = alClient
-            ExplicitWidth = 181
-            ExplicitHeight = 24
-          end
-          object Label161: TLabel
-            Left = 1
-            Top = 1
-            Width = 166
-            Height = 20
-            Align = alClient
-            Alignment = taCenter
-            AutoSize = False
-            Caption = 'Measuring mode'
-            Color = clMedGray
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -15
-            Font.Name = 'Cambria'
-            Font.Style = [fsBold]
-            ParentColor = False
-            ParentFont = False
-            ExplicitWidth = 181
-            ExplicitHeight = 24
-          end
-        end
-        object Panel7: TPanel
-          Left = 1
-          Top = 23
-          Width = 168
-          Height = 32
-          Align = alClient
-          BevelOuter = bvLowered
-          TabOrder = 1
-          object CMC: TSpeedButton
-            Left = 6
-            Top = 4
-            Width = 152
-            Height = 25
-            Cursor = crHandPoint
-            Hint = 'change'
-            Caption = 'Change mode'
-            NumGlyphs = 2
-            ParentShowHint = False
-            ShowHint = True
-            OnClick = CMCClick
-          end
+          Transparent = False
+          Layout = tlCenter
         end
       end
     end
     object TS3: TTabSheet
       Caption = 'Data exchange system'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 1592
-      ExplicitHeight = 851
       object Panel: TPanel
         Left = 0
         Top = 0
         Width = 1904
         Height = 1143
         Align = alClient
+        FullRepaint = False
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -3963,8 +2965,6 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
-        ExplicitWidth = 1592
-        ExplicitHeight = 851
         object iMTK: TImage
           Left = 1
           Top = 1
@@ -4235,12 +3235,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
         end
-        object Legend1: TGroupBox
-          Left = 1672
-          Top = 15
-          Width = 193
-          Height = 218
-          Caption = 'Legend'
+        object P112: TMyPanel
+          Left = 73
+          Top = 317
+          Width = 476
+          Height = 120
+          Cursor = crHandPoint
+          Color = clWhite
+          DeviceState = dsGray
+          VTextPos = dsTop
+          Caption = 'TM-2409-1 (A5/A4)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
@@ -4248,150 +3252,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
-          object iL1: TImage
-            Left = 16
-            Top = 60
-            Width = 41
-            Height = 150
-          end
-          object l71: TLabel
-            Left = 16
-            Top = 34
-            Width = 30
-            Height = 14
-            Caption = 'Color'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label210: TLabel
-            Left = 70
-            Top = 34
-            Width = 113
-            Height = 14
-            Caption = 'Type of data channel'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label211: TLabel
-            Left = 80
-            Top = 65
-            Width = 47
-            Height = 14
-            Caption = 'Ethernet'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label212: TLabel
-            Left = 80
-            Top = 95
-            Width = 36
-            Height = 14
-            Caption = 'RS-485'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label213: TLabel
-            Left = 80
-            Top = 125
-            Width = 80
-            Height = 14
-            Caption = 'MIL-STD-1553B'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label214: TLabel
-            Left = 80
-            Top = 155
-            Width = 94
-            Height = 14
-            Caption = 'Digital test signal'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label215: TLabel
-            Left = 80
-            Top = 185
-            Width = 99
-            Height = 14
-            Caption = 'Analog test signal'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-        end
-        object P112: TMyPanel
-          Left = 73
-          Top = 317
-          Width = 476
-          Height = 120
-          Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
-          DeviceState = dsGray
-          BevelInner = bvLowered
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -16
-          Font.Name = 'Cambria'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 1
           UseDockManager = True
           OnClick = Sp12Click
-          object Label4: TLabel
-            Left = 2
-            Top = 2
-            Width = 143
-            Height = 19
-            Cursor = crHandPoint
-            Align = alTop
-            Alignment = taCenter
-            Caption = 'TM-2409-1 (A5/A4)'
-            OnClick = Sp12Click
-          end
           object P112Exh: TMyPanel
             Left = 366
             Top = 4
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X13'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4408,13 +3278,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com11'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4432,13 +3298,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com12'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4456,13 +3318,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com13'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4480,13 +3338,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com18'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X8'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4504,13 +3358,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com17'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X7'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4528,13 +3378,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com15'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4552,13 +3398,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com14'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4576,13 +3418,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com16'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4601,46 +3439,27 @@ object NMain: TNMain
           Width = 476
           Height = 120
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
+          Caption = 'TM-2409-1 (A5/A5)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 2
+          TabOrder = 1
           UseDockManager = True
           OnClick = Sp13Click
-          object Label8: TLabel
-            Left = 2
-            Top = 2
-            Width = 143
-            Height = 19
-            Cursor = crHandPoint
-            Align = alTop
-            Alignment = taCenter
-            Caption = 'TM-2409-1 (A5/A5)'
-            OnClick = Sp13Click
-          end
           object P113Exh: TMyPanel
             Left = 78
             Top = 4
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X13'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4657,13 +3476,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com24'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4681,13 +3496,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com25'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4705,13 +3516,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com27'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X7'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4729,13 +3536,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com28'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X8'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4753,13 +3556,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com26'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4777,13 +3576,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com21'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4801,13 +3596,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com22'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4825,13 +3616,9 @@ object NMain: TNMain
             Width = 40
             Height = 40
             Hint = 'com23'
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4850,46 +3637,27 @@ object NMain: TNMain
           Width = 150
           Height = 460
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
+          Caption = 'TM-2410 (A5/A2)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 3
+          TabOrder = 2
           UseDockManager = True
           OnClick = Sp14Click
-          object Label11: TLabel
-            Left = 2
-            Top = 2
-            Width = 129
-            Height = 19
-            Cursor = crHandPoint
-            Align = alTop
-            Alignment = taCenter
-            Caption = 'TM-2410 (A5/A2)'
-            OnClick = Sp14Click
-          end
           object P114_Lan4: TMyPanel
             Left = 5
             Top = 110
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4905,13 +3673,9 @@ object NMain: TNMain
             Top = 160
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4927,13 +3691,9 @@ object NMain: TNMain
             Top = 210
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X8'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4949,13 +3709,9 @@ object NMain: TNMain
             Top = 260
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X10'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4971,13 +3727,9 @@ object NMain: TNMain
             Top = 360
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X14'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -4993,13 +3745,9 @@ object NMain: TNMain
             Top = 410
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X16'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5015,13 +3763,9 @@ object NMain: TNMain
             Top = 60
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5037,13 +3781,9 @@ object NMain: TNMain
             Top = 110
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X15'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5059,13 +3799,9 @@ object NMain: TNMain
             Top = 160
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X11'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5081,13 +3817,9 @@ object NMain: TNMain
             Top = 210
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X13'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5103,13 +3835,9 @@ object NMain: TNMain
             Top = 260
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5125,13 +3853,9 @@ object NMain: TNMain
             Top = 310
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5147,13 +3871,9 @@ object NMain: TNMain
             Top = 360
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X7'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5169,13 +3889,9 @@ object NMain: TNMain
             Top = 410
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X9'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5191,13 +3907,9 @@ object NMain: TNMain
             Top = 310
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X12'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5213,13 +3925,9 @@ object NMain: TNMain
             Top = 60
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5237,46 +3945,27 @@ object NMain: TNMain
           Width = 150
           Height = 460
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
+          Caption = 'TM-2410 (A5/A3)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 4
+          TabOrder = 3
           UseDockManager = True
           OnClick = Sp15Click
-          object Label18: TLabel
-            Left = 2
-            Top = 2
-            Width = 129
-            Height = 19
-            Cursor = crHandPoint
-            Align = alTop
-            Alignment = taCenter
-            Caption = 'TM-2410 (A5/A3)'
-            OnClick = Sp15Click
-          end
           object P115_Lan13: TMyPanel
             Left = 5
             Top = 110
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X13'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5292,13 +3981,9 @@ object NMain: TNMain
             Top = 160
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X11'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5314,13 +3999,9 @@ object NMain: TNMain
             Top = 210
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X15'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5336,13 +4017,9 @@ object NMain: TNMain
             Top = 260
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5358,13 +4035,9 @@ object NMain: TNMain
             Top = 360
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X7'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5380,13 +4053,9 @@ object NMain: TNMain
             Top = 410
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X9'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5399,16 +4068,12 @@ object NMain: TNMain
           end
           object P115_Lan2: TMyPanel
             Left = 105
-            Top = 64
+            Top = 60
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5424,13 +4089,9 @@ object NMain: TNMain
             Top = 110
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5446,13 +4107,9 @@ object NMain: TNMain
             Top = 160
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5468,13 +4125,9 @@ object NMain: TNMain
             Top = 210
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X8'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5490,13 +4143,9 @@ object NMain: TNMain
             Top = 260
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X10'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5512,13 +4161,9 @@ object NMain: TNMain
             Top = 310
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X12'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5534,13 +4179,9 @@ object NMain: TNMain
             Top = 360
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X14'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5556,13 +4197,9 @@ object NMain: TNMain
             Top = 410
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X16'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5578,13 +4215,9 @@ object NMain: TNMain
             Top = 310
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csDesert
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5600,13 +4233,9 @@ object NMain: TNMain
             Top = 60
             Width = 40
             Height = 40
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5624,57 +4253,50 @@ object NMain: TNMain
           Width = 170
           Height = 50
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 5
+          TabOrder = 4
           UseDockManager = True
           OnClick = sp40Click
           object Label12: TLabel
-            Left = 2
-            Top = 21
-            Width = 88
+            Left = 1
+            Top = 20
+            Width = 168
             Height = 19
             Cursor = crHandPoint
             Align = alTop
             Alignment = taCenter
             Caption = '" Ilmen-71" '
             OnClick = sp40Click
+            ExplicitWidth = 88
           end
           object Label16: TLabel
-            Left = 2
-            Top = 2
-            Width = 23
+            Left = 1
+            Top = 1
+            Width = 168
             Height = 19
             Cursor = crHandPoint
             Align = alTop
             Alignment = taCenter
-            Caption = 'NS '
+            Caption = 'NS'
             OnClick = sp40Click
+            ExplicitWidth = 23
           end
           object p141: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'Ch2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5690,13 +4312,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'Ch1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5714,14 +4332,9 @@ object NMain: TNMain
           Width = 170
           Height = 80
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'WSL'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -5729,14 +4342,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 6
+          TabOrder = 5
           UseDockManager = True
           OnClick = Sp2Click
           object Label43: TLabel
-            Left = 2
+            Left = 1
             Top = 64
-            Width = 89
-            Height = 14
+            Width = 168
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -5748,19 +4361,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp2Click
+            ExplicitWidth = 86
           end
           object p102_LAN1: TMyPanel
             Left = 5
             Top = 7
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X14'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5776,13 +4386,9 @@ object NMain: TNMain
             Top = 7
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X15'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5798,13 +4404,9 @@ object NMain: TNMain
             Top = 43
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X10'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5822,14 +4424,9 @@ object NMain: TNMain
           Width = 170
           Height = 80
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'WSP'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -5837,14 +4434,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 7
+          TabOrder = 6
           UseDockManager = True
           OnClick = Sp1Click
           object Label40: TLabel
-            Left = 2
+            Left = 1
             Top = 64
-            Width = 89
-            Height = 14
+            Width = 168
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -5856,19 +4453,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp1Click
+            ExplicitWidth = 86
           end
           object p101_LAN2: TMyPanel
             Left = 131
             Top = 43
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X15'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5884,13 +4478,9 @@ object NMain: TNMain
             Top = 7
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X9'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5906,13 +4496,9 @@ object NMain: TNMain
             Top = 43
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X14'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5930,14 +4516,9 @@ object NMain: TNMain
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'WSR'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -5945,14 +4526,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 8
+          TabOrder = 7
           UseDockManager = True
           OnClick = Sp3Click
           object Label17: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 96
-            Height = 14
+            Width = 168
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -5964,19 +4545,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp3Click
+            ExplicitWidth = 93
           end
           object p103_LAN1: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X14'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -5992,13 +4570,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X15'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6016,14 +4590,9 @@ object NMain: TNMain
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'VRD1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -6031,14 +4600,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 9
+          TabOrder = 8
           UseDockManager = True
           OnClick = Sp16Click
           object Label23: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 89
-            Height = 14
+            Width = 168
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -6050,19 +4619,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp16Click
+            ExplicitWidth = 86
           end
           object p116_LAN1: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X11'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6078,13 +4644,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X12'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6102,14 +4664,9 @@ object NMain: TNMain
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TM-2411-1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -6117,14 +4674,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 10
+          TabOrder = 9
           UseDockManager = True
           OnClick = Sp17Click
           object Label50: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 46
-            Height = 14
+            Width = 168
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -6136,19 +4693,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp17Click
+            ExplicitWidth = 41
           end
           object p117Exh: TMyPanel
             Left = 131
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6166,14 +4720,9 @@ object NMain: TNMain
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TM-2411-1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -6181,14 +4730,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 11
+          TabOrder = 10
           UseDockManager = True
           OnClick = Sp19Click
           object Label49: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 46
-            Height = 14
+            Width = 168
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -6200,19 +4749,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp19Click
+            ExplicitWidth = 41
           end
           object p119Exh: TMyPanel
             Left = 131
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6225,19 +4771,14 @@ object NMain: TNMain
           end
         end
         object p118: TMyPanel
-          Left = 1400
+          Left = 1401
           Top = 165
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TM-2411-1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -6245,14 +4786,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 12
+          TabOrder = 11
           UseDockManager = True
           OnClick = Sp18Click
           object Label19: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 46
-            Height = 14
+            Width = 168
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -6264,19 +4805,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp18Click
+            ExplicitWidth = 41
           end
           object p118Exh: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6294,14 +4832,9 @@ object NMain: TNMain
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TM-2320'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -6309,14 +4842,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 13
+          TabOrder = 12
           UseDockManager = True
           OnClick = sp20Click
           object Label20: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 32
-            Height = 14
+            Width = 168
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -6328,19 +4861,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = sp20Click
+            ExplicitWidth = 30
           end
           object p120_LAN2: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6357,57 +4887,50 @@ object NMain: TNMain
           Top = 515
           Width = 170
           Height = 45
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 14
+          TabOrder = 13
           UseDockManager = True
           OnClick = sp38Click
           object Label51: TLabel
-            Left = 2
-            Top = 21
-            Width = 28
+            Left = 1
+            Top = 1
+            Width = 168
             Height = 19
             Cursor = crHandPoint
             Align = alTop
             Alignment = taCenter
             Caption = 'OLS'
             OnClick = sp38Click
+            ExplicitWidth = 33
           end
           object Label53: TLabel
-            Left = 2
-            Top = 2
-            Width = 83
+            Left = 1
+            Top = 20
+            Width = 168
             Height = 19
             Cursor = crHandPoint
             Align = alTop
             Alignment = taCenter
             Caption = '" Luna-3E" '
             OnClick = sp38Click
+            ExplicitWidth = 88
           end
           object p138: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'Ch1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6423,13 +4946,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'Ch2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6447,14 +4966,9 @@ object NMain: TNMain
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'RACS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -6462,7 +4976,7 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 15
+          TabOrder = 14
           UseDockManager = True
           OnClick = sp45Click
           object p145: TMyPanel
@@ -6470,13 +4984,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'Ch1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6492,13 +5002,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'Ch2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -6515,14 +5021,28 @@ object NMain: TNMain
           Top = 640
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsCentral
           Caption = 'X20'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 15
+          UseDockManager = True
+        end
+        object Px17: TMyPanel
+          Left = 440
+          Top = 640
+          Width = 40
+          Height = 40
+          Color = clWhite
+          DeviceState = dsGray
+          VTextPos = dsCentral
+          Caption = 'X17'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -6532,19 +5052,15 @@ object NMain: TNMain
           TabOrder = 16
           UseDockManager = True
         end
-        object Px17: TMyPanel
-          Left = 440
+        object Px19: TMyPanel
+          Left = 498
           Top = 640
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X17'
+          VTextPos = dsCentral
+          Caption = 'X19'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -6554,19 +5070,15 @@ object NMain: TNMain
           TabOrder = 17
           UseDockManager = True
         end
-        object Px19: TMyPanel
-          Left = 498
+        object Px18: TMyPanel
+          Left = 1349
           Top = 640
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X19'
+          VTextPos = dsCentral
+          Caption = 'X18'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -6576,19 +5088,15 @@ object NMain: TNMain
           TabOrder = 18
           UseDockManager = True
         end
-        object Px18: TMyPanel
-          Left = 1349
+        object Px10: TMyPanel
+          Left = 1409
           Top = 640
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X18'
+          VTextPos = dsCentral
+          Caption = 'X10'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -6598,49 +5106,22 @@ object NMain: TNMain
           TabOrder = 19
           UseDockManager = True
         end
-        object Px10: TMyPanel
-          Left = 1409
-          Top = 640
-          Width = 40
-          Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
-          DeviceState = dsGray
-          Caption = 'X10'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -12
-          Font.Name = 'Cambria'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 20
-          UseDockManager = True
-        end
         object p126: TMyPanel
           Left = 523
           Top = 750
           Width = 75
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 21
+          TabOrder = 20
           UseDockManager = True
           OnClick = Sp26Click
           object Label91: TLabel
@@ -6663,14 +5144,9 @@ object NMain: TNMain
             Top = 170
             Width = 30
             Height = 25
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
-            BevelOuter = bvLowered
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -6687,21 +5163,16 @@ object NMain: TNMain
           Width = 75
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 22
+          TabOrder = 21
           UseDockManager = True
           OnClick = Sp28Click
           object Label69: TLabel
@@ -6724,14 +5195,9 @@ object NMain: TNMain
             Top = 170
             Width = 30
             Height = 25
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
-            BevelOuter = bvLowered
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -6748,21 +5214,16 @@ object NMain: TNMain
           Width = 75
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 23
+          TabOrder = 22
           UseDockManager = True
           OnClick = Sp29Click
           object Label92: TLabel
@@ -6785,14 +5246,9 @@ object NMain: TNMain
             Top = 170
             Width = 30
             Height = 25
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
-            BevelOuter = bvLowered
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -6809,21 +5265,16 @@ object NMain: TNMain
           Width = 75
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 24
+          TabOrder = 23
           UseDockManager = True
           OnClick = Sp27Click
           object Label107: TLabel
@@ -6846,14 +5297,9 @@ object NMain: TNMain
             Top = 170
             Width = 30
             Height = 25
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
-            BevelOuter = bvLowered
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -6870,21 +5316,16 @@ object NMain: TNMain
           Width = 75
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 25
+          TabOrder = 24
           UseDockManager = True
           OnClick = Sp30Click
           object Label110: TLabel
@@ -6907,14 +5348,9 @@ object NMain: TNMain
             Top = 170
             Width = 30
             Height = 25
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
-            BevelOuter = bvLowered
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -6931,21 +5367,16 @@ object NMain: TNMain
           Width = 75
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 26
+          TabOrder = 25
           UseDockManager = True
           OnClick = Sp31Click
           object Label111: TLabel
@@ -6968,14 +5399,9 @@ object NMain: TNMain
             Top = 170
             Width = 30
             Height = 25
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
-            BevelOuter = bvLowered
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -6992,21 +5418,16 @@ object NMain: TNMain
           Width = 75
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 27
+          TabOrder = 26
           UseDockManager = True
           OnClick = Sp25Click
           object Label112: TLabel
@@ -7029,14 +5450,9 @@ object NMain: TNMain
             Top = 170
             Width = 30
             Height = 25
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
-            BevelOuter = bvLowered
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7053,14 +5469,9 @@ object NMain: TNMain
           Width = 125
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'EM-5401'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -7068,14 +5479,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 28
+          TabOrder = 27
           UseDockManager = True
           OnClick = Sp23Click
           object Label113: TLabel
             Left = 26
             Top = 109
-            Width = 74
-            Height = 14
+            Width = 66
+            Height = 15
             Cursor = crHandPoint
             Alignment = taCenter
             Caption = '(A5/A6/A14)'
@@ -7092,14 +5503,9 @@ object NMain: TNMain
             Top = 170
             Width = 30
             Height = 25
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
-            BevelOuter = bvLowered
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7116,14 +5522,9 @@ object NMain: TNMain
           Width = 125
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'EM-5401'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -7131,14 +5532,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 29
+          TabOrder = 28
           UseDockManager = True
           OnClick = Sp24Click
           object Label66: TLabel
             Left = 26
             Top = 109
-            Width = 74
-            Height = 14
+            Width = 66
+            Height = 15
             Cursor = crHandPoint
             Alignment = taCenter
             Caption = '(A5/A6/A15)'
@@ -7155,14 +5556,9 @@ object NMain: TNMain
             Top = 170
             Width = 30
             Height = 25
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
-            BevelOuter = bvLowered
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7179,56 +5575,27 @@ object NMain: TNMain
           Width = 256
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
+          Caption = 'EM-5402 (A5/A6/A16)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 30
+          TabOrder = 29
           UseDockManager = True
           OnClick = Sp11Click
-          object Label108: TLabel
-            Left = 2
-            Top = 2
-            Width = 4
-            Height = 19
-            Cursor = crHandPoint
-            Align = alTop
-            Alignment = taCenter
-            OnClick = Sp11Click
-          end
-          object Label116: TLabel
-            Left = 2
-            Top = 21
-            Width = 164
-            Height = 19
-            Cursor = crHandPoint
-            Align = alTop
-            Alignment = taCenter
-            Caption = 'EM-5402 (A5/A6/A16)'
-            OnClick = Sp11Click
-          end
           object p111_Ch1: TMyPanel
             Left = 10
             Top = 85
             Width = 45
             Height = 105
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7258,13 +5625,9 @@ object NMain: TNMain
             Top = 85
             Width = 45
             Height = 105
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7294,13 +5657,9 @@ object NMain: TNMain
             Top = 85
             Width = 45
             Height = 105
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7330,13 +5689,9 @@ object NMain: TNMain
             Top = 85
             Width = 45
             Height = 105
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7368,56 +5723,27 @@ object NMain: TNMain
           Width = 256
           Height = 201
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
+          Caption = 'EM-5402 (A5/A6/A17)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 31
+          TabOrder = 30
           UseDockManager = True
           OnClick = Sp21Click
-          object Label62: TLabel
-            Left = 2
-            Top = 2
-            Width = 4
-            Height = 19
-            Cursor = crHandPoint
-            Align = alTop
-            Alignment = taCenter
-            OnClick = Sp21Click
-          end
-          object Label63: TLabel
-            Left = 2
-            Top = 21
-            Width = 164
-            Height = 19
-            Cursor = crHandPoint
-            Align = alTop
-            Alignment = taCenter
-            Caption = 'EM-5402 (A5/A6/A17)'
-            OnClick = Sp21Click
-          end
           object p121_Ch1: TMyPanel
             Left = 10
             Top = 85
             Width = 45
             Height = 105
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7447,13 +5773,9 @@ object NMain: TNMain
             Top = 85
             Width = 45
             Height = 105
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7483,13 +5805,9 @@ object NMain: TNMain
             Top = 85
             Width = 45
             Height = 105
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7519,13 +5837,9 @@ object NMain: TNMain
             Top = 85
             Width = 45
             Height = 105
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
             Font.Height = -12
@@ -7556,14 +5870,28 @@ object NMain: TNMain
           Top = 1025
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsCentral
           Caption = 'X13'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 31
+          UseDockManager = True
+        end
+        object Px14: TMyPanel
+          Left = 331
+          Top = 1025
+          Width = 40
+          Height = 40
+          Color = clWhite
+          DeviceState = dsGray
+          VTextPos = dsCentral
+          Caption = 'X14'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -7573,19 +5901,15 @@ object NMain: TNMain
           TabOrder = 32
           UseDockManager = True
         end
-        object Px14: TMyPanel
-          Left = 331
+        object Px15: TMyPanel
+          Left = 1488
           Top = 1025
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X14'
+          VTextPos = dsCentral
+          Caption = 'X15'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -7595,19 +5919,15 @@ object NMain: TNMain
           TabOrder = 33
           UseDockManager = True
         end
-        object Px15: TMyPanel
-          Left = 1488
+        object Px16: TMyPanel
+          Left = 1552
           Top = 1025
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X15'
+          VTextPos = dsCentral
+          Caption = 'X16'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -7617,42 +5937,15 @@ object NMain: TNMain
           TabOrder = 34
           UseDockManager = True
         end
-        object Px16: TMyPanel
-          Left = 1552
-          Top = 1025
-          Width = 40
-          Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
-          DeviceState = dsGray
-          Caption = 'X16'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -12
-          Font.Name = 'Cambria'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 35
-          UseDockManager = True
-        end
         object P109: TMyPanel
           Left = 368
           Top = 1091
           Width = 150
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = '        TVD4 (right)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -7660,14 +5953,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 36
+          TabOrder = 35
           UseDockManager = True
           OnClick = Sp9Click
           object Label67: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 119
-            Height = 14
+            Width = 148
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -7679,19 +5972,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp9Click
+            ExplicitWidth = 116
           end
           object P109_X1: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -7709,14 +5999,9 @@ object NMain: TNMain
           Width = 150
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = '        TVD3 (axial2)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -7724,14 +6009,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 37
+          TabOrder = 36
           UseDockManager = True
           OnClick = Sp10Click
           object Label68: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 119
-            Height = 14
+            Width = 148
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -7743,19 +6028,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp10Click
+            ExplicitWidth = 116
           end
           object P110_X1: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -7773,14 +6055,9 @@ object NMain: TNMain
           Width = 150
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TVD2 (axial1)         '
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -7788,14 +6065,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 38
+          TabOrder = 37
           UseDockManager = True
           OnClick = Sp8Click
           object Label99: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 125
-            Height = 14
+            Width = 148
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -7807,19 +6084,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp8Click
+            ExplicitWidth = 122
           end
           object P108_X1: TMyPanel
             Left = 110
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -7837,14 +6111,9 @@ object NMain: TNMain
           Width = 150
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TVD1 (left)          '
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -7852,14 +6121,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 39
+          TabOrder = 38
           UseDockManager = True
           OnClick = Sp7Click
           object Label100: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 125
-            Height = 14
+            Width = 148
+            Height = 15
             Cursor = crHandPoint
             Align = alBottom
             Alignment = taCenter
@@ -7871,19 +6140,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp7Click
+            ExplicitWidth = 122
           end
           object P107_X1: TMyPanel
             Left = 110
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -7900,21 +6166,16 @@ object NMain: TNMain
           Top = 750
           Width = 75
           Height = 100
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 40
+          TabOrder = 39
           UseDockManager = True
           object Label35: TLabel
             Left = 37
@@ -7952,21 +6213,16 @@ object NMain: TNMain
           Top = 750
           Width = 75
           Height = 100
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 41
+          TabOrder = 40
           UseDockManager = True
           object Label45: TLabel
             Left = 37
@@ -8004,21 +6260,16 @@ object NMain: TNMain
           Top = 860
           Width = 75
           Height = 100
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 42
+          TabOrder = 41
           UseDockManager = True
           object Label21: TLabel
             Left = 37
@@ -8056,21 +6307,16 @@ object NMain: TNMain
           Top = 750
           Width = 75
           Height = 100
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 43
+          TabOrder = 42
           UseDockManager = True
           object Label54: TLabel
             Left = 37
@@ -8108,21 +6354,16 @@ object NMain: TNMain
           Top = 750
           Width = 75
           Height = 100
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 44
+          TabOrder = 43
           UseDockManager = True
           object Label56: TLabel
             Left = 37
@@ -8160,21 +6401,16 @@ object NMain: TNMain
           Top = 860
           Width = 75
           Height = 100
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 45
+          TabOrder = 44
           UseDockManager = True
           object Label58: TLabel
             Left = 37
@@ -8207,24 +6443,150 @@ object NMain: TNMain
             ParentFont = False
           end
         end
+        object Panel9: TPanel
+          Left = 1672
+          Top = 15
+          Width = 195
+          Height = 211
+          BevelOuter = bvNone
+          Color = clMedGray
+          TabOrder = 45
+          object Shape13: TShape
+            Left = 0
+            Top = 19
+            Width = 195
+            Height = 192
+            Align = alClient
+            Brush.Style = bsClear
+            Pen.Color = clWhite
+            ExplicitTop = 25
+          end
+          object Label116: TLabel
+            Left = 0
+            Top = 0
+            Width = 195
+            Height = 19
+            Align = alTop
+            Caption = '  LEGEND'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -16
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ExplicitWidth = 76
+          end
+          object l71: TLabel
+            Left = 16
+            Top = 34
+            Width = 30
+            Height = 15
+            Caption = 'Color'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label210: TLabel
+            Left = 70
+            Top = 34
+            Width = 117
+            Height = 15
+            Caption = 'Type of data channel'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label211: TLabel
+            Left = 70
+            Top = 65
+            Width = 48
+            Height = 15
+            Caption = 'Ethernet'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object iL1: TImage
+            Left = 16
+            Top = 60
+            Width = 41
+            Height = 150
+          end
+          object Label212: TLabel
+            Left = 70
+            Top = 95
+            Width = 41
+            Height = 15
+            Caption = 'RS-485'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label213: TLabel
+            Left = 70
+            Top = 125
+            Width = 87
+            Height = 15
+            Caption = 'MIL-STD-1553B'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label214: TLabel
+            Left = 70
+            Top = 155
+            Width = 97
+            Height = 15
+            Caption = 'Digital test signal'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label215: TLabel
+            Left = 70
+            Top = 185
+            Width = 101
+            Height = 15
+            Caption = 'Analog test signal'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+        end
       end
     end
     object TS4: TTabSheet
       Caption = 'Video system'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 1592
-      ExplicitHeight = 851
       object PMedia: TPanel
         Left = 0
         Top = 0
         Width = 1904
         Height = 1143
         Align = alClient
+        FullRepaint = False
         TabOrder = 0
-        ExplicitWidth = 1592
-        ExplicitHeight = 851
         object iMedia: TImage
           Left = 1
           Top = 1
@@ -8233,109 +6595,108 @@ object NMain: TNMain
           Align = alClient
           ExplicitLeft = 0
           ExplicitTop = 0
-          ExplicitWidth = 1903
         end
         object L117: TLabel
           Left = 990
           Top = 170
-          Width = 44
-          Height = 12
+          Width = 42
+          Height = 14
           Caption = 'AXIAL 1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L118: TLabel
           Left = 990
           Top = 200
-          Width = 34
-          Height = 12
+          Width = 32
+          Height = 14
           Caption = 'RIGHT'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L119: TLabel
           Left = 990
           Top = 230
-          Width = 25
-          Height = 12
+          Width = 26
+          Height = 14
           Caption = 'LEFT'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L120: TLabel
           Left = 990
           Top = 260
-          Width = 44
-          Height = 12
+          Width = 42
+          Height = 14
           Caption = 'AXIAL 2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L121: TLabel
           Left = 990
           Top = 290
-          Width = 48
-          Height = 12
+          Width = 47
+          Height = 14
           Caption = 'LANDING'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L122: TLabel
           Left = 990
           Top = 320
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'PWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L123: TLabel
           Left = 990
           Top = 350
-          Width = 22
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'LWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L124: TLabel
           Left = 990
           Top = 380
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'RWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
@@ -8343,116 +6704,116 @@ object NMain: TNMain
           Left = 990
           Top = 410
           Width = 22
-          Height = 12
+          Height = 14
           Caption = 'VRD'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L126: TLabel
           Left = 990
           Top = 520
-          Width = 44
-          Height = 12
+          Width = 42
+          Height = 14
           Caption = 'AXIAL 1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object l127: TLabel
           Left = 990
           Top = 550
-          Width = 34
-          Height = 12
+          Width = 32
+          Height = 14
           Caption = 'RIGHT'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L128: TLabel
           Left = 990
           Top = 580
-          Width = 25
-          Height = 12
+          Width = 26
+          Height = 14
           Caption = 'LEFT'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L129: TLabel
           Left = 990
           Top = 610
-          Width = 44
-          Height = 12
+          Width = 42
+          Height = 14
           Caption = 'AXIAL 2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L130: TLabel
           Left = 990
           Top = 640
-          Width = 48
-          Height = 12
+          Width = 47
+          Height = 14
           Caption = 'LANDING'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L131: TLabel
           Left = 990
           Top = 670
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'PWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L132: TLabel
           Left = 990
           Top = 700
-          Width = 22
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'LWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L133: TLabel
           Left = 990
           Top = 730
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'RWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
@@ -8460,103 +6821,103 @@ object NMain: TNMain
           Left = 990
           Top = 760
           Width = 22
-          Height = 12
+          Height = 14
           Caption = 'VRD'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L135: TLabel
           Left = 812
           Top = 172
-          Width = 44
-          Height = 12
+          Width = 42
+          Height = 14
           Caption = 'AXIAL 1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L136: TLabel
           Left = 812
           Top = 264
-          Width = 34
-          Height = 12
+          Width = 32
+          Height = 14
           Caption = 'RIGHT'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L137: TLabel
           Left = 780
           Top = 447
-          Width = 48
-          Height = 12
+          Width = 47
+          Height = 14
           Caption = 'LANDING'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L138: TLabel
           Left = 780
           Top = 492
-          Width = 48
-          Height = 12
+          Width = 47
+          Height = 14
           Caption = 'LANDING'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L139: TLabel
           Left = 812
           Top = 623
-          Width = 25
-          Height = 12
+          Width = 26
+          Height = 14
           Caption = 'LEFT'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L141: TLabel
           Left = 290
           Top = 932
-          Width = 22
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'LWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L142: TLabel
           Left = 812
           Top = 712
-          Width = 44
-          Height = 12
+          Width = 42
+          Height = 14
           Caption = 'AXIAL 2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
@@ -8564,51 +6925,51 @@ object NMain: TNMain
           Left = 1313
           Top = 932
           Width = 22
-          Height = 12
+          Height = 14
           Caption = 'VRD'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L144: TLabel
           Left = 631
           Top = 932
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'PWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L145: TLabel
           Left = 525
           Top = 245
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L146: TLabel
           Left = 525
           Top = 307
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
@@ -8628,91 +6989,91 @@ object NMain: TNMain
         object L147: TLabel
           Left = 407
           Top = 436
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L151: TLabel
           Left = 277
           Top = 436
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L152: TLabel
           Left = 342
           Top = 436
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L155: TLabel
           Left = 525
           Top = 676
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L156: TLabel
           Left = 525
           Top = 766
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 4'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L160: TLabel
           Left = 525
           Top = 932
-          Width = 22
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'LWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L159: TLabel
           Left = 1207
           Top = 932
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'RWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
@@ -8720,64 +7081,64 @@ object NMain: TNMain
           Left = 1545
           Top = 932
           Width = 22
-          Height = 12
+          Height = 14
           Caption = 'VRD'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L157: TLabel
           Left = 863
           Top = 932
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'PWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L162: TLabel
           Left = 1270
           Top = 260
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'PWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L163: TLabel
           Left = 1270
           Top = 330
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'RWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L165: TLabel
           Left = 1270
           Top = 610
-          Width = 22
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'LWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
@@ -8785,12 +7146,12 @@ object NMain: TNMain
           Left = 1270
           Top = 680
           Width = 22
-          Height = 12
+          Height = 14
           Caption = 'VRD'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
@@ -8804,172 +7165,74 @@ object NMain: TNMain
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
           Font.Height = -15
-          Font.Name = 'Arial'
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L150: TLabel
           Left = 277
           Top = 494
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L149: TLabel
           Left = 342
           Top = 494
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L153: TLabel
           Left = 407
           Top = 494
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L154: TLabel
           Left = 472
           Top = 494
-          Width = 37
-          Height = 12
+          Width = 38
+          Height = 14
           Caption = 'SYNC 4'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
+          Font.Height = -11
+          Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
         end
         object L161: TLabel
           Left = 975
           Top = 932
-          Width = 23
-          Height = 12
+          Width = 24
+          Height = 14
           Caption = 'RWS'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -10
-          Font.Name = 'Tahoma'
-          Font.Style = [fsBold]
-          ParentFont = False
-        end
-        object Legend2: TGroupBox
-          Left = 1672
-          Top = 15
-          Width = 193
-          Height = 195
-          Caption = 'Legend'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -16
+          Font.Height = -11
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 0
-          object iL2: TImage
-            Left = 16
-            Top = 60
-            Width = 41
-            Height = 122
-          end
-          object Label216: TLabel
-            Left = 16
-            Top = 34
-            Width = 30
-            Height = 14
-            Caption = 'Color'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label217: TLabel
-            Left = 70
-            Top = 34
-            Width = 113
-            Height = 14
-            Caption = 'Type of data channel'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label218: TLabel
-            Left = 90
-            Top = 65
-            Width = 43
-            Height = 14
-            Caption = 'Y-Video'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label219: TLabel
-            Left = 90
-            Top = 95
-            Width = 26
-            Height = 14
-            Caption = 'Sync'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label220: TLabel
-            Left = 90
-            Top = 125
-            Width = 44
-            Height = 14
-            Caption = 'C-Video'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object Label221: TLabel
-            Left = 90
-            Top = 155
-            Width = 43
-            Height = 14
-            Caption = 'S-Video'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -11
-            Font.Name = 'Arial'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
         end
         object P208: TMyPanel
           Left = 40
@@ -8977,14 +7240,9 @@ object NMain: TNMain
           Width = 150
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TVD2 (axial1)         '
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -8992,14 +7250,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 1
+          TabOrder = 0
           UseDockManager = True
           OnClick = Sp8Click
           object Label60: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 125
-            Height = 14
+            Width = 148
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = 'TM-2220-1 (A2)            '
@@ -9010,19 +7268,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp8Click
+            ExplicitWidth = 122
           end
           object p208_X1: TMyPanel
             Left = 110
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9040,14 +7295,9 @@ object NMain: TNMain
           Width = 150
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TVD4 (right)         '
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -9055,14 +7305,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 2
+          TabOrder = 1
           UseDockManager = True
           OnClick = Sp9Click
           object Label24: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 125
-            Height = 14
+            Width = 148
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = 'TM-2220-1 (A4)            '
@@ -9073,19 +7323,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp9Click
+            ExplicitWidth = 122
           end
           object P209_X1: TMyPanel
             Left = 110
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9103,14 +7350,9 @@ object NMain: TNMain
           Width = 150
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TVD1 (left)         '
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -9118,14 +7360,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 3
+          TabOrder = 2
           UseDockManager = True
           OnClick = Sp7Click
           object Label31: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 125
-            Height = 14
+            Width = 148
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = 'TM-2220-1 (A1)            '
@@ -9136,19 +7378,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp7Click
+            ExplicitWidth = 122
           end
           object P207_X1: TMyPanel
             Left = 110
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9166,14 +7405,9 @@ object NMain: TNMain
           Width = 150
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'TVD3 (axial2)         '
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -9181,14 +7415,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 4
+          TabOrder = 3
           UseDockManager = True
           OnClick = Sp10Click
           object Label26: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 125
-            Height = 14
+            Width = 148
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = 'TM-2220-1 (A3)            '
@@ -9199,19 +7433,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp10Click
+            ExplicitWidth = 122
           end
           object P210_X1: TMyPanel
             Left = 110
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'X1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9228,14 +7459,28 @@ object NMain: TNMain
           Top = 176
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsCentral
           Caption = 'X13'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 4
+          UseDockManager = True
+        end
+        object MyPanel2: TMyPanel
+          Left = 235
+          Top = 270
+          Width = 40
+          Height = 40
+          Color = clWhite
+          DeviceState = dsGray
+          VTextPos = dsCentral
+          Caption = 'X14'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -9245,19 +7490,15 @@ object NMain: TNMain
           TabOrder = 5
           UseDockManager = True
         end
-        object MyPanel2: TMyPanel
+        object MyPanel3: TMyPanel
           Left = 235
-          Top = 270
+          Top = 631
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X14'
+          VTextPos = dsCentral
+          Caption = 'X15'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -9267,19 +7508,15 @@ object NMain: TNMain
           TabOrder = 6
           UseDockManager = True
         end
-        object MyPanel3: TMyPanel
+        object MyPanel4: TMyPanel
           Left = 235
-          Top = 631
+          Top = 715
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X15'
+          VTextPos = dsCentral
+          Caption = 'X16'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -9289,42 +7526,15 @@ object NMain: TNMain
           TabOrder = 7
           UseDockManager = True
         end
-        object MyPanel4: TMyPanel
-          Left = 235
-          Top = 715
-          Width = 40
-          Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
-          DeviceState = dsGray
-          Caption = 'X16'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -12
-          Font.Name = 'Cambria'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 8
-          UseDockManager = True
-        end
         object P223: TMyPanel
           Left = 247
-          Top = 336
+          Top = 335
           Width = 250
           Height = 95
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Caption = 'EM-5401 (A5/A6/A14)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -9332,7 +7542,7 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 9
+          TabOrder = 8
           UseDockManager = True
           OnClick = Sp23Click
           object P223_S1: TMyPanel
@@ -9340,13 +7550,9 @@ object NMain: TNMain
             Top = 60
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9362,13 +7568,9 @@ object NMain: TNMain
             Top = 60
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9384,13 +7586,9 @@ object NMain: TNMain
             Top = 60
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9406,13 +7604,9 @@ object NMain: TNMain
             Top = 60
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9430,14 +7624,9 @@ object NMain: TNMain
           Width = 250
           Height = 95
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsBottom
           Caption = 'EM-5401 (A5/A6/A15)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -9445,7 +7634,7 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 10
+          TabOrder = 9
           UseDockManager = True
           OnClick = Sp24Click
           object P224_S1: TMyPanel
@@ -9453,13 +7642,9 @@ object NMain: TNMain
             Top = 5
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9475,13 +7660,9 @@ object NMain: TNMain
             Top = 5
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9497,13 +7678,9 @@ object NMain: TNMain
             Top = 5
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9519,13 +7696,9 @@ object NMain: TNMain
             Top = 5
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9543,38 +7716,34 @@ object NMain: TNMain
           Width = 165
           Height = 233
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 11
+          TabOrder = 10
           UseDockManager = True
           OnClick = Sp26Click
           object Label25: TLabel
-            Left = 2
-            Top = 2
-            Width = 64
+            Left = 1
+            Top = 1
+            Width = 163
             Height = 19
             Align = alTop
             Alignment = taCenter
             Caption = 'EM-2437'
             OnClick = Sp26Click
+            ExplicitWidth = 65
           end
           object Label34: TLabel
-            Left = 2
-            Top = 21
-            Width = 72
-            Height = 15
+            Left = 1
+            Top = 20
+            Width = 163
+            Height = 16
             Align = alTop
             Alignment = taCenter
             Caption = '(A5/A6/A7)'
@@ -9585,19 +7754,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp26Click
+            ExplicitWidth = 64
           end
           object P226_Ch1: TMyPanel
             Left = 5
             Top = 45
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9612,13 +7778,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9634,13 +7796,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9656,13 +7814,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9678,14 +7832,10 @@ object NMain: TNMain
             Left = 5
             Top = 90
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9700,13 +7850,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9722,13 +7868,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9744,13 +7886,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9766,14 +7904,10 @@ object NMain: TNMain
             Left = 5
             Top = 135
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9788,13 +7922,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9810,13 +7940,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9832,13 +7958,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9855,13 +7977,9 @@ object NMain: TNMain
             Top = 180
             Width = 154
             Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -9876,13 +7994,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9898,13 +8012,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9920,13 +8030,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -9945,38 +8051,34 @@ object NMain: TNMain
           Width = 165
           Height = 233
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 12
+          TabOrder = 11
           UseDockManager = True
           OnClick = Sp27Click
           object Label30: TLabel
-            Left = 2
-            Top = 2
-            Width = 64
+            Left = 1
+            Top = 1
+            Width = 163
             Height = 19
             Align = alTop
             Alignment = taCenter
             Caption = 'EM-2437'
             OnClick = Sp27Click
+            ExplicitWidth = 65
           end
           object Label38: TLabel
-            Left = 2
-            Top = 21
-            Width = 72
-            Height = 15
+            Left = 1
+            Top = 20
+            Width = 163
+            Height = 16
             Align = alTop
             Alignment = taCenter
             Caption = '(A5/A6/A8)'
@@ -9987,19 +8089,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp27Click
+            ExplicitWidth = 64
           end
           object P227_Ch1: TMyPanel
             Left = 5
             Top = 45
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10014,13 +8113,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10036,13 +8131,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10058,13 +8149,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10080,14 +8167,10 @@ object NMain: TNMain
             Left = 5
             Top = 90
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10102,13 +8185,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10124,13 +8203,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10146,13 +8221,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10168,14 +8239,10 @@ object NMain: TNMain
             Left = 5
             Top = 135
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10190,13 +8257,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10212,13 +8275,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10234,13 +8293,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10257,13 +8312,9 @@ object NMain: TNMain
             Top = 180
             Width = 154
             Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10278,13 +8329,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10300,13 +8347,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10322,13 +8365,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10347,38 +8386,34 @@ object NMain: TNMain
           Width = 165
           Height = 233
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 13
+          TabOrder = 12
           UseDockManager = True
           OnClick = Sp29Click
           object Label27: TLabel
-            Left = 2
-            Top = 2
-            Width = 64
+            Left = 1
+            Top = 1
+            Width = 163
             Height = 19
             Align = alTop
             Alignment = taCenter
             Caption = 'EM-2437'
             OnClick = Sp29Click
+            ExplicitWidth = 65
           end
           object Label39: TLabel
-            Left = 2
-            Top = 21
-            Width = 80
-            Height = 15
+            Left = 1
+            Top = 20
+            Width = 163
+            Height = 16
             Align = alTop
             Alignment = taCenter
             Caption = '(A5/A6/A10)'
@@ -10389,19 +8424,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp29Click
+            ExplicitWidth = 71
           end
           object P229_Ch1: TMyPanel
             Left = 5
             Top = 45
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'no use'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10416,13 +8448,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10438,13 +8466,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10460,13 +8484,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10482,14 +8502,10 @@ object NMain: TNMain
             Left = 5
             Top = 90
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'no use'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10504,13 +8520,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10526,13 +8538,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10548,13 +8556,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10570,14 +8574,10 @@ object NMain: TNMain
             Left = 5
             Top = 135
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10592,13 +8592,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10614,13 +8610,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10636,13 +8628,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10659,13 +8647,9 @@ object NMain: TNMain
             Top = 180
             Width = 154
             Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10680,13 +8664,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10702,13 +8682,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10724,13 +8700,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10749,38 +8721,34 @@ object NMain: TNMain
           Width = 165
           Height = 233
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 14
+          TabOrder = 13
           UseDockManager = True
           OnClick = Sp28Click
           object Label33: TLabel
-            Left = 2
-            Top = 2
-            Width = 64
+            Left = 1
+            Top = 1
+            Width = 163
             Height = 19
             Align = alTop
             Alignment = taCenter
             Caption = 'EM-2437'
             OnClick = Sp28Click
+            ExplicitWidth = 65
           end
           object Label46: TLabel
-            Left = 2
-            Top = 21
-            Width = 72
-            Height = 15
+            Left = 1
+            Top = 20
+            Width = 163
+            Height = 16
             Align = alTop
             Alignment = taCenter
             Caption = '(A5/A6/A9)'
@@ -10791,19 +8759,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp28Click
+            ExplicitWidth = 64
           end
           object P228_Ch4: TMyPanel
             Left = 5
             Top = 45
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'no use'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10818,13 +8783,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10840,13 +8801,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10862,13 +8819,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10884,14 +8837,10 @@ object NMain: TNMain
             Left = 5
             Top = 90
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'no use'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10906,13 +8855,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10928,13 +8873,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10950,13 +8891,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -10972,14 +8909,10 @@ object NMain: TNMain
             Left = 5
             Top = 135
             Width = 154
-            Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 46
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -10994,13 +8927,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -11016,13 +8945,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -11038,13 +8963,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -11061,13 +8982,9 @@ object NMain: TNMain
             Top = 180
             Width = 154
             Height = 45
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'channel 1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11082,13 +8999,9 @@ object NMain: TNMain
               Top = 7
               Width = 30
               Height = 30
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsTop
               Caption = 'in'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -11104,13 +9017,9 @@ object NMain: TNMain
               Top = 2
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 1'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -11126,13 +9035,9 @@ object NMain: TNMain
               Top = 23
               Width = 40
               Height = 20
-              ColorFace = clWhite
-              ColorGrad = 14344414
-              ColorLight = 8224125
-              ColorDark = 6447714
-              ColorScheme = csCustom
-              FillDirection = fdVertical
+              Color = clWhite
               DeviceState = dsGray
+              VTextPos = dsCentral
               Caption = 'out 2'
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -11151,38 +9056,34 @@ object NMain: TNMain
           Width = 150
           Height = 139
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 15
+          TabOrder = 14
           UseDockManager = True
           OnClick = Sp25Click
           object Label32: TLabel
-            Left = 2
-            Top = 2
-            Width = 64
+            Left = 1
+            Top = 1
+            Width = 148
             Height = 19
             Align = alTop
             Alignment = taCenter
             Caption = 'EM-3401'
             OnClick = Sp25Click
+            ExplicitWidth = 65
           end
           object Label61: TLabel
-            Left = 2
-            Top = 21
-            Width = 80
-            Height = 15
+            Left = 1
+            Top = 20
+            Width = 148
+            Height = 16
             Align = alTop
             Alignment = taCenter
             Caption = '(A5/A6/A11)'
@@ -11193,19 +9094,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp25Click
+            ExplicitWidth = 71
           end
           object P225_2: TMyPanel
             Left = 102
             Top = 45
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11221,13 +9119,9 @@ object NMain: TNMain
             Top = 95
             Width = 40
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11243,13 +9137,9 @@ object NMain: TNMain
             Top = 69
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11267,38 +9157,34 @@ object NMain: TNMain
           Width = 224
           Height = 320
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 16
+          TabOrder = 15
           UseDockManager = True
           OnClick = Sp30Click
           object Label36: TLabel
-            Left = 2
-            Top = 2
-            Width = 64
+            Left = 1
+            Top = 1
+            Width = 222
             Height = 19
             Align = alTop
             Alignment = taCenter
             Caption = 'EM-7401'
             OnClick = Sp30Click
+            ExplicitWidth = 65
           end
           object Label102: TLabel
-            Left = 2
-            Top = 21
-            Width = 80
-            Height = 15
+            Left = 1
+            Top = 20
+            Width = 222
+            Height = 16
             Align = alTop
             Alignment = taCenter
             Caption = '(A5/A6/A12)'
@@ -11309,6 +9195,7 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp30Click
+            ExplicitWidth = 71
           end
           object I7401_1: TImage
             Left = 66
@@ -11322,14 +9209,10 @@ object NMain: TNMain
             Left = 6
             Top = 40
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11344,14 +9227,10 @@ object NMain: TNMain
             Left = 6
             Top = 70
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11366,14 +9245,10 @@ object NMain: TNMain
             Left = 6
             Top = 100
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11388,14 +9263,10 @@ object NMain: TNMain
             Left = 6
             Top = 130
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11410,14 +9281,10 @@ object NMain: TNMain
             Left = 6
             Top = 160
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 5,6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11432,14 +9299,10 @@ object NMain: TNMain
             Left = 6
             Top = 190
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 9,10'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11454,14 +9317,10 @@ object NMain: TNMain
             Left = 6
             Top = 220
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 11,12'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11476,14 +9335,10 @@ object NMain: TNMain
             Left = 6
             Top = 250
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 13,14'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11499,13 +9354,9 @@ object NMain: TNMain
             Top = 280
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 15,16'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11521,13 +9372,9 @@ object NMain: TNMain
             Top = 60
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 1,2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11543,13 +9390,9 @@ object NMain: TNMain
             Top = 130
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 3,4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11565,13 +9408,9 @@ object NMain: TNMain
             Top = 200
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 5,6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11587,13 +9426,9 @@ object NMain: TNMain
             Top = 270
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 7,8'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11611,38 +9446,34 @@ object NMain: TNMain
           Width = 224
           Height = 320
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsTop
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -16
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 17
+          TabOrder = 16
           UseDockManager = True
           OnClick = Sp31Click
           object Label28: TLabel
-            Left = 2
-            Top = 2
-            Width = 64
+            Left = 1
+            Top = 1
+            Width = 222
             Height = 19
             Align = alTop
             Alignment = taCenter
             Caption = 'EM-7401'
             OnClick = Sp31Click
+            ExplicitWidth = 65
           end
           object Label121: TLabel
-            Left = 2
-            Top = 21
-            Width = 80
-            Height = 15
+            Left = 1
+            Top = 20
+            Width = 222
+            Height = 16
             Align = alTop
             Alignment = taCenter
             Caption = '(A5/A6/A13)'
@@ -11653,6 +9484,7 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp31Click
+            ExplicitWidth = 71
           end
           object I7401_2: TImage
             Left = 66
@@ -11666,14 +9498,10 @@ object NMain: TNMain
             Left = 6
             Top = 40
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 1'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11688,14 +9516,10 @@ object NMain: TNMain
             Left = 6
             Top = 70
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11710,14 +9534,10 @@ object NMain: TNMain
             Left = 6
             Top = 100
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 3'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11732,14 +9552,10 @@ object NMain: TNMain
             Left = 6
             Top = 130
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11754,14 +9570,10 @@ object NMain: TNMain
             Left = 6
             Top = 160
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 5,6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11776,14 +9588,10 @@ object NMain: TNMain
             Left = 6
             Top = 190
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 9,10'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11798,14 +9606,10 @@ object NMain: TNMain
             Left = 6
             Top = 220
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 11,12'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11820,14 +9624,10 @@ object NMain: TNMain
             Left = 6
             Top = 250
             Width = 60
-            Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Height = 31
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 13,14'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11843,13 +9643,9 @@ object NMain: TNMain
             Top = 280
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'in 15,16'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11865,13 +9661,9 @@ object NMain: TNMain
             Top = 60
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 1,2'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11887,13 +9679,9 @@ object NMain: TNMain
             Top = 130
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 3,4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11909,13 +9697,9 @@ object NMain: TNMain
             Top = 200
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 5,6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11931,13 +9715,9 @@ object NMain: TNMain
             Top = 270
             Width = 60
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsTop
             Caption = 'out 7,8'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -11954,14 +9734,28 @@ object NMain: TNMain
           Top = 413
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsCentral
           Caption = 'X12'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 17
+          UseDockManager = True
+        end
+        object Px8: TMyPanel
+          Left = 1600
+          Top = 538
+          Width = 40
+          Height = 40
+          Color = clWhite
+          DeviceState = dsGray
+          VTextPos = dsCentral
+          Caption = 'X8'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -11971,19 +9765,15 @@ object NMain: TNMain
           TabOrder = 18
           UseDockManager = True
         end
-        object Px8: TMyPanel
+        object Px11: TMyPanel
           Left = 1600
-          Top = 538
+          Top = 764
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X8'
+          VTextPos = dsCentral
+          Caption = 'X11'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -11993,41 +9783,14 @@ object NMain: TNMain
           TabOrder = 19
           UseDockManager = True
         end
-        object Px11: TMyPanel
-          Left = 1600
-          Top = 764
-          Width = 40
-          Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
-          DeviceState = dsGray
-          Caption = 'X11'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -12
-          Font.Name = 'Cambria'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 20
-          UseDockManager = True
-        end
         object MyPanel5: TMyPanel
           Left = 1691
           Top = 535
           Width = 150
           Height = 45
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = '       TM-2407'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -12035,13 +9798,13 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 21
+          TabOrder = 20
           UseDockManager = True
           object Label29: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 84
-            Height = 14
+            Width = 148
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = '        (A28/A12)'
@@ -12051,19 +9814,16 @@ object NMain: TNMain
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
             ParentFont = False
+            ExplicitWidth = 79
           end
           object MyPanel6: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X14'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12080,14 +9840,9 @@ object NMain: TNMain
           Top = 761
           Width = 150
           Height = 45
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = '      BC-5-1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -12095,13 +9850,13 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 22
+          TabOrder = 21
           UseDockManager = True
           object Label122: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 59
-            Height = 14
+            Width = 148
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = '         (A21)'
@@ -12111,19 +9866,16 @@ object NMain: TNMain
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
             ParentFont = False
+            ExplicitWidth = 57
           end
           object MyPanel50: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12140,14 +9892,9 @@ object NMain: TNMain
           Top = 410
           Width = 150
           Height = 45
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = '      BC-5-1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -12155,13 +9902,13 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 23
+          TabOrder = 22
           UseDockManager = True
           object Label123: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 53
-            Height = 14
+            Width = 148
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = '       (A20)'
@@ -12171,19 +9918,16 @@ object NMain: TNMain
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
             ParentFont = False
+            ExplicitWidth = 51
           end
           object MyPanel58: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X4'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12200,14 +9944,28 @@ object NMain: TNMain
           Top = 950
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsCentral
           Caption = 'X1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 23
+          UseDockManager = True
+        end
+        object Px2: TMyPanel
+          Left = 540
+          Top = 950
+          Width = 40
+          Height = 40
+          Color = clWhite
+          DeviceState = dsGray
+          VTextPos = dsCentral
+          Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -12217,19 +9975,15 @@ object NMain: TNMain
           TabOrder = 24
           UseDockManager = True
         end
-        object Px2: TMyPanel
-          Left = 540
+        object Px3: TMyPanel
+          Left = 600
           Top = 950
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X2'
+          VTextPos = dsCentral
+          Caption = 'X3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -12239,19 +9993,15 @@ object NMain: TNMain
           TabOrder = 25
           UseDockManager = True
         end
-        object Px3: TMyPanel
-          Left = 600
+        object Px4: TMyPanel
+          Left = 880
           Top = 950
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X3'
+          VTextPos = dsCentral
+          Caption = 'X4'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -12261,19 +10011,15 @@ object NMain: TNMain
           TabOrder = 26
           UseDockManager = True
         end
-        object Px4: TMyPanel
-          Left = 880
+        object Px5: TMyPanel
+          Left = 940
           Top = 950
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X4'
+          VTextPos = dsCentral
+          Caption = 'X5'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -12283,19 +10029,15 @@ object NMain: TNMain
           TabOrder = 27
           UseDockManager = True
         end
-        object Px5: TMyPanel
-          Left = 940
+        object Px6: TMyPanel
+          Left = 1220
           Top = 950
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X5'
+          VTextPos = dsCentral
+          Caption = 'X6'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -12305,19 +10047,15 @@ object NMain: TNMain
           TabOrder = 28
           UseDockManager = True
         end
-        object Px6: TMyPanel
-          Left = 1220
+        object Px7: TMyPanel
+          Left = 1280
           Top = 950
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X6'
+          VTextPos = dsCentral
+          Caption = 'X7'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -12327,19 +10065,15 @@ object NMain: TNMain
           TabOrder = 29
           UseDockManager = True
         end
-        object Px7: TMyPanel
-          Left = 1280
+        object Px9: TMyPanel
+          Left = 1560
           Top = 950
           Width = 40
           Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          Caption = 'X7'
+          VTextPos = dsCentral
+          Caption = 'X9'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -12349,42 +10083,15 @@ object NMain: TNMain
           TabOrder = 30
           UseDockManager = True
         end
-        object Px9: TMyPanel
-          Left = 1560
-          Top = 950
-          Width = 40
-          Height = 40
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
-          DeviceState = dsGray
-          Caption = 'X9'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -12
-          Font.Name = 'Cambria'
-          Font.Style = [fsBold]
-          ParentFont = False
-          TabOrder = 31
-          UseDockManager = True
-        end
         object P202: TMyPanel
           Left = 340
           Top = 1050
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'WSL'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -12392,14 +10099,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 32
+          TabOrder = 31
           UseDockManager = True
           OnClick = Sp2Click
           object Label41: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 89
-            Height = 14
+            Width = 168
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = 'TM-2322-2 (A9)'
@@ -12410,19 +10117,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp2Click
+            ExplicitWidth = 86
           end
           object p202_X5: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12438,13 +10142,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12462,14 +10162,9 @@ object NMain: TNMain
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'WSP'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -12477,14 +10172,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 33
+          TabOrder = 32
           UseDockManager = True
           OnClick = Sp1Click
           object Label42: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 89
-            Height = 14
+            Width = 168
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = 'TM-2322-2 (A7)'
@@ -12495,19 +10190,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp1Click
+            ExplicitWidth = 86
           end
           object p201_X5: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12523,13 +10215,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12547,14 +10235,9 @@ object NMain: TNMain
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'WSR'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -12562,14 +10245,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 34
+          TabOrder = 33
           UseDockManager = True
           OnClick = Sp3Click
           object Label3: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 96
-            Height = 14
+            Width = 168
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = 'TM-2322-2 (A10)'
@@ -12580,19 +10263,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp3Click
+            ExplicitWidth = 93
           end
           object p203_X5: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12608,13 +10288,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12632,14 +10308,9 @@ object NMain: TNMain
           Width = 170
           Height = 45
           Cursor = crHandPoint
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csDesert
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
-          BevelInner = bvLowered
+          VTextPos = dsCentral
           Caption = 'VRD1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -12647,14 +10318,14 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
-          TabOrder = 35
+          TabOrder = 34
           UseDockManager = True
           OnClick = Sp16Click
           object Label44: TLabel
-            Left = 2
+            Left = 1
             Top = 29
-            Width = 89
-            Height = 14
+            Width = 168
+            Height = 15
             Align = alBottom
             Alignment = taCenter
             Caption = 'TM-2408-1 (A8)'
@@ -12665,19 +10336,16 @@ object NMain: TNMain
             Font.Style = [fsBold]
             ParentFont = False
             OnClick = Sp16Click
+            ExplicitWidth = 86
           end
           object p216_X5: TMyPanel
             Left = 5
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X5'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12693,13 +10361,9 @@ object NMain: TNMain
             Top = 9
             Width = 30
             Height = 30
-            ColorFace = clWhite
-            ColorGrad = 14344414
-            ColorLight = 8224125
-            ColorDark = 6447714
-            ColorScheme = csCustom
-            FillDirection = fdVertical
+            Color = clWhite
             DeviceState = dsGray
+            VTextPos = dsCentral
             Caption = 'X6'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clWindowText
@@ -12711,15 +10375,132 @@ object NMain: TNMain
             UseDockManager = True
           end
         end
+        object Panel8: TPanel
+          Left = 1672
+          Top = 15
+          Width = 195
+          Height = 189
+          BevelOuter = bvNone
+          Color = clMedGray
+          TabOrder = 35
+          object Shape18: TShape
+            Left = 0
+            Top = 19
+            Width = 195
+            Height = 170
+            Align = alClient
+            Brush.Style = bsClear
+            Pen.Color = clWhite
+            ExplicitLeft = 1
+            ExplicitTop = 65
+            ExplicitWidth = 189
+            ExplicitHeight = 172
+          end
+          object Label217: TLabel
+            Left = 70
+            Top = 34
+            Width = 117
+            Height = 15
+            Caption = 'Type of data channel'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label216: TLabel
+            Left = 16
+            Top = 34
+            Width = 30
+            Height = 15
+            Caption = 'Color'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object iL2: TImage
+            Left = 16
+            Top = 60
+            Width = 41
+            Height = 122
+          end
+          object Label218: TLabel
+            Left = 70
+            Top = 65
+            Width = 46
+            Height = 15
+            Caption = ' Y-Video'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label219: TLabel
+            Left = 70
+            Top = 95
+            Width = 31
+            Height = 15
+            Caption = ' Sync'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label220: TLabel
+            Left = 70
+            Top = 125
+            Width = 47
+            Height = 15
+            Caption = ' C-Video'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label221: TLabel
+            Left = 70
+            Top = 155
+            Width = 47
+            Height = 15
+            Caption = ' S-Video'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label4: TLabel
+            Left = 0
+            Top = 0
+            Width = 195
+            Height = 19
+            Align = alTop
+            Caption = '  LEGEND'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -16
+            Font.Name = 'Cambria'
+            Font.Style = [fsBold]
+            ParentFont = False
+            ExplicitWidth = 76
+          end
+        end
       end
     end
     object TS5: TTabSheet
       Caption = 'Power supply system'
       ImageIndex = 4
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 1592
-      ExplicitHeight = 851
       object iPower: TImage
         Left = 0
         Top = 0
@@ -12934,13 +10715,9 @@ object NMain: TNMain
           Top = 5
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X8'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -12956,13 +10733,9 @@ object NMain: TNMain
           Top = 5
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X9'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -12978,13 +10751,9 @@ object NMain: TNMain
           Top = 5
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X21'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13000,13 +10769,9 @@ object NMain: TNMain
           Top = 5
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X22'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13022,13 +10787,9 @@ object NMain: TNMain
           Top = 5
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X23'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13044,13 +10805,9 @@ object NMain: TNMain
           Top = 5
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X13'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13066,13 +10823,9 @@ object NMain: TNMain
           Top = 5
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X14'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13088,13 +10841,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13110,13 +10859,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13132,13 +10877,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13154,13 +10895,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X17'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13176,13 +10913,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X20'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13198,13 +10931,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X19'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13220,13 +10949,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X18'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13242,13 +10967,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X4'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13264,13 +10985,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X6'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13286,13 +11003,9 @@ object NMain: TNMain
           Top = 82
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X5'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13481,14 +11194,9 @@ object NMain: TNMain
         Top = 1060
         Width = 660
         Height = 75
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -13498,26 +11206,23 @@ object NMain: TNMain
         TabOrder = 3
         UseDockManager = True
         object Label47: TLabel
-          Left = 2
-          Top = 54
-          Width = 58
+          Left = 1
+          Top = 55
+          Width = 658
           Height = 19
           Align = alBottom
           Alignment = taCenter
           Caption = 'DP (A6)'
+          ExplicitWidth = 57
         end
         object SH_X2: TMyPanel
           Left = 5
           Top = 5
           Width = 50
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X5'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13533,13 +11238,9 @@ object NMain: TNMain
           Top = 5
           Width = 50
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X7'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13555,13 +11256,9 @@ object NMain: TNMain
           Top = 5
           Width = 50
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X6'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13579,14 +11276,9 @@ object NMain: TNMain
         Width = 130
         Height = 140
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -13597,9 +11289,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp17Click
         object Label1: TLabel
-          Left = 2
-          Top = 2
-          Width = 79
+          Left = 1
+          Top = 1
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -13607,11 +11299,12 @@ object NMain: TNMain
           Caption = 'TM-2411-1'
           ParentBiDiMode = False
           OnClick = Sp17Click
+          ExplicitWidth = 78
         end
         object Label124: TLabel
-          Left = 2
-          Top = 21
-          Width = 126
+          Left = 1
+          Top = 20
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -13634,13 +11327,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X5'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13656,13 +11345,9 @@ object NMain: TNMain
           Top = 100
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13678,13 +11363,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X4'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13700,13 +11381,9 @@ object NMain: TNMain
           Top = 70
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13722,13 +11399,9 @@ object NMain: TNMain
           Top = 100
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13746,14 +11419,9 @@ object NMain: TNMain
         Width = 130
         Height = 140
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -13764,9 +11432,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp19Click
         object Label14: TLabel
-          Left = 2
-          Top = 2
-          Width = 79
+          Left = 1
+          Top = 1
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -13774,11 +11442,12 @@ object NMain: TNMain
           Caption = 'TM-2411-1'
           ParentBiDiMode = False
           OnClick = Sp19Click
+          ExplicitWidth = 78
         end
         object Label94: TLabel
-          Left = 2
-          Top = 21
-          Width = 126
+          Left = 1
+          Top = 20
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -13801,13 +11470,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X5'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13823,13 +11488,9 @@ object NMain: TNMain
           Top = 100
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13845,13 +11506,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X4'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13867,13 +11524,9 @@ object NMain: TNMain
           Top = 70
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13889,13 +11542,9 @@ object NMain: TNMain
           Top = 100
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13913,14 +11562,9 @@ object NMain: TNMain
         Width = 130
         Height = 140
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -13931,9 +11575,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp18Click
         object Label52: TLabel
-          Left = 2
-          Top = 2
-          Width = 79
+          Left = 1
+          Top = 1
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -13941,11 +11585,12 @@ object NMain: TNMain
           Caption = 'TM-2411-1'
           ParentBiDiMode = False
           OnClick = Sp18Click
+          ExplicitWidth = 78
         end
         object Label96: TLabel
-          Left = 2
-          Top = 21
-          Width = 126
+          Left = 1
+          Top = 20
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -13961,19 +11606,16 @@ object NMain: TNMain
           OnClick = Sp18Click
           ExplicitLeft = 0
           ExplicitTop = 27
+          ExplicitWidth = 126
         end
         object p318_X5: TMyPanel
           Left = 5
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X5'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -13989,13 +11631,9 @@ object NMain: TNMain
           Top = 100
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14011,13 +11649,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X4'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14033,13 +11667,9 @@ object NMain: TNMain
           Top = 70
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14055,13 +11685,9 @@ object NMain: TNMain
           Top = 100
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14079,14 +11705,9 @@ object NMain: TNMain
         Width = 130
         Height = 80
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14097,9 +11718,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp12Click
         object Label15: TLabel
-          Left = 2
-          Top = 2
-          Width = 79
+          Left = 1
+          Top = 1
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14107,11 +11728,12 @@ object NMain: TNMain
           Caption = 'TM-2409-1'
           ParentBiDiMode = False
           OnClick = Sp12Click
+          ExplicitWidth = 78
         end
         object Label95: TLabel
-          Left = 2
-          Top = 21
-          Width = 126
+          Left = 1
+          Top = 20
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14134,13 +11756,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X12'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14158,14 +11776,9 @@ object NMain: TNMain
         Width = 130
         Height = 80
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14176,9 +11789,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp14Click
         object Label64: TLabel
-          Left = 2
-          Top = 2
-          Width = 65
+          Left = 1
+          Top = 1
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14186,11 +11799,12 @@ object NMain: TNMain
           Caption = 'TM-2410'
           ParentBiDiMode = False
           OnClick = Sp14Click
+          ExplicitWidth = 64
         end
         object Label103: TLabel
-          Left = 2
-          Top = 21
-          Width = 126
+          Left = 1
+          Top = 20
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14213,13 +11827,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14236,14 +11846,9 @@ object NMain: TNMain
         Top = 480
         Width = 130
         Height = 80
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14253,20 +11858,21 @@ object NMain: TNMain
         TabOrder = 9
         UseDockManager = True
         object Label70: TLabel
-          Left = 2
-          Top = 2
-          Width = 65
+          Left = 1
+          Top = 1
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
           BiDiMode = bdRightToLeft
           Caption = 'TM-2227'
           ParentBiDiMode = False
+          ExplicitWidth = 64
         end
         object Label72: TLabel
-          Left = 2
-          Top = 21
-          Width = 126
+          Left = 1
+          Top = 20
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14288,13 +11894,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14312,14 +11914,9 @@ object NMain: TNMain
         Width = 130
         Height = 80
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14330,9 +11927,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp13Click
         object Label73: TLabel
-          Left = 2
-          Top = 2
-          Width = 79
+          Left = 1
+          Top = 1
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14340,11 +11937,12 @@ object NMain: TNMain
           Caption = 'TM-2409-1'
           ParentBiDiMode = False
           OnClick = Sp13Click
+          ExplicitWidth = 78
         end
         object Label74: TLabel
-          Left = 2
-          Top = 21
-          Width = 126
+          Left = 1
+          Top = 20
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14367,13 +11965,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X12'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14391,14 +11985,9 @@ object NMain: TNMain
         Width = 130
         Height = 80
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14409,9 +11998,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp15Click
         object Label65: TLabel
-          Left = 2
-          Top = 2
-          Width = 65
+          Left = 1
+          Top = 1
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14419,11 +12008,12 @@ object NMain: TNMain
           Caption = 'TM-2410'
           ParentBiDiMode = False
           OnClick = Sp15Click
+          ExplicitWidth = 64
         end
         object Label104: TLabel
-          Left = 2
-          Top = 21
-          Width = 126
+          Left = 1
+          Top = 20
+          Width = 128
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14446,13 +12036,9 @@ object NMain: TNMain
           Top = 40
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14470,14 +12056,9 @@ object NMain: TNMain
         Width = 140
         Height = 70
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14488,9 +12069,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp1Click
         object Label71: TLabel
-          Left = 2
-          Top = 2
-          Width = 33
+          Left = 1
+          Top = 1
+          Width = 138
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14498,12 +12079,13 @@ object NMain: TNMain
           Caption = 'WSP'
           ParentBiDiMode = False
           OnClick = Sp1Click
+          ExplicitWidth = 37
         end
         object Label105: TLabel
-          Left = 2
-          Top = 21
-          Width = 89
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 138
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = 'TM-2322-2 (A7)'
@@ -14514,19 +12096,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           OnClick = Sp1Click
+          ExplicitWidth = 86
         end
         object MyPanel60: TMyPanel
           Left = 77
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14542,13 +12121,9 @@ object NMain: TNMain
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14566,14 +12141,9 @@ object NMain: TNMain
         Width = 140
         Height = 70
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14584,9 +12154,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp3Click
         object Label79: TLabel
-          Left = 2
-          Top = 2
-          Width = 34
+          Left = 1
+          Top = 1
+          Width = 138
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14594,12 +12164,13 @@ object NMain: TNMain
           Caption = 'WSR'
           ParentBiDiMode = False
           OnClick = Sp3Click
+          ExplicitWidth = 38
         end
         object Label106: TLabel
-          Left = 2
-          Top = 21
-          Width = 96
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 138
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = 'TM-2322-2 (A10)'
@@ -14610,19 +12181,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           OnClick = Sp3Click
+          ExplicitWidth = 93
         end
         object P303_X2: TMyPanel
           Left = 77
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14638,13 +12206,9 @@ object NMain: TNMain
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14662,14 +12226,9 @@ object NMain: TNMain
         Width = 140
         Height = 70
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14680,9 +12239,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp16Click
         object Label86: TLabel
-          Left = 2
-          Top = 2
-          Width = 41
+          Left = 1
+          Top = 1
+          Width = 138
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14690,12 +12249,13 @@ object NMain: TNMain
           Caption = 'VRD1'
           ParentBiDiMode = False
           OnClick = Sp16Click
+          ExplicitWidth = 44
         end
         object Label109: TLabel
-          Left = 2
-          Top = 21
-          Width = 89
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 138
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = 'TM-2408-1 (A8)'
@@ -14706,19 +12266,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           OnClick = Sp16Click
+          ExplicitWidth = 86
         end
         object MyPanel61: TMyPanel
           Left = 77
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14734,13 +12291,9 @@ object NMain: TNMain
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14758,14 +12311,9 @@ object NMain: TNMain
         Width = 140
         Height = 70
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14776,9 +12324,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = Sp2Click
         object Label125: TLabel
-          Left = 2
-          Top = 2
-          Width = 32
+          Left = 1
+          Top = 1
+          Width = 138
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -14786,12 +12334,13 @@ object NMain: TNMain
           Caption = 'WSL'
           ParentBiDiMode = False
           OnClick = Sp2Click
+          ExplicitWidth = 36
         end
         object Label126: TLabel
-          Left = 2
-          Top = 21
-          Width = 89
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 138
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = 'TM-2322-2 (A9)'
@@ -14802,19 +12351,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           OnClick = Sp2Click
+          ExplicitWidth = 86
         end
         object MyPanel62: TMyPanel
           Left = 77
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14830,13 +12376,9 @@ object NMain: TNMain
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X3'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14854,14 +12396,9 @@ object NMain: TNMain
         Width = 140
         Height = 70
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14872,9 +12409,9 @@ object NMain: TNMain
         UseDockManager = True
         OnClick = sp20Click
         object Label127: TLabel
-          Left = 2
+          Left = 1
           Top = 35
-          Width = 65
+          Width = 138
           Height = 19
           Align = alBottom
           Alignment = taCenter
@@ -14882,12 +12419,13 @@ object NMain: TNMain
           Caption = 'TM-2320'
           ParentBiDiMode = False
           OnClick = sp20Click
+          ExplicitWidth = 64
         end
         object Label128: TLabel
-          Left = 2
+          Left = 1
           Top = 54
-          Width = 32
-          Height = 14
+          Width = 138
+          Height = 15
           Align = alBottom
           Alignment = taCenter
           Caption = '(A11)'
@@ -14898,19 +12436,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           OnClick = sp20Click
+          ExplicitWidth = 30
         end
         object p320_X2: TMyPanel
           Left = 45
           Top = 5
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X2'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14927,14 +12462,9 @@ object NMain: TNMain
         Top = 845
         Width = 120
         Height = 70
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -14944,21 +12474,22 @@ object NMain: TNMain
         TabOrder = 17
         UseDockManager = True
         object Label129: TLabel
-          Left = 2
-          Top = 2
-          Width = 47
+          Left = 1
+          Top = 1
+          Width = 118
           Height = 19
           Align = alTop
           Alignment = taCenter
           BiDiMode = bdRightToLeft
           Caption = 'BC-5-1'
           ParentBiDiMode = False
+          ExplicitWidth = 52
         end
         object Label130: TLabel
-          Left = 2
-          Top = 21
-          Width = 32
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 118
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = '(A20)'
@@ -14968,19 +12499,16 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
+          ExplicitWidth = 30
         end
         object BC5_A19_X1: TMyPanel
           Left = 35
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -14997,14 +12525,9 @@ object NMain: TNMain
         Top = 845
         Width = 120
         Height = 70
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -15014,21 +12537,22 @@ object NMain: TNMain
         TabOrder = 18
         UseDockManager = True
         object Label133: TLabel
-          Left = 2
-          Top = 2
-          Width = 47
+          Left = 1
+          Top = 1
+          Width = 118
           Height = 19
           Align = alTop
           Alignment = taCenter
           BiDiMode = bdRightToLeft
           Caption = 'BC-5-1'
           ParentBiDiMode = False
+          ExplicitWidth = 52
         end
         object Label134: TLabel
-          Left = 2
-          Top = 21
-          Width = 32
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 118
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = '(A21)'
@@ -15038,19 +12562,16 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
+          ExplicitWidth = 30
         end
         object BC5_A21_X1: TMyPanel
           Left = 35
           Top = 35
           Width = 53
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15067,14 +12588,9 @@ object NMain: TNMain
         Top = 450
         Width = 140
         Height = 70
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -15084,21 +12600,22 @@ object NMain: TNMain
         TabOrder = 19
         UseDockManager = True
         object Label135: TLabel
-          Left = 2
-          Top = 2
-          Width = 47
+          Left = 1
+          Top = 1
+          Width = 138
           Height = 19
           Align = alTop
           Alignment = taCenter
           BiDiMode = bdRightToLeft
           Caption = 'BC-8-1'
           ParentBiDiMode = False
+          ExplicitWidth = 52
         end
         object Label136: TLabel
-          Left = 2
-          Top = 21
-          Width = 32
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 138
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = '(A19)'
@@ -15108,19 +12625,16 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
+          ExplicitWidth = 30
         end
         object BC8_A34_X1: TMyPanel
           Left = 5
           Top = 35
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15137,14 +12651,9 @@ object NMain: TNMain
         Top = 590
         Width = 140
         Height = 70
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -15154,21 +12663,22 @@ object NMain: TNMain
         TabOrder = 20
         UseDockManager = True
         object Label137: TLabel
-          Left = 2
-          Top = 2
-          Width = 47
+          Left = 1
+          Top = 1
+          Width = 138
           Height = 19
           Align = alTop
           Alignment = taCenter
           BiDiMode = bdRightToLeft
           Caption = 'BC-8-1'
           ParentBiDiMode = False
+          ExplicitWidth = 52
         end
         object Label138: TLabel
-          Left = 2
-          Top = 21
-          Width = 32
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 138
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = '(A16)'
@@ -15178,19 +12688,16 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
+          ExplicitWidth = 30
         end
         object BC8_A6_X1: TMyPanel
           Left = 5
           Top = 35
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15207,14 +12714,9 @@ object NMain: TNMain
         Top = 670
         Width = 140
         Height = 70
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -15224,21 +12726,22 @@ object NMain: TNMain
         TabOrder = 21
         UseDockManager = True
         object Label139: TLabel
-          Left = 2
-          Top = 2
-          Width = 47
+          Left = 1
+          Top = 1
+          Width = 138
           Height = 19
           Align = alTop
           Alignment = taCenter
           BiDiMode = bdRightToLeft
           Caption = 'BC-4-2'
           ParentBiDiMode = False
+          ExplicitWidth = 52
         end
         object Label140: TLabel
-          Left = 2
-          Top = 21
-          Width = 32
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 138
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = '(A17)'
@@ -15248,19 +12751,16 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
+          ExplicitWidth = 30
         end
         object BC8_A7_X1: TMyPanel
           Left = 5
           Top = 35
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15277,14 +12777,9 @@ object NMain: TNMain
         Top = 810
         Width = 140
         Height = 70
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
@@ -15294,21 +12789,22 @@ object NMain: TNMain
         TabOrder = 22
         UseDockManager = True
         object Label141: TLabel
-          Left = 2
-          Top = 2
-          Width = 47
+          Left = 1
+          Top = 1
+          Width = 138
           Height = 19
           Align = alTop
           Alignment = taCenter
           BiDiMode = bdRightToLeft
           Caption = 'BC-8-1'
           ParentBiDiMode = False
+          ExplicitWidth = 52
         end
         object Label142: TLabel
-          Left = 2
-          Top = 21
-          Width = 32
-          Height = 14
+          Left = 1
+          Top = 20
+          Width = 138
+          Height = 15
           Align = alTop
           Alignment = taCenter
           Caption = '(A18)'
@@ -15318,19 +12814,16 @@ object NMain: TNMain
           Font.Name = 'Cambria'
           Font.Style = [fsBold]
           ParentFont = False
+          ExplicitWidth = 30
         end
         object BC8_A9_X1: TMyPanel
           Left = 5
           Top = 35
           Width = 40
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15342,122 +12835,33 @@ object NMain: TNMain
           UseDockManager = True
         end
       end
-      object Panel3: TPanel
-        Left = 1650
-        Top = 20
-        Width = 195
-        Height = 160
-        BevelKind = bkFlat
-        BevelOuter = bvNone
-        TabOrder = 23
-        object Image6: TImage
-          Left = 0
-          Top = 0
-          Width = 191
-          Height = 156
-          Align = alClient
-          ExplicitTop = 2
-          ExplicitWidth = 193
-          ExplicitHeight = 219
-        end
-        object Label222: TLabel
-          Left = 16
-          Top = 34
-          Width = 30
-          Height = 14
-          Caption = 'Color'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-        end
-        object iL3: TImage
-          Left = 16
-          Top = 60
-          Width = 41
-          Height = 90
-        end
-        object Label223: TLabel
-          Left = 70
-          Top = 34
-          Width = 113
-          Height = 14
-          Caption = 'Type of data channel'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-        end
-        object AC: TLabel
-          Left = 80
-          Top = 65
-          Width = 48
-          Height = 14
-          Caption = 'AC 230 V'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-        end
-        object Label225: TLabel
-          Left = 80
-          Top = 95
-          Width = 48
-          Height = 14
-          Caption = 'AC 220 V'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-        end
-        object Label226: TLabel
-          Left = 80
-          Top = 125
-          Width = 23
-          Height = 14
-          Caption = '24 V'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -11
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          ParentFont = False
-        end
-        object Label143: TLabel
-          Left = 16
-          Top = 3
-          Width = 53
-          Height = 19
-          Caption = 'Legend'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlue
-          Font.Height = -16
-          Font.Name = 'Cambria'
-          Font.Style = [fsBold]
-          ParentFont = False
-        end
-      end
       object x22: TMyPanel
         Left = 665
         Top = 420
         Width = 40
         Height = 30
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csCustom
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
+        VTextPos = dsTop
         Caption = 'X22'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Cambria'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 23
+        UseDockManager = True
+      end
+      object x21: TMyPanel
+        Left = 67
+        Top = 420
+        Width = 40
+        Height = 30
+        Color = clWhite
+        DeviceState = dsGray
+        VTextPos = dsTop
+        Caption = 'X21'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -12
@@ -15467,19 +12871,15 @@ object NMain: TNMain
         TabOrder = 24
         UseDockManager = True
       end
-      object x21: TMyPanel
-        Left = 67
-        Top = 420
+      object x13: TMyPanel
+        Left = 1150
+        Top = 55
         Width = 40
         Height = 30
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csCustom
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        Caption = 'X21'
+        VTextPos = dsTop
+        Caption = 'X13'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -12
@@ -15489,19 +12889,15 @@ object NMain: TNMain
         TabOrder = 25
         UseDockManager = True
       end
-      object x13: TMyPanel
+      object x14: TMyPanel
         Left = 1150
-        Top = 55
+        Top = 145
         Width = 40
         Height = 30
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csCustom
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        Caption = 'X13'
+        VTextPos = dsTop
+        Caption = 'X14'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -12
@@ -15511,19 +12907,15 @@ object NMain: TNMain
         TabOrder = 26
         UseDockManager = True
       end
-      object x14: TMyPanel
+      object x15: TMyPanel
         Left = 1150
-        Top = 145
+        Top = 235
         Width = 40
         Height = 30
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csCustom
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        Caption = 'X14'
+        VTextPos = dsTop
+        Caption = 'X15'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -12
@@ -15533,19 +12925,15 @@ object NMain: TNMain
         TabOrder = 27
         UseDockManager = True
       end
-      object x15: TMyPanel
+      object x16: TMyPanel
         Left = 1150
-        Top = 235
+        Top = 319
         Width = 40
         Height = 30
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csCustom
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        Caption = 'X15'
+        VTextPos = dsTop
+        Caption = 'X16'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -12
@@ -15555,42 +12943,15 @@ object NMain: TNMain
         TabOrder = 28
         UseDockManager = True
       end
-      object x16: TMyPanel
-        Left = 1150
-        Top = 319
-        Width = 40
-        Height = 30
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csCustom
-        FillDirection = fdVertical
-        DeviceState = dsGray
-        Caption = 'X16'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Cambria'
-        Font.Style = [fsBold]
-        ParentFont = False
-        TabOrder = 29
-        UseDockManager = True
-      end
       object P308: TMyPanel
         Left = 1300
         Top = 45
         Width = 150
         Height = 45
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Caption = '        TVD2 (axial1)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -15598,14 +12959,14 @@ object NMain: TNMain
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 30
+        TabOrder = 29
         UseDockManager = True
         OnClick = Sp8Click
         object Label144: TLabel
-          Left = 2
+          Left = 1
           Top = 29
-          Width = 119
-          Height = 14
+          Width = 148
+          Height = 15
           Align = alBottom
           Alignment = taCenter
           Caption = '          TM-2220-1 (A2)'
@@ -15616,19 +12977,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           OnClick = Sp8Click
+          ExplicitWidth = 116
         end
         object MyPanel63: TMyPanel
           Left = 5
           Top = 9
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15646,14 +13004,9 @@ object NMain: TNMain
         Width = 150
         Height = 45
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Caption = '        TVD4 (right)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -15661,14 +13014,14 @@ object NMain: TNMain
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 31
+        TabOrder = 30
         UseDockManager = True
         OnClick = Sp9Click
         object Label145: TLabel
-          Left = 2
+          Left = 1
           Top = 29
-          Width = 119
-          Height = 14
+          Width = 148
+          Height = 15
           Align = alBottom
           Alignment = taCenter
           Caption = '          TM-2220-1 (A4)'
@@ -15679,19 +13032,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           OnClick = Sp9Click
+          ExplicitWidth = 116
         end
         object MyPanel65: TMyPanel
           Left = 5
           Top = 9
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15709,14 +13059,9 @@ object NMain: TNMain
         Width = 150
         Height = 45
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Caption = '        TVD1 (left)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -15724,14 +13069,14 @@ object NMain: TNMain
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 32
+        TabOrder = 31
         UseDockManager = True
         OnClick = Sp7Click
         object Label146: TLabel
-          Left = 2
+          Left = 1
           Top = 29
-          Width = 119
-          Height = 14
+          Width = 148
+          Height = 15
           Align = alBottom
           Alignment = taCenter
           Caption = '          TM-2220-1 (A1)'
@@ -15742,19 +13087,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           OnClick = Sp7Click
+          ExplicitWidth = 116
         end
         object MyPanel67: TMyPanel
           Left = 5
           Top = 9
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15772,14 +13114,9 @@ object NMain: TNMain
         Width = 150
         Height = 45
         Cursor = crHandPoint
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Caption = '        TVD3 (axial2)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -15787,14 +13124,14 @@ object NMain: TNMain
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 33
+        TabOrder = 32
         UseDockManager = True
         OnClick = Sp10Click
         object Label148: TLabel
-          Left = 2
+          Left = 1
           Top = 29
-          Width = 119
-          Height = 14
+          Width = 148
+          Height = 15
           Align = alBottom
           Alignment = taCenter
           Caption = '          TM-2220-1 (A3)'
@@ -15805,19 +13142,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentFont = False
           OnClick = Sp10Click
+          ExplicitWidth = 116
         end
         object MyPanel69: TMyPanel
           Left = 5
           Top = 9
           Width = 30
           Height = 30
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'X1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15834,26 +13168,21 @@ object NMain: TNMain
         Top = 99
         Width = 110
         Height = 80
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 34
+        TabOrder = 33
         UseDockManager = True
         object Label149: TLabel
-          Left = 2
-          Top = 2
-          Width = 99
+          Left = 1
+          Top = 1
+          Width = 108
           Height = 16
           Align = alTop
           Alignment = taCenter
@@ -15866,19 +13195,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentBiDiMode = False
           ParentFont = False
+          ExplicitWidth = 102
         end
         object p334_1: TMyPanel
           Left = 5
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'AC220V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15894,13 +13220,9 @@ object NMain: TNMain
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'DC24V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15916,13 +13238,9 @@ object NMain: TNMain
           Top = 25
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'FB'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15939,26 +13257,21 @@ object NMain: TNMain
         Top = 185
         Width = 110
         Height = 80
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 35
+        TabOrder = 34
         UseDockManager = True
         object Label153: TLabel
-          Left = 2
-          Top = 2
-          Width = 99
+          Left = 1
+          Top = 1
+          Width = 108
           Height = 16
           Align = alTop
           Alignment = taCenter
@@ -15971,19 +13284,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentBiDiMode = False
           ParentFont = False
+          ExplicitWidth = 102
         end
         object p335_1: TMyPanel
           Left = 5
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'AC220V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -15999,13 +13309,9 @@ object NMain: TNMain
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'DC24V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16021,13 +13327,9 @@ object NMain: TNMain
           Top = 25
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'FB'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16044,26 +13346,21 @@ object NMain: TNMain
         Top = 270
         Width = 110
         Height = 80
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 36
+        TabOrder = 35
         UseDockManager = True
         object Label154: TLabel
-          Left = 2
-          Top = 2
-          Width = 99
+          Left = 1
+          Top = 1
+          Width = 108
           Height = 16
           Align = alTop
           Alignment = taCenter
@@ -16076,19 +13373,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentBiDiMode = False
           ParentFont = False
+          ExplicitWidth = 102
         end
         object p332_1: TMyPanel
           Left = 5
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'AC220V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16104,13 +13398,9 @@ object NMain: TNMain
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'DC24V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16126,13 +13416,9 @@ object NMain: TNMain
           Top = 25
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'FB'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16149,26 +13435,21 @@ object NMain: TNMain
         Top = 99
         Width = 110
         Height = 80
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 37
+        TabOrder = 36
         UseDockManager = True
         object Label155: TLabel
-          Left = 2
-          Top = 2
-          Width = 99
+          Left = 1
+          Top = 1
+          Width = 108
           Height = 16
           Align = alTop
           Alignment = taCenter
@@ -16181,19 +13462,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentBiDiMode = False
           ParentFont = False
+          ExplicitWidth = 102
         end
         object p336_1: TMyPanel
           Left = 5
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'AC220V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16209,13 +13487,9 @@ object NMain: TNMain
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'DC24V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16231,13 +13505,9 @@ object NMain: TNMain
           Top = 25
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'FB'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16254,26 +13524,21 @@ object NMain: TNMain
         Top = 185
         Width = 110
         Height = 80
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 38
+        TabOrder = 37
         UseDockManager = True
         object Label156: TLabel
-          Left = 2
-          Top = 2
-          Width = 99
+          Left = 1
+          Top = 1
+          Width = 108
           Height = 16
           Align = alTop
           Alignment = taCenter
@@ -16286,19 +13551,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentBiDiMode = False
           ParentFont = False
+          ExplicitWidth = 102
         end
         object p337_1: TMyPanel
           Left = 5
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'AC220V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16314,13 +13576,9 @@ object NMain: TNMain
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'DC24V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16336,13 +13594,9 @@ object NMain: TNMain
           Top = 25
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'FB'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16359,26 +13613,21 @@ object NMain: TNMain
         Top = 271
         Width = 110
         Height = 80
-        ColorFace = clWhite
-        ColorGrad = 14344414
-        ColorLight = 8224125
-        ColorDark = 6447714
-        ColorScheme = csDesert
-        FillDirection = fdVertical
+        Color = clWhite
         DeviceState = dsGray
-        BevelInner = bvLowered
+        VTextPos = dsTop
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
         Font.Name = 'Cambria'
         Font.Style = [fsBold]
         ParentFont = False
-        TabOrder = 39
+        TabOrder = 38
         UseDockManager = True
         object Label160: TLabel
-          Left = 2
-          Top = 2
-          Width = 99
+          Left = 1
+          Top = 1
+          Width = 108
           Height = 16
           Align = alTop
           Alignment = taCenter
@@ -16391,19 +13640,16 @@ object NMain: TNMain
           Font.Style = [fsBold]
           ParentBiDiMode = False
           ParentFont = False
+          ExplicitWidth = 102
         end
         object p333_1: TMyPanel
           Left = 5
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'AC220V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16419,13 +13665,9 @@ object NMain: TNMain
           Top = 50
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'DC24V'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16441,13 +13683,9 @@ object NMain: TNMain
           Top = 25
           Width = 40
           Height = 24
-          ColorFace = clWhite
-          ColorGrad = 14344414
-          ColorLight = 8224125
-          ColorDark = 6447714
-          ColorScheme = csCustom
-          FillDirection = fdVertical
+          Color = clWhite
           DeviceState = dsGray
+          VTextPos = dsTop
           Caption = 'FB'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -16473,7 +13711,7 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 40
+        TabOrder = 39
         Text = '      0/0'
       end
       object i36DC: TEdit
@@ -16490,7 +13728,7 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 41
+        TabOrder = 40
         Text = '      0/0'
       end
       object i37FB: TEdit
@@ -16507,7 +13745,7 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 42
+        TabOrder = 41
         Text = '      0/0'
       end
       object i37DC: TEdit
@@ -16524,7 +13762,7 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 43
+        TabOrder = 42
         Text = '      0/0'
       end
       object i33DC: TEdit
@@ -16541,7 +13779,7 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 44
+        TabOrder = 43
         Text = '      0/0'
       end
       object i34FB: TEdit
@@ -16558,7 +13796,7 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 45
+        TabOrder = 44
         Text = '      0/0'
       end
       object i34DC: TEdit
@@ -16575,7 +13813,7 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 46
+        TabOrder = 45
         Text = '      0/0'
       end
       object i35FB: TEdit
@@ -16592,7 +13830,7 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 47
+        TabOrder = 46
         Text = '      0/0'
       end
       object i35DC: TEdit
@@ -16609,7 +13847,7 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 48
+        TabOrder = 47
         Text = '      0/0'
       end
       object i32DC: TEdit
@@ -16626,8 +13864,116 @@ object NMain: TNMain
         Font.Style = [fsBold]
         ParentFont = False
         ReadOnly = True
-        TabOrder = 49
+        TabOrder = 48
         Text = '      0/0'
+      end
+      object Panel10: TPanel
+        Left = 1672
+        Top = 15
+        Width = 195
+        Height = 165
+        BevelOuter = bvNone
+        Color = clMedGray
+        TabOrder = 49
+        object Shape20: TShape
+          Left = 0
+          Top = 19
+          Width = 195
+          Height = 146
+          Align = alClient
+          Brush.Style = bsClear
+          Pen.Color = clWhite
+          ExplicitLeft = 9
+          ExplicitTop = 86
+          ExplicitWidth = 189
+          ExplicitHeight = 172
+        end
+        object Label8: TLabel
+          Left = 0
+          Top = 0
+          Width = 195
+          Height = 19
+          Align = alTop
+          Caption = '  LEGEND'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -16
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+          ExplicitWidth = 76
+        end
+        object Label11: TLabel
+          Left = 16
+          Top = 34
+          Width = 30
+          Height = 15
+          Caption = 'Color'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label18: TLabel
+          Left = 70
+          Top = 34
+          Width = 117
+          Height = 15
+          Caption = 'Type of data channel'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label62: TLabel
+          Left = 70
+          Top = 65
+          Width = 51
+          Height = 15
+          Caption = 'AC 230 V'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label63: TLabel
+          Left = 70
+          Top = 95
+          Width = 51
+          Height = 15
+          Caption = 'AC 220 V'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label108: TLabel
+          Left = 70
+          Top = 125
+          Width = 25
+          Height = 15
+          Caption = '24 V'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Cambria'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object iL3: TImage
+          Left = 16
+          Top = 60
+          Width = 41
+          Height = 90
+        end
       end
     end
   end

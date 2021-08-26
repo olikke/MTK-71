@@ -171,7 +171,8 @@
 			<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
 			<VersionInfoKeys Name="Comments">enjoy</VersionInfoKeys>
 		</VersionInfoKeys>  <Excluded_Packages>
-      <Excluded_Packages Name="O:\Users\olikke\Documents\Borland Studio Projects\Bpl\PmyPanel.bpl">(untitled)</Excluded_Packages>
+      <Excluded_Packages Name="C:\Documents and Settings\pivotal operator\My Documents\Borland Studio Projects\Bpl\DirectX9_D2006.bpl">DirectX 9 Headers</Excluded_Packages>
+      <Excluded_Packages Name="C:\Documents and Settings\pivotal operator\My Documents\Borland Studio Projects\Bpl\DSPack_D2006.bpl">DSPack 2.3: Multimedia Package for Delphi</Excluded_Packages>
     </Excluded_Packages>
   </Delphi.Personality>
 	<StarTeamAssociation></StarTeamAssociation>

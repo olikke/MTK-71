@@ -4,19 +4,19 @@ object Telemetric: TTelemetric
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'NS " Ilmen-71 "'
-  ClientHeight = 1009
+  ClientHeight = 986
   ClientWidth = 924
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
-  Font.Name = 'Tahoma'
+  Font.Height = -12
+  Font.Name = 'Arial Black'
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
   OnActivate = FormActivate
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 17
   object Panel1: TPanel
     Left = 0
     Top = 0
@@ -33,31 +33,37 @@ object Telemetric: TTelemetric
       Left = 10
       Top = 30
       Width = 482
-      Height = 22
+      Height = 23
       Color = clMedGray
       ReadOnly = True
       TabOrder = 0
       Text = '            Parameters'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit3: TEdit
       Left = 10
       Top = 55
       Width = 482
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 1
       Text = '            Data Exchange'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit9: TEdit
       Left = 37
       Top = 80
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 2
       Text = 
         ' Geographical coordinates on Krasovsky ellipsoid (CK-42) [degree' +
         's]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object pp: TPanel
       Left = 10
@@ -79,184 +85,222 @@ object Telemetric: TTelemetric
       Left = 37
       Top = 105
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 4
       Text = 
         ' Geographical coordinates on Krasovsky ellipsoid (CK-42) [degree' +
         's]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit5: TEdit
       Left = 37
       Top = 130
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 5
       Text = ' North components of ship speed relatively sea bed [m/s]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit6: TEdit
       Left = 37
       Top = 155
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 6
       Text = ' East components of ship speed relatively sea bed [m/s]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit7: TEdit
       Left = 37
       Top = 180
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 7
       Text = ' Speed from log [m/s]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit8: TEdit
       Left = 37
       Top = 205
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 8
       Text = ' Course [degrees]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit10: TEdit
       Left = 37
       Top = 230
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 9
       Text = ' Angular rates of course variation [degrees/s]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit11: TEdit
       Left = 37
       Top = 255
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 10
       Text = 
         ' Pitch angle (positive angle corresponds to ship trim to aft) [d' +
         'egrees]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit12: TEdit
       Left = 37
       Top = 280
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 11
       Text = ' Angular rates of pitch variation [degrees/s]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit13: TEdit
       Left = 37
       Top = 305
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 12
       Text = 
         ' Roll angle (positive angle corresponds to ship heel STB) [degre' +
         'es]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit14: TEdit
       Left = 37
       Top = 330
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 13
       Text = ' Angular rates of roll variation [degrees/s]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit15: TEdit
       Left = 37
       Top = 355
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 14
       Text = 
         ' North components ship linear speed in geographical system coord' +
         'inates'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit16: TEdit
       Left = 37
       Top = 380
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 15
       Text = 
         ' East components ship linear speed in geographical system coordi' +
         'nates'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit17: TEdit
       Left = 37
       Top = 405
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 16
       Text = 
         ' Vertical components ship linear speed in geographical system co' +
         'ordinates'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit18: TEdit
       Left = 37
       Top = 430
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 17
       Text = ' North ship movement due to rolling and orbital movement [m]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit19: TEdit
       Left = 37
       Top = 455
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 18
       Text = ' East ship movement due to rolling and orbital movement [m]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit20: TEdit
       Left = 37
       Top = 480
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 19
       Text = ' Vertical ship movement due to rolling and orbital movement [m]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit21: TEdit
       Left = 37
       Top = 505
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 20
       Text = ' Total angle of ship deck inclination [degrees]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit22: TEdit
       Left = 37
       Top = 530
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 21
       Text = ' Current Greenwich time'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit30: TEdit
       Left = 37
       Top = 555
       Width = 455
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 22
       Text = ' Date (Year, month, date)'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Panel41: TPanel
       Left = 10
@@ -566,7 +610,7 @@ object Telemetric: TTelemetric
       Left = 495
       Top = 55
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -575,12 +619,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 42
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e1: TEdit
       Left = 495
       Top = 80
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -589,12 +635,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 43
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e2: TEdit
       Left = 495
       Top = 105
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -603,12 +651,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 44
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e3: TEdit
       Left = 495
       Top = 130
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -617,12 +667,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 45
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e4: TEdit
       Left = 495
       Top = 155
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -631,12 +683,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 46
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e5: TEdit
       Left = 495
       Top = 180
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -645,12 +699,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 47
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e6: TEdit
       Left = 495
       Top = 205
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -659,12 +715,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 48
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e7: TEdit
       Left = 495
       Top = 230
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -673,12 +731,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 49
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e8: TEdit
       Left = 495
       Top = 255
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -687,12 +747,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 50
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e9: TEdit
       Left = 495
       Top = 280
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -701,12 +763,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 51
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e10: TEdit
       Left = 495
       Top = 305
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -715,12 +779,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 52
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e11: TEdit
       Left = 495
       Top = 330
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -729,12 +795,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 53
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e12: TEdit
       Left = 495
       Top = 355
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -743,12 +811,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 54
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e13: TEdit
       Left = 495
       Top = 380
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -757,12 +827,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 55
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e14: TEdit
       Left = 495
       Top = 405
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -771,12 +843,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 56
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e15: TEdit
       Left = 495
       Top = 430
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -785,12 +859,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 57
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e16: TEdit
       Left = 495
       Top = 455
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -799,12 +875,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 58
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e17: TEdit
       Left = 495
       Top = 480
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -813,12 +891,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 59
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e18: TEdit
       Left = 495
       Top = 505
       Width = 65
-      Height = 22
+      Height = 23
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -827,12 +907,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 60
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e19: TEdit
       Left = 495
       Top = 530
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -841,6 +923,8 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 61
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object e20: TEdit
       Left = 495
@@ -856,12 +940,15 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 62
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d0: TEdit
       Left = 565
       Top = 55
       Width = 65
-      Height = 23
+      Height = 24
+      Color = clBtnFace
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -870,12 +957,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 63
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d1: TEdit
       Left = 565
       Top = 80
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -884,6 +973,8 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 64
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d2: TEdit
       Left = 565
@@ -898,12 +989,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 65
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d3: TEdit
       Left = 565
       Top = 130
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -912,12 +1005,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 66
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d4: TEdit
       Left = 565
       Top = 155
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -926,12 +1021,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 67
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d5: TEdit
       Left = 565
       Top = 180
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -940,12 +1037,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 68
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d6: TEdit
       Left = 565
       Top = 205
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -954,12 +1053,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 69
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d7: TEdit
       Left = 565
       Top = 230
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -968,12 +1069,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 70
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d8: TEdit
       Left = 565
       Top = 255
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -982,12 +1085,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 71
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d9: TEdit
       Left = 565
       Top = 280
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -996,12 +1101,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 72
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d10: TEdit
       Left = 565
       Top = 305
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1010,12 +1117,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 73
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d11: TEdit
       Left = 565
       Top = 330
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1024,12 +1133,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 74
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d12: TEdit
       Left = 565
       Top = 355
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1038,12 +1149,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 75
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d13: TEdit
       Left = 565
       Top = 380
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1052,12 +1165,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 76
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d14: TEdit
       Left = 565
       Top = 405
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1066,12 +1181,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 77
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d15: TEdit
       Left = 565
       Top = 430
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1080,12 +1197,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 78
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d16: TEdit
       Left = 565
       Top = 455
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1094,12 +1213,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 79
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d17: TEdit
       Left = 565
       Top = 480
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1108,12 +1229,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 80
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d18: TEdit
       Left = 565
       Top = 505
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1122,12 +1245,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 81
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d19: TEdit
       Left = 565
       Top = 530
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1136,6 +1261,8 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 82
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object d20: TEdit
       Left = 565
@@ -1151,12 +1278,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 83
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f0: TEdit
       Left = 635
       Top = 55
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1165,12 +1294,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 84
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f1: TEdit
       Left = 635
       Top = 80
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1179,12 +1310,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 85
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f2: TEdit
       Left = 635
       Top = 105
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1193,12 +1326,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 86
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f3: TEdit
       Left = 635
       Top = 130
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1207,12 +1342,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 87
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f4: TEdit
       Left = 635
       Top = 155
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1221,12 +1358,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 88
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f5: TEdit
       Left = 635
       Top = 180
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1235,12 +1374,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 89
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f6: TEdit
       Left = 635
       Top = 205
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1249,12 +1390,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 90
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f7: TEdit
       Left = 635
       Top = 230
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1263,12 +1406,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 91
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f8: TEdit
       Left = 635
       Top = 255
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1277,12 +1422,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 92
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f9: TEdit
       Left = 635
       Top = 280
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1291,12 +1438,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 93
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f10: TEdit
       Left = 635
       Top = 305
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1305,12 +1454,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 94
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f11: TEdit
       Left = 635
       Top = 330
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1319,12 +1470,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 95
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f12: TEdit
       Left = 635
       Top = 355
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1333,12 +1486,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 96
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f13: TEdit
       Left = 635
       Top = 380
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1347,12 +1502,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 97
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f14: TEdit
       Left = 635
       Top = 405
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1361,12 +1518,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 98
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f15: TEdit
       Left = 635
       Top = 430
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1375,12 +1534,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 99
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f16: TEdit
       Left = 635
       Top = 455
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1389,12 +1550,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 100
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f17: TEdit
       Left = 635
       Top = 480
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1403,12 +1566,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 101
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f18: TEdit
-      Left = 636
+      Left = 635
       Top = 505
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1417,12 +1582,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 102
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f19: TEdit
       Left = 635
       Top = 530
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1431,12 +1598,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 103
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t0: TEdit
       Left = 705
       Top = 55
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1445,12 +1614,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 104
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t1: TEdit
       Left = 705
       Top = 80
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1459,12 +1630,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 105
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t2: TEdit
       Left = 705
       Top = 105
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1473,12 +1646,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 106
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t3: TEdit
       Left = 705
       Top = 130
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1487,12 +1662,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 107
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t4: TEdit
       Left = 705
       Top = 155
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1501,12 +1678,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 108
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t5: TEdit
       Left = 705
       Top = 180
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1515,12 +1694,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 109
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t6: TEdit
       Left = 705
       Top = 205
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1529,12 +1710,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 110
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t7: TEdit
       Left = 705
       Top = 230
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1543,12 +1726,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 111
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t8: TEdit
       Left = 705
       Top = 255
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1557,12 +1742,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 112
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t9: TEdit
       Left = 705
       Top = 280
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1571,12 +1758,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 113
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t10: TEdit
       Left = 705
       Top = 305
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1585,12 +1774,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 114
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t11: TEdit
       Left = 705
       Top = 330
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1599,12 +1790,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 115
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t12: TEdit
       Left = 705
       Top = 355
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1613,12 +1806,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 116
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t13: TEdit
       Left = 705
       Top = 380
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1627,12 +1822,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 117
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t14: TEdit
       Left = 705
       Top = 405
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1641,12 +1838,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 118
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t15: TEdit
       Left = 705
       Top = 430
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1655,12 +1854,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 119
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t16: TEdit
       Left = 705
       Top = 455
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1669,12 +1870,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 120
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t17: TEdit
       Left = 705
       Top = 480
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1683,12 +1886,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 121
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t18: TEdit
       Left = 705
       Top = 505
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1697,12 +1902,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 122
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t19: TEdit
       Left = 705
       Top = 530
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1711,12 +1918,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 123
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w0: TEdit
       Left = 775
       Top = 55
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1725,12 +1934,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 124
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w1: TEdit
       Left = 775
       Top = 80
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1739,12 +1950,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 125
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w2: TEdit
       Left = 775
       Top = 105
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1753,12 +1966,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 126
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w3: TEdit
       Left = 775
       Top = 130
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1767,12 +1982,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 127
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w4: TEdit
       Left = 775
       Top = 155
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1781,12 +1998,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 128
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w5: TEdit
       Left = 775
       Top = 180
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1795,12 +2014,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 129
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w6: TEdit
       Left = 775
       Top = 205
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1809,12 +2030,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 130
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w7: TEdit
       Left = 775
       Top = 230
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1823,12 +2046,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 131
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w8: TEdit
-      Left = 776
+      Left = 775
       Top = 255
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1837,12 +2062,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 132
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w9: TEdit
       Left = 775
       Top = 280
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1851,12 +2078,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 133
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w10: TEdit
       Left = 775
       Top = 305
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1865,12 +2094,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 134
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w11: TEdit
       Left = 775
       Top = 330
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1879,12 +2110,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 135
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w12: TEdit
       Left = 775
       Top = 355
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1893,12 +2126,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 136
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w13: TEdit
       Left = 775
       Top = 380
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1907,12 +2142,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 137
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w14: TEdit
       Left = 775
       Top = 405
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1921,12 +2158,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 138
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w15: TEdit
       Left = 775
       Top = 430
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1935,12 +2174,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 139
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w16: TEdit
       Left = 775
       Top = 455
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1949,12 +2190,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 140
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w17: TEdit
       Left = 775
       Top = 480
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1963,12 +2206,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 141
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w18: TEdit
       Left = 775
       Top = 505
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1977,12 +2222,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 142
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w19: TEdit
       Left = 775
       Top = 530
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -1991,12 +2238,14 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 143
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object k0: TEdit
       Left = 845
       Top = 55
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2010,7 +2259,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 80
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2024,7 +2273,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 105
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2038,7 +2287,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 130
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2052,7 +2301,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 155
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2066,7 +2315,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 180
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2080,7 +2329,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 205
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2094,7 +2343,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 230
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2108,7 +2357,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 255
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2122,7 +2371,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 280
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2136,7 +2385,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 305
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2150,7 +2399,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 330
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2164,7 +2413,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 355
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2178,7 +2427,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 380
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2192,7 +2441,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 405
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2206,7 +2455,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 430
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2220,7 +2469,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 455
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2234,7 +2483,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 480
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2248,7 +2497,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 505
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2262,7 +2511,7 @@ object Telemetric: TTelemetric
       Left = 845
       Top = 530
       Width = 65
-      Height = 23
+      Height = 24
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -2276,7 +2525,7 @@ object Telemetric: TTelemetric
       Left = 495
       Top = 30
       Width = 65
-      Height = 22
+      Height = 23
       Color = clMedGray
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -2287,12 +2536,14 @@ object Telemetric: TTelemetric
       ReadOnly = True
       TabOrder = 164
       Text = '  Central '
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit36: TEdit
       Left = 705
       Top = 30
       Width = 65
-      Height = 22
+      Height = 23
       Color = clMedGray
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -2303,12 +2554,14 @@ object Telemetric: TTelemetric
       ReadOnly = True
       TabOrder = 165
       Text = '  Central '
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit61: TEdit
       Left = 565
       Top = 30
       Width = 65
-      Height = 22
+      Height = 23
       Color = clMedGray
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -2319,12 +2572,14 @@ object Telemetric: TTelemetric
       ReadOnly = True
       TabOrder = 166
       Text = '     Fore'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit62: TEdit
       Left = 775
       Top = 30
       Width = 65
-      Height = 22
+      Height = 23
       Color = clMedGray
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -2335,12 +2590,14 @@ object Telemetric: TTelemetric
       ReadOnly = True
       TabOrder = 167
       Text = '    Fore'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit63: TEdit
       Left = 635
       Top = 30
       Width = 65
-      Height = 22
+      Height = 23
       Color = clMedGray
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -2351,12 +2608,14 @@ object Telemetric: TTelemetric
       ReadOnly = True
       TabOrder = 168
       Text = '       Aft'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit64: TEdit
       Left = 845
       Top = 30
       Width = 65
-      Height = 22
+      Height = 23
       Color = clMedGray
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -2367,12 +2626,14 @@ object Telemetric: TTelemetric
       ReadOnly = True
       TabOrder = 169
       Text = '       Aft'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit65: TEdit
       Left = 495
       Top = 5
       Width = 204
-      Height = 22
+      Height = 23
       Color = clMedGray
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -2383,12 +2644,14 @@ object Telemetric: TTelemetric
       ReadOnly = True
       TabOrder = 170
       Text = '                         Channel 1'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit66: TEdit
       Left = 705
       Top = 5
-      Width = 204
-      Height = 22
+      Width = 205
+      Height = 23
       Color = clMedGray
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -2399,6 +2662,8 @@ object Telemetric: TTelemetric
       ReadOnly = True
       TabOrder = 171
       Text = '                         Channel 2'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object f20: TEdit
       Left = 635
@@ -2414,6 +2679,8 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 172
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object t20: TEdit
       Left = 705
@@ -2429,6 +2696,8 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 173
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object w20: TEdit
       Left = 775
@@ -2444,6 +2713,8 @@ object Telemetric: TTelemetric
       ParentFont = False
       ReadOnly = True
       TabOrder = 174
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object k20: TEdit
       Left = 845
@@ -2463,77 +2734,93 @@ object Telemetric: TTelemetric
     object Edit71: TEdit
       Left = 10
       Top = 580
-      Width = 903
-      Height = 22
+      Width = 902
+      Height = 23
       Color = clMedGray
       ReadOnly = True
       TabOrder = 176
       Text = 
         '            Sign of data validity  (To find out the state of par' +
         'ameter set  "mouse" cursor on it)'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit72: TEdit
       Left = 10
       Top = 605
       Width = 481
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 177
       Text = ' Navigation system operation mode'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit73: TEdit
       Left = 10
       Top = 630
       Width = 423
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 178
       Text = ' Validity of processes coordinates'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit74: TEdit
       Left = 10
       Top = 655
       Width = 423
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 179
       Text = ' Validity of absolute speed components'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit75: TEdit
       Left = 10
       Top = 680
       Width = 452
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 180
       Text = ' Validity of speed from log'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit76: TEdit
       Left = 10
       Top = 755
       Width = 481
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 181
       Text = ' Validity of stabilization parameters'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit77: TEdit
       Left = 10
       Top = 705
       Width = 452
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 182
       Text = ' Source of course  information'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit78: TEdit
       Left = 10
       Top = 730
       Width = 452
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 183
       Text = ' Validity of course'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Panel67: TPanel
       Left = 437
@@ -2640,6 +2927,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 190
+      Visible = False
       object p7: TImage
         Left = 16
         Top = -8
@@ -2656,6 +2944,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 191
+      Visible = False
       object p8: TImage
         Left = 16
         Top = -8
@@ -2672,6 +2961,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 192
+      Visible = False
       object p9: TImage
         Left = 16
         Top = -8
@@ -2688,6 +2978,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 193
+      Visible = False
       object p10: TImage
         Left = 16
         Top = -8
@@ -2704,6 +2995,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 194
+      Visible = False
       object p11: TImage
         Left = 16
         Top = -8
@@ -2720,6 +3012,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 195
+      Visible = False
       object p12: TImage
         Left = 16
         Top = -8
@@ -2736,6 +3029,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 196
+      Visible = False
       object p13: TImage
         Left = 16
         Top = -8
@@ -2752,6 +3046,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 197
+      Visible = False
       object p14: TImage
         Left = 16
         Top = -8
@@ -2768,6 +3063,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 198
+      Visible = False
       object p15: TImage
         Left = 16
         Top = -8
@@ -2784,6 +3080,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 199
+      Visible = False
       object p16: TImage
         Left = 16
         Top = -8
@@ -2800,6 +3097,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 200
+      Visible = False
       object p17: TImage
         Left = 16
         Top = -8
@@ -2816,6 +3114,7 @@ object Telemetric: TTelemetric
       BevelOuter = bvNone
       Color = clWhite
       TabOrder = 201
+      Visible = False
       object p18: TImage
         Left = 16
         Top = -8
@@ -2851,9 +3150,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 203
       Text = '     SW1'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object esw2: TEdit
       Left = 495
@@ -2867,9 +3170,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 204
       Text = '     SW2'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object esw3: TEdit
       Left = 495
@@ -2883,9 +3190,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 205
       Text = '     SW3'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object esw4: TEdit
       Left = 495
@@ -2899,9 +3210,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 206
       Text = '     SW4'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object esw6: TEdit
       Left = 495
@@ -2915,9 +3230,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 207
       Text = '     SW6'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object esw5: TEdit
       Left = 495
@@ -2931,9 +3250,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 208
       Text = '     SW5'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object esw7: TEdit
       Left = 495
@@ -2947,9 +3270,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 209
       Text = '     SW7'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object dsw1: TEdit
       Left = 565
@@ -2963,9 +3290,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 210
       Text = '     SW1'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object dsw2: TEdit
       Left = 565
@@ -2979,9 +3310,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 211
       Text = '     SW2'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object dsw3: TEdit
       Left = 565
@@ -2995,9 +3330,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 212
       Text = '     SW3'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object dsw4: TEdit
       Left = 565
@@ -3011,9 +3350,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 213
       Text = '     SW4'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object dsw6: TEdit
       Left = 565
@@ -3027,9 +3370,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 214
       Text = '     SW6'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object dsw7: TEdit
       Left = 565
@@ -3043,9 +3390,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 215
       Text = '     SW7'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object dsw5: TEdit
       Left = 565
@@ -3059,9 +3410,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 216
       Text = '     SW5'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object fsw1: TEdit
       Left = 635
@@ -3075,9 +3430,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 217
       Text = '     SW1'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object fsw2: TEdit
       Left = 635
@@ -3091,9 +3450,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 218
       Text = '     SW2'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object fsw3: TEdit
       Left = 635
@@ -3107,9 +3470,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 219
       Text = '     SW3'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object fsw4: TEdit
       Left = 635
@@ -3123,12 +3490,16 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 220
       Text = '     SW4'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object fsw6: TEdit
-      Left = 634
+      Left = 635
       Top = 705
       Width = 65
       Height = 24
@@ -3139,9 +3510,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 221
       Text = '     SW6'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object fsw7: TEdit
       Left = 635
@@ -3155,9 +3530,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 222
       Text = '     SW7'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object fsw5: TEdit
       Left = 635
@@ -3171,9 +3550,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 223
       Text = '     SW5'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object tsw1: TEdit
       Left = 705
@@ -3187,9 +3570,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 224
       Text = '     SW1'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object tsw2: TEdit
       Left = 705
@@ -3203,9 +3590,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 225
       Text = '     SW2'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object tsw3: TEdit
       Left = 705
@@ -3219,9 +3610,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 226
       Text = '     SW3'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object tsw4: TEdit
       Left = 705
@@ -3235,9 +3630,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 227
       Text = '     SW4'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object tsw6: TEdit
       Left = 705
@@ -3251,9 +3650,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 228
       Text = '     SW6'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object tsw7: TEdit
       Left = 705
@@ -3267,9 +3670,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 229
       Text = '     SW7'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object tsw5: TEdit
       Left = 705
@@ -3283,9 +3690,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 230
       Text = '     SW5'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object wsw1: TEdit
       Left = 775
@@ -3299,9 +3710,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 231
       Text = '     SW1'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object wsw2: TEdit
       Left = 775
@@ -3315,9 +3730,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 232
       Text = '     SW2'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object wsw3: TEdit
       Left = 775
@@ -3331,9 +3750,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 233
       Text = '     SW3'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object wsw4: TEdit
       Left = 775
@@ -3347,9 +3770,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 234
       Text = '     SW4'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object wsw6: TEdit
       Left = 775
@@ -3363,9 +3790,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 235
       Text = '     SW6'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object wsw7: TEdit
       Left = 775
@@ -3379,9 +3810,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 236
       Text = '     SW7'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object wsw5: TEdit
       Left = 775
@@ -3395,9 +3830,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 237
       Text = '     SW5'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object ksw1: TEdit
       Left = 845
@@ -3411,9 +3850,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 238
       Text = '     SW1'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object ksw2: TEdit
       Left = 845
@@ -3427,9 +3870,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 239
       Text = '     SW2'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object ksw3: TEdit
       Left = 845
@@ -3443,9 +3890,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 240
       Text = '     SW3'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object ksw4: TEdit
       Left = 845
@@ -3459,9 +3910,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 241
       Text = '     SW4'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object ksw6: TEdit
       Left = 845
@@ -3475,9 +3930,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 242
       Text = '     SW6'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object ksw7: TEdit
       Left = 845
@@ -3491,9 +3950,13 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 243
       Text = '     SW7'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object ksw5: TEdit
       Left = 845
@@ -3507,68 +3970,84 @@ object Telemetric: TTelemetric
       Font.Name = 'Cambria'
       Font.Style = [fsBold]
       ParentFont = False
+      ParentShowHint = False
       ReadOnly = True
+      ShowHint = True
       TabOrder = 244
       Text = '     SW5'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit1: TEdit
       Left = 10
-      Top = 805
-      Width = 903
-      Height = 22
+      Top = 780
+      Width = 902
+      Height = 23
       Color = clMedGray
       ReadOnly = True
       TabOrder = 245
       Text = '            Average data (accumulation time = 6 min)'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit23: TEdit
       Left = 10
-      Top = 830
+      Top = 805
       Width = 452
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 246
       Text = '  Pitch angle  [degrees]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit24: TEdit
       Left = 10
-      Top = 855
+      Top = 830
       Width = 452
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 247
       Text = '  Roll angle   [degrees]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit25: TEdit
       Left = 10
-      Top = 880
+      Top = 855
       Width = 452
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 248
       Text = '  North ship movement      [m]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit26: TEdit
       Left = 10
-      Top = 905
+      Top = 880
       Width = 452
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 249
       Text = '  East ship movement         [m]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit27: TEdit
       Left = 10
-      Top = 930
+      Top = 905
       Width = 452
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 250
       Text = '  Vertical ship movement  [m]'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Panel2: TPanel
       Left = 467
-      Top = 830
+      Top = 805
       Width = 25
       Height = 22
       BevelKind = bkTile
@@ -3584,7 +4063,7 @@ object Telemetric: TTelemetric
     end
     object Panel3: TPanel
       Left = 467
-      Top = 855
+      Top = 830
       Width = 25
       Height = 22
       BevelKind = bkTile
@@ -3600,7 +4079,7 @@ object Telemetric: TTelemetric
     end
     object Panel4: TPanel
       Left = 467
-      Top = 880
+      Top = 855
       Width = 25
       Height = 22
       BevelKind = bkTile
@@ -3616,7 +4095,7 @@ object Telemetric: TTelemetric
     end
     object Panel5: TPanel
       Left = 467
-      Top = 905
+      Top = 880
       Width = 25
       Height = 22
       BevelKind = bkTile
@@ -3632,7 +4111,7 @@ object Telemetric: TTelemetric
     end
     object Panel6: TPanel
       Left = 467
-      Top = 930
+      Top = 905
       Width = 25
       Height = 22
       BevelKind = bkTile
@@ -3648,23 +4127,44 @@ object Telemetric: TTelemetric
     end
     object Edit28: TEdit
       Left = 10
-      Top = 955
+      Top = 930
       Width = 481
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 256
       Text = '  Sign of validity'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object Edit29: TEdit
       Left = 10
-      Top = 980
+      Top = 955
       Width = 481
-      Height = 22
+      Height = 23
       ReadOnly = True
       TabOrder = 257
       Text = '  Accumulation time'
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object ea1: TEdit
+      Left = 495
+      Top = 805
+      Width = 65
+      Height = 24
+      AutoSize = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Cambria'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 258
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
+    end
+    object ea2: TEdit
       Left = 495
       Top = 830
       Width = 65
@@ -3677,9 +4177,11 @@ object Telemetric: TTelemetric
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 258
+      TabOrder = 259
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
-    object ea2: TEdit
+    object ea3: TEdit
       Left = 495
       Top = 855
       Width = 65
@@ -3692,9 +4194,11 @@ object Telemetric: TTelemetric
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 259
+      TabOrder = 260
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
-    object ea3: TEdit
+    object ea4: TEdit
       Left = 495
       Top = 880
       Width = 65
@@ -3707,9 +4211,11 @@ object Telemetric: TTelemetric
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 260
+      TabOrder = 261
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
-    object ea4: TEdit
+    object ea5: TEdit
       Left = 495
       Top = 905
       Width = 65
@@ -3722,9 +4228,11 @@ object Telemetric: TTelemetric
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 261
+      TabOrder = 262
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
-    object ea5: TEdit
+    object ea6: TEdit
       Left = 495
       Top = 930
       Width = 65
@@ -3737,9 +4245,11 @@ object Telemetric: TTelemetric
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 262
+      TabOrder = 263
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
-    object ea6: TEdit
+    object ea7: TEdit
       Left = 495
       Top = 955
       Width = 65
@@ -3752,22 +4262,9 @@ object Telemetric: TTelemetric
       Font.Style = [fsBold]
       ParentFont = False
       ReadOnly = True
-      TabOrder = 263
-    end
-    object ea7: TEdit
-      Left = 495
-      Top = 980
-      Width = 65
-      Height = 24
-      AutoSize = False
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Cambria'
-      Font.Style = [fsBold]
-      ParentFont = False
-      ReadOnly = True
       TabOrder = 264
+      OnEnter = Edit2Enter
+      OnExit = Edit2Exit
     end
     object da1: TEdit
       Left = 565

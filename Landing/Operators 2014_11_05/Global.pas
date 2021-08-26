@@ -398,10 +398,10 @@ var
  TypeNP:byte=0;
 
 const
-      Color_G : TColor = $0000FF00;
-      Color_R : TColor = $000000FF;
-      Color_B : TColor = $00FDA84E;
-      Color_Y : TColor = clYellow;
+      Color_G : TColor = $009AE129;
+      Color_R : TColor = $004542F3;
+      Color_B : TColor = $00d3d3d3;
+      Color_Y : TColor = $0034c9fd;
       Color_S : TColor = clSilver;
       Color_W : TColor = clWhite;
       ChangeOfMode: array [1..6] of string=

@@ -4,46 +4,47 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Grids,Global, ExtCtrls, StdCtrls;
+  Dialogs, Grids,Global, ExtCtrls, StdCtrls, XPMan;
 
 type
   TOLS = class(TForm)
     Timer1: TTimer;
-    Panel1: TPanel;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit1: TEdit;
-    Edit4: TEdit;
-    Edit5: TEdit;
-    Edit6: TEdit;
-    Edit7: TEdit;
-    Edit8: TEdit;
-    Edit9: TEdit;
-    Edit10: TEdit;
-    Edit11: TEdit;
+    XPManifest1: TXPManifest;
     Edit12: TEdit;
-    e1: TEdit;
-    e2: TEdit;
-    e3: TEdit;
-    e4: TEdit;
-    e5: TEdit;
-    e6: TEdit;
-    e7: TEdit;
-    e8: TEdit;
-    e9: TEdit;
-    e10: TEdit;
+    Edit2: TEdit;
     Edit13: TEdit;
+    Edit3: TEdit;
+    e1: TEdit;
     f1: TEdit;
+    Edit1: TEdit;
+    e2: TEdit;
     f2: TEdit;
+    Edit4: TEdit;
+    e3: TEdit;
     f3: TEdit;
+    Edit5: TEdit;
+    e4: TEdit;
     f4: TEdit;
+    Edit6: TEdit;
+    e5: TEdit;
     f5: TEdit;
+    Edit7: TEdit;
+    e6: TEdit;
     f6: TEdit;
+    Edit8: TEdit;
+    e7: TEdit;
     f7: TEdit;
+    Edit9: TEdit;
+    e8: TEdit;
     f8: TEdit;
+    Edit10: TEdit;
+    e9: TEdit;
     f9: TEdit;
+    Edit11: TEdit;
+    e10: TEdit;
     f10: TEdit;
-    procedure FormActivate(Sender: TObject);
+    procedure Edit3Exit(Sender: TObject);
+    procedure Edit3Enter(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure SetValues;
@@ -62,6 +63,16 @@ implementation
 
 {$R *.dfm}
 
+procedure TOLS.Edit3Enter(Sender: TObject);
+begin
+  (Sender as TEdit).Enabled:=false;
+end;
+
+procedure TOLS.Edit3Exit(Sender: TObject);
+begin
+  (Sender as TEdit).Enabled:=true;
+end;
+
 procedure TOLS.FillMe;
 begin
   e1.Text :=' YES';    f1.Text :=' YES';
@@ -75,11 +86,6 @@ begin
   e8.Text :='1.10';    f8.Text :='1.10';
   e9.Text :='0.00';    f9.Text :='0.00';
   e10.Text:='0.00';    f10.Text:='0.00';
-end;
-
-procedure TOLS.FormActivate(Sender: TObject);
-begin
-Panel1.SetFocus;
 end;
 
 procedure TOLS.FormCreate(Sender: TObject);
