@@ -2,10 +2,15 @@
 
 *.exe
 
+!MySleep.exe
+
 _history/*
 
-#hello
+Protocol/*
 
 *.rar
 
+!MTKProg.rar
+
+!BDD.rar
 
