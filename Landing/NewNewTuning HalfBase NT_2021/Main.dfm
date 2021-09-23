@@ -327,7 +327,7 @@ object Form1: TForm1
     Top = 0
     Width = 1035
     Height = 902
-    ActivePage = TabSheet4
+    ActivePage = TabSheet2
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -14
@@ -1345,6 +1345,20 @@ object Form1: TForm1
           Width = 200
           Height = 16
           Caption = 'real coordinates of RP1-RP3!'
+        end
+        object Label3: TLabel
+          Left = 24
+          Top = 364
+          Width = 236
+          Height = 16
+          Caption = 'Special the height (Z) above TDP. '
+        end
+        object Label4: TLabel
+          Left = 24
+          Top = 386
+          Width = 307
+          Height = 16
+          Caption = 'Z=1.5 m above desk + (HeightRP-HeightTDP)'
         end
         object Panel5: TPanel
           Left = 0
@@ -2784,7 +2798,6 @@ object Form1: TForm1
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
-            ReadOnly = True
             TabOrder = 0
             OnEnter = Lak_EXEnter
             OnExit = kuFocusExit
@@ -2802,7 +2815,6 @@ object Form1: TForm1
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
-            ReadOnly = True
             TabOrder = 1
             OnEnter = Lak_EXEnter
             OnExit = kuFocusExit
@@ -2820,7 +2832,6 @@ object Form1: TForm1
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
-            ReadOnly = True
             TabOrder = 2
             OnEnter = Lak_EXEnter
             OnExit = kuFocusExit
@@ -2838,7 +2849,6 @@ object Form1: TForm1
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
-            ReadOnly = True
             TabOrder = 3
             OnEnter = Lak_EXEnter
             OnExit = kuFocusExit
@@ -2856,7 +2866,6 @@ object Form1: TForm1
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
-            ReadOnly = True
             TabOrder = 4
             OnEnter = Lak_EXEnter
             OnExit = kuFocusExit
@@ -2874,7 +2883,6 @@ object Form1: TForm1
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
-            ReadOnly = True
             TabOrder = 5
             OnEnter = Lak_EXEnter
             OnExit = kuFocusExit
@@ -2892,7 +2900,6 @@ object Form1: TForm1
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
-            ReadOnly = True
             TabOrder = 6
             OnEnter = Lak_EXEnter
             OnExit = kuFocusExit
@@ -2910,7 +2917,6 @@ object Form1: TForm1
             Font.Name = 'MS Sans Serif'
             Font.Style = [fsBold]
             ParentFont = False
-            ReadOnly = True
             TabOrder = 7
             OnEnter = Lak_EXEnter
             OnExit = kuFocusExit
@@ -2928,7 +2934,6 @@ object Form1: TForm1
             Font.Name = 'Cambria'
             Font.Style = [fsBold]
             ParentFont = False
-            ReadOnly = True
             TabOrder = 8
             OnEnter = Lak_EXEnter
             OnExit = kuFocusExit
@@ -3752,8 +3757,8 @@ object Form1: TForm1
         ExplicitWidth = 351
       end
       object SpeedButton11: TSpeedButton
-        Left = 324
-        Top = 0
+        Left = 277
+        Top = -6
         Width = 28
         Height = 28
         Font.Charset = DEFAULT_CHARSET

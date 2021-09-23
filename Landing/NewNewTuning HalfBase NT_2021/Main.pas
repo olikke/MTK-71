@@ -212,7 +212,6 @@ type
     newKx: TEdit;
     newKy: TEdit;
     OpenDialog1: TOpenDialog;
-    SpeedButton11: TSpeedButton;
     SampleGrabber: TSampleGrabber;
     SpeedButton21: TSpeedButton;
     SpeedButton20: TSpeedButton;
@@ -281,6 +280,9 @@ type
     rRPz: TEdit;
     mRPz: TEdit;
     eRPz: TEdit;
+    SpeedButton11: TSpeedButton;
+    Label3: TLabel;
+    Label4: TLabel;
     procedure Lak_EXEnter(Sender: TObject);
     procedure vRP1xChange(Sender: TObject);
     procedure SpeedButton20Click(Sender: TObject);
@@ -931,6 +933,15 @@ var i,j:Word;
 begin
   //olikkeGo
   timer1.Enabled:=false;
+    SpeedButton7.Enabled:=true;
+   SpeedButton8.Enabled:=true;
+   SpeedButton9.Enabled:=true;
+   SpeedButton10.Enabled:=true;
+   SpeedButton1.Enabled:=true;
+   SpeedButton2.Enabled:=true;
+   tvMode1.Enabled:=true;
+   tvMode2.Enabled:=true;
+   tvMode3.Enabled:=true;   
   //olikkeEnd
   PageControl1.ActivePageIndex:=0;
   RPEdit[1]:=nil;
@@ -1047,14 +1058,15 @@ end;
 procedure TForm1.RadioButton6MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
-  //viX:=0;
-  //viY:=0;
   SpeedButton7.Enabled:=false;
   SpeedButton8.Enabled:=false;
   SpeedButton9.Enabled:=false;
   SpeedButton10.Enabled:=false;
   SpeedButton1.Enabled:=false;
   SpeedButton2.Enabled:=false;
+  tvMode1.Enabled:=false;
+  tvMode2.Enabled:=false;
+  tvMode3.Enabled:=false;
   kuFocus.Text:='';
   kuRx.Text:='';
   kuRy.Text:='';
@@ -1140,6 +1152,9 @@ begin
    SpeedButton10.Enabled:=true;
    SpeedButton1.Enabled:=true;
    SpeedButton2.Enabled:=true;
+   tvMode1.Enabled:=true;
+   tvMode2.Enabled:=true;
+   tvMode3.Enabled:=true;
 end;
 
 procedure TForm1.ComboBox1Change(Sender: TObject);
@@ -1198,13 +1213,14 @@ end;
 procedure TForm1.Lak_EXEnter(Sender: TObject);
 begin
   if not (Sender as TEdit).ReadOnly then
-  (Sender as TEdit).Enabled:=false;
+  (Sender as TEdit).Enabled:=false;  
 end;
 
 procedure TForm1.Lak_EXKeyPress(Sender: TObject; var Key: Char);
 const Separator: set of Char=['/', '.', ',','.','>',',','<'];
 var i:integer;
 begin
+  if (Sender as TEdit).ReadOnly then
   if (key in Separator) then
     if pos(DecimalSeparator,(Sender as TEdit).Text)<>0 then Key:=#0 else Key:=DecimalSeparator;
   (Sender as TEdit).ReadOnly:= not (Key in ['0'..'9',DecimalSeparator,#8,'-']);
@@ -1236,7 +1252,6 @@ var Res:Cardinal;
     ReceiveCommand:TMass;
 begin
   result:=false;
-  ShowMessage(IntToStr(Command[0])+' '+IntToStr(Command[1])+' '+IntToStr(Command[2])+' '+IntToStr(Command[3]));
   if Comm2220.Opened=false then
   begin
     try Comm2220.OpenDevice
@@ -1412,15 +1427,16 @@ end;
 
 procedure TForm1.openEditLAKClick(Sender: TObject);
 begin
-  Lak_EZ.ReadOnly:=true;
-  Lak_LZ.ReadOnly:=true;
-  Lak_SZ.ReadOnly:=true;
   LAK_EX.ReadOnly:=true;
   Lak_EY.ReadOnly:=true;
+  Lak_EZ.ReadOnly:=true;
   Lak_LX.ReadOnly:=true;
   Lak_LY.ReadOnly:=true;
+  Lak_LZ.ReadOnly:=true;
   Lak_SX.ReadOnly:=true;
   Lak_SY.ReadOnly:=true;
+  Lak_SZ.ReadOnly:=true;
+  panel10.SetFocus;
   openEditLAK.Visible:=false;
   closeEditLAK.Visible:=true;
   editLAK.Enabled:=true;
@@ -1438,6 +1454,7 @@ begin
   Lak_LY.ReadOnly:=false;
   Lak_SX.ReadOnly:=false;
   Lak_SY.ReadOnly:=false;
+  panel10.SetFocus;
   openEditLAK.Visible:=true;
   closeeditLAK.Visible:=false;
   editLAK.Enabled:=false;
